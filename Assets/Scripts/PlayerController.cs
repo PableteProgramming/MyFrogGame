@@ -21,6 +21,8 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         
+
+
     }
 
     private void FixedUpdate()
@@ -41,5 +43,27 @@ public class PlayerController : MonoBehaviour
             rb2d.velocity = new Vector2(0, rb2d.velocity.y);
             animator.SetBool("Run", false);
         }
+
+
+        if (Input.GetKey("space") || Input.GetKey("up"))
+        {
+            if (CheckGround.IsGrounded)
+            {
+                rb2d.velocity = new Vector2(rb2d.velocity.x, jumpSpeed);
+            }
+        }
+
+        if (CheckGround.IsGrounded == false)
+        {
+            animator.SetBool("Jump", true);
+            animator.SetBool("Run", false);
+        }
+
+        if (CheckGround.IsGrounded == true)
+        {
+            animator.SetBool("Jump", false);
+        }
+
+        Debug.Log(CheckGround.IsGrounded);
     }
 }
