@@ -32,12 +32,16 @@ public class PlayerController : MonoBehaviour
             rb2d.velocity = new Vector2(runSpeed, rb2d.velocity.y);
             spriteRenderer.flipX = false;
             animator.SetBool("Run", true);
+            //
+            animator.SetBool("Fall", false);
         }
         else if (Input.GetKey("a") || Input.GetKey("left"))
         {
             rb2d.velocity = new Vector2(-runSpeed, rb2d.velocity.y);
             spriteRenderer.flipX = true;
             animator.SetBool("Run", true);
+            //
+            animator.SetBool("Fall", false);
         }
         else {
             rb2d.velocity = new Vector2(0, rb2d.velocity.y);
@@ -58,16 +62,19 @@ public class PlayerController : MonoBehaviour
             animator.SetBool("Jump", true);
             animator.SetBool("Run", false);
         }
-        else
+        
+        if(CheckGround.IsGrounded==true)
         {
             animator.SetBool("Jump", false);
+            animator.SetBool("Fall", false);
         }
 
         if (rb2d.velocity.y < 0)
         {
             animator.SetBool("Fall", true);
+            //animator.SetBool("Jump", false);
         }
-        else
+        else if(rb2d.velocity.y > 0)
         {
             animator.SetBool("Fall", false);
         }
