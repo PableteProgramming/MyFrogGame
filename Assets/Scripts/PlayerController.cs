@@ -13,6 +13,12 @@ public class PlayerController : MonoBehaviour
 
     public Animator animator;
 
+    public bool betterjump;
+
+    public float fallMultiplier;
+
+    public float jumpMultiplier;
+
     void Start()
     {
 
@@ -20,35 +26,6 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        
-
-
-    }
-
-    private void FixedUpdate()
-    {
-        if (Input.GetKey("d") || Input.GetKey("right"))
-        {
-            rb2d.velocity = new Vector2(runSpeed, rb2d.velocity.y);
-            spriteRenderer.flipX = false;
-            animator.SetBool("Run", true);
-            //
-            animator.SetBool("Fall", false);
-        }
-        else if (Input.GetKey("a") || Input.GetKey("left"))
-        {
-            rb2d.velocity = new Vector2(-runSpeed, rb2d.velocity.y);
-            spriteRenderer.flipX = true;
-            animator.SetBool("Run", true);
-            //
-            animator.SetBool("Fall", false);
-        }
-        else {
-            rb2d.velocity = new Vector2(0, rb2d.velocity.y);
-            animator.SetBool("Run", false);
-        }
-
-
         if (Input.GetKey("space") || Input.GetKey("up"))
         {
             if (CheckGround.IsGrounded)
@@ -62,8 +39,8 @@ public class PlayerController : MonoBehaviour
             animator.SetBool("Jump", true);
             animator.SetBool("Run", false);
         }
-        
-        if(CheckGround.IsGrounded==true)
+
+        if (CheckGround.IsGrounded == true)
         {
             animator.SetBool("Jump", false);
             animator.SetBool("Fall", false);
@@ -72,13 +49,44 @@ public class PlayerController : MonoBehaviour
         if (rb2d.velocity.y < 0)
         {
             animator.SetBool("Fall", true);
-            //animator.SetBool("Jump", false);
         }
-        else if(rb2d.velocity.y > 0)
+        else if (rb2d.velocity.y > 0)
         {
             animator.SetBool("Fall", false);
         }
+    }
 
-        //Debug.Log(CheckGround.IsGrounded);
+    private void FixedUpdate()
+    {
+        if (Input.GetKey("d") || Input.GetKey("right"))
+        {
+            rb2d.velocity = new Vector2(runSpeed, rb2d.velocity.y);
+            spriteRenderer.flipX = false;
+            animator.SetBool("Run", true);
+            animator.SetBool("Fall", false);
+        }
+        else if (Input.GetKey("a") || Input.GetKey("left"))
+        {
+            rb2d.velocity = new Vector2(-runSpeed, rb2d.velocity.y);
+            spriteRenderer.flipX = true;
+            animator.SetBool("Run", true);
+            animator.SetBool("Fall", false);
+        }
+        else {
+            rb2d.velocity = new Vector2(0, rb2d.velocity.y);
+            animator.SetBool("Run", false);
+        }
+
+        if (betterjump)
+        {
+            if (rb2d.velocity.y < 0)
+            {
+                rb2d.velocity += Vector2.up * Physics2D.gravity.y * (fallMultiplier) * Time.deltaTime;
+            }
+            if (rb2d.velocity.y > 0 && !Input.GetKey("space") && !Input.GetKey("up"))
+            {
+                rb2d.velocity += Vector2.up * Physics2D.gravity.y * (jumpMultiplier) * Time.deltaTime;
+            }
+        }
     }
 }
