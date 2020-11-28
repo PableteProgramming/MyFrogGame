@@ -58,12 +58,20 @@ public class PlayerController : MonoBehaviour
             animator.SetBool("Jump", true);
             animator.SetBool("Run", false);
         }
-
-        if (CheckGround.IsGrounded == true)
+        else
         {
             animator.SetBool("Jump", false);
         }
 
-        Debug.Log(CheckGround.IsGrounded);
+        if (rb2d.velocity.y < 0)
+        {
+            animator.SetBool("Fall", true);
+        }
+        else
+        {
+            animator.SetBool("Fall", false);
+        }
+
+        //Debug.Log(CheckGround.IsGrounded);
     }
 }
