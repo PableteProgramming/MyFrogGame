@@ -19,6 +19,12 @@ public class PlayerController : MonoBehaviour
 
     public float jumpMultiplier;
 
+    public float DoubleJumpSpeed;
+
+    private bool canDoubleJump;
+
+    public bool DoubleJump;
+
     void Start()
     {
 
@@ -30,7 +36,26 @@ public class PlayerController : MonoBehaviour
         {
             if (CheckGround.IsGrounded)
             {
+                if (DoubleJump)
+                {
+                    canDoubleJump = true;
+                }
                 rb2d.velocity = new Vector2(rb2d.velocity.x, jumpSpeed);
+            }
+            else
+            {
+                if (DoubleJump)
+                {
+                    if(Input.GetKeyDown("space") || Input.GetKeyDown("up"))
+                    {
+                        if (canDoubleJump)
+                        {
+                            animator.SetBool("DoubleJump", true);
+                            rb2d.velocity = new Vector2(rb2d.velocity.x, DoubleJumpSpeed);
+                            canDoubleJump = false;
+                        }
+                    }
+                }
             }
         }
 
@@ -44,6 +69,7 @@ public class PlayerController : MonoBehaviour
         {
             animator.SetBool("Jump", false);
             animator.SetBool("Fall", false);
+            animator.SetBool("DoubleJump", false);
         }
 
         if (rb2d.velocity.y < 0)

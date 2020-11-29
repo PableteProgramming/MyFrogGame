@@ -227,3 +227,8 @@ MonoBehaviour:
   rb2d: {fileID: 8199607611470447298}
   spriteRenderer: {fileID: 8199607611470447302}
   animator: {fileID: 8199607611470447296}
+  betterjump: 1
+  fallMultiplier: 0.5
+  jumpMultiplier: 1
+  DoubleJumpSpeed: 2.5
+  DoubleJump: 1
