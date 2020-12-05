@@ -6,6 +6,10 @@ public class PlayerController : MonoBehaviour
 {
     public float runSpeed;
     public float jumpSpeed;
+    public string dir;
+    public bool dirChanged;
+    public bool WallJump;
+    public bool canWallJump;
 
     public Rigidbody2D rb2d;
 
@@ -21,7 +25,7 @@ public class PlayerController : MonoBehaviour
 
     public float DoubleJumpSpeed;
 
-    private bool canDoubleJump;
+    public bool canDoubleJump;
 
     public bool DoubleJump;
 
@@ -44,11 +48,27 @@ public class PlayerController : MonoBehaviour
                     if (DoubleJump)
                     {
                         canDoubleJump = true;
+                        canWallJump = true;
                     }
                     rb2d.velocity = new Vector2(rb2d.velocity.x, jumpSpeed);
                 }
                 else
                 {
+                    if (WallJump)
+                    {
+                        if (Input.GetKeyDown("space") || Input.GetKeyDown("up"))
+                        {
+                            if (CheckWall.IsWalled)
+                            {
+                                if (canWallJump)
+                                {
+                                    rb2d.velocity = new Vector2(rb2d.velocity.x, DoubleJumpSpeed);
+                                    canWallJump = false;
+                                }
+                            }
+                        }
+                    }
+                    //
                     if (DoubleJump)
                     {
                         if (Input.GetKeyDown("space") || Input.GetKeyDown("up"))
@@ -85,6 +105,24 @@ public class PlayerController : MonoBehaviour
             {
                 animator.SetBool("Fall", false);
             }
+
+            if (dirChanged)
+            {
+                canWallJump = true;
+            }
+
+            /*if (rb2d.velocity.x > 0)
+            {
+                dir = "right";
+            }
+            else if (rb2d.velocity.x > 0)
+            {
+                dir = "left";
+            }
+            else
+            {
+                dir = "stop";
+            }*/
         }
     }
 
@@ -95,6 +133,12 @@ public class PlayerController : MonoBehaviour
         {
             if (Input.GetKey("d") || Input.GetKey("right"))
             {
+                dirChanged = false;
+                if (dir != "right")
+                {
+                    dir = "right";
+                    dirChanged = true;
+                }
                 rb2d.velocity = new Vector2(runSpeed, rb2d.velocity.y);
                 spriteRenderer.flipX = false;
                 animator.SetBool("Run", true);
@@ -102,6 +146,12 @@ public class PlayerController : MonoBehaviour
             }
             else if (Input.GetKey("a") || Input.GetKey("left"))
             {
+                dirChanged = false;
+                if (dir != "left")
+                {
+                    dir = "left";
+                    dirChanged = true;
+                }
                 rb2d.velocity = new Vector2(-runSpeed, rb2d.velocity.y);
                 spriteRenderer.flipX = true;
                 animator.SetBool("Run", true);
@@ -109,6 +159,8 @@ public class PlayerController : MonoBehaviour
             }
             else
             {
+                dirChanged = false;
+                dir = "stop";
                 rb2d.velocity = new Vector2(0, rb2d.velocity.y);
                 animator.SetBool("Run", false);
             }
