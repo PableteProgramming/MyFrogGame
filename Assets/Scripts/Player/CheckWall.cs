@@ -4,12 +4,17 @@ using UnityEngine;
 
 public class CheckWall : MonoBehaviour
 {
-    public static bool IsWalled;
+    public bool IsWalled=false;
+    private void Start()
+    {
+        IsWalled = false;
+    }
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.transform.CompareTag("Ground"))
         {
             IsWalled = true;
+            //Debug.Log(IsWalled);
         }
     }
 
@@ -18,6 +23,7 @@ public class CheckWall : MonoBehaviour
         if (collision.transform.CompareTag("Ground"))
         {
             IsWalled = false;
+            //Debug.Log(IsWalled);
         }
     }
 }

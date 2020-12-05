@@ -6,10 +6,11 @@ public class PlayerController : MonoBehaviour
 {
     public float runSpeed;
     public float jumpSpeed;
-    public string dir;
-    public bool dirChanged;
+    private string dir;
+    private bool dirChanged;
     public bool WallJump;
-    public bool canWallJump;
+    private bool canWallJump;
+    public float WallJumpSpeed;
 
     public Rigidbody2D rb2d;
 
@@ -25,11 +26,12 @@ public class PlayerController : MonoBehaviour
 
     public float DoubleJumpSpeed;
 
-    public bool canDoubleJump;
+    private bool canDoubleJump;
 
     public bool DoubleJump;
 
     private bool Hitted;
+   //public bool IsWall1;
 
     void Start()
     {
@@ -38,6 +40,9 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
+        //
+        //IsWall1 = IsWalled.IsWall;
+        //
         Hitted = transform.GetComponent<PlayerRespawn>().Hitted;
         if (!Hitted)
         {
@@ -48,28 +53,33 @@ public class PlayerController : MonoBehaviour
                     if (DoubleJump)
                     {
                         canDoubleJump = true;
+                    }
+                    if (WallJump)
+                    {
                         canWallJump = true;
                     }
                     rb2d.velocity = new Vector2(rb2d.velocity.x, jumpSpeed);
+                    dirChanged = false;
                 }
                 else
                 {
-                    if (WallJump)
+                    if (IsWalled.IsWall)
                     {
-                        if (Input.GetKeyDown("space") || Input.GetKeyDown("up"))
+                        if (WallJump)
                         {
-                            if (CheckWall.IsWalled)
+                            if (Input.GetKeyDown("space") || Input.GetKeyDown("up"))
                             {
                                 if (canWallJump)
                                 {
-                                    rb2d.velocity = new Vector2(rb2d.velocity.x, DoubleJumpSpeed);
+                                    rb2d.velocity = new Vector2(rb2d.velocity.x, WallJumpSpeed);
                                     canWallJump = false;
+                                    dirChanged = false;
                                 }
                             }
                         }
                     }
                     //
-                    if (DoubleJump)
+                    else if (DoubleJump)
                     {
                         if (Input.GetKeyDown("space") || Input.GetKeyDown("up"))
                         {
@@ -133,12 +143,12 @@ public class PlayerController : MonoBehaviour
         {
             if (Input.GetKey("d") || Input.GetKey("right"))
             {
-                dirChanged = false;
-                if (dir != "right")
+                //dirChanged = false;
+                if (dir == "left")
                 {
-                    dir = "right";
                     dirChanged = true;
                 }
+                dir = "right";
                 rb2d.velocity = new Vector2(runSpeed, rb2d.velocity.y);
                 spriteRenderer.flipX = false;
                 animator.SetBool("Run", true);
@@ -146,12 +156,12 @@ public class PlayerController : MonoBehaviour
             }
             else if (Input.GetKey("a") || Input.GetKey("left"))
             {
-                dirChanged = false;
-                if (dir != "left")
+                //dirChanged = false;
+                if (dir == "right")
                 {
-                    dir = "left";
                     dirChanged = true;
                 }
+                dir = "left";
                 rb2d.velocity = new Vector2(-runSpeed, rb2d.velocity.y);
                 spriteRenderer.flipX = true;
                 animator.SetBool("Run", true);
