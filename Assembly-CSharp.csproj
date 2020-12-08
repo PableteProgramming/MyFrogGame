@@ -66,6 +66,7 @@
     <Compile Include="Assets\Scripts\Enemies\Spike.cs" />
     <Compile Include="Assets\Scripts\Fruits\AllFruitsEat.cs" />
     <Compile Include="Assets\Scripts\Fruits\CollectFruit.cs" />
+    <Compile Include="Assets\Scripts\Platforms\TwoSidesPlatform.cs" />
     <Compile Include="Assets\Scripts\Player\CheckGround.cs" />
     <Compile Include="Assets\Scripts\Player\CheckWall.cs" />
     <Compile Include="Assets\Scripts\Player\IsWalled.cs" />
