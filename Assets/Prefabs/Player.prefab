@@ -156,7 +156,6 @@ GameObject:
   - component: {fileID: 7029897575164622570}
   - component: {fileID: 7029897575164622571}
   - component: {fileID: 7029897575164622572}
-  - component: {fileID: 7029897575164622574}
   - component: {fileID: 7029897575164622560}
   m_Layer: 0
   m_Name: Player
@@ -176,8 +175,8 @@ Transform:
   m_LocalPosition: {x: -1.538, y: -0.854, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 7029897575489870231}
   - {fileID: 7029897575358768864}
+  - {fileID: 7029897575489870231}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -322,20 +321,6 @@ MonoBehaviour:
   jumpMultiplier: 1
   DoubleJumpSpeed: 3
   DoubleJump: 1
---- !u!114 &7029897575164622574
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7029897575164622561}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5673a9e56d960c647b302b904e73212c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animator: {fileID: 0}
-  Hitted: 0
 --- !u!114 &7029897575164622560
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -381,7 +366,7 @@ Transform:
   - {fileID: 8437466441517954850}
   - {fileID: 9165072055534821959}
   m_Father: {fileID: 7029897575886266091}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &8307709752393229760
 MonoBehaviour:
@@ -426,7 +411,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 7029897575886266091}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &7029897575489870229
 BoxCollider2D:

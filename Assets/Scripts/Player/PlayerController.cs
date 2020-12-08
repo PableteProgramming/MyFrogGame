@@ -40,6 +40,14 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
+        if (!WallJump)
+        {
+            transform.GetChild(0).gameObject.SetActive(false);
+        }
+        else
+        {
+            transform.GetChild(0).gameObject.SetActive(true);
+        }
         //
         //IsWall1 = IsWalled.IsWall;
         //
