@@ -63,6 +63,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\Enemies\AngryPig\LeftCheck.cs" />
+    <Compile Include="Assets\Scripts\Enemies\AngryPig\Move.cs" />
+    <Compile Include="Assets\Scripts\Enemies\AngryPig\RightCheck.cs" />
     <Compile Include="Assets\Scripts\Enemies\Spike.cs" />
     <Compile Include="Assets\Scripts\Fruits\AllFruitsEat.cs" />
     <Compile Include="Assets\Scripts\Fruits\CollectFruit.cs" />

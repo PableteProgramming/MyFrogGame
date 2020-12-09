@@ -203,7 +203,6 @@ GameObject:
   m_Component:
   - component: {fileID: 3782994479224629809}
   - component: {fileID: 3782994479224629804}
-  - component: {fileID: 3782994479224629811}
   - component: {fileID: 3782994479224629810}
   m_Layer: 0
   m_Name: RightCheck
@@ -252,19 +251,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.015118435, y: 0.14256346}
   m_EdgeRadius: 0
---- !u!114 &3782994479224629811
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3782994479224629808}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6f4153055cfad1c4888e4793e93b9c63, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  IsWalled: 0
 --- !u!114 &3782994479224629810
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -288,7 +274,6 @@ GameObject:
   m_Component:
   - component: {fileID: 3782994479346403253}
   - component: {fileID: 3782994479346403248}
-  - component: {fileID: 3782994479346403255}
   - component: {fileID: 3782994479346403254}
   m_Layer: 0
   m_Name: LeftCheck
@@ -337,19 +322,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.015154362, y: 0.14406276}
   m_EdgeRadius: 0
---- !u!114 &3782994479346403255
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3782994479346403252}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6f4153055cfad1c4888e4793e93b9c63, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  IsWalled: 0
 --- !u!114 &3782994479346403254
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -443,7 +415,6 @@ GameObject:
   m_Component:
   - component: {fileID: 3782994480360785563}
   - component: {fileID: 3782994480360785557}
-  - component: {fileID: 3782994480360785556}
   m_Layer: 0
   m_Name: WallCheck
   m_TagString: Untagged
@@ -468,19 +439,6 @@ Transform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &3782994480360785557
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3782994480360785562}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5dff8e60c5c82ae4585be85eeed541a0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  temp: 0
---- !u!114 &3782994480360785556
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
