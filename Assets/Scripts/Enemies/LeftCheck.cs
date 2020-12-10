@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class LeftCheck : MonoBehaviour
 {
-    public static bool IsWalled = false;
+    public bool IsWalled = false;
     public string Tag;
     private void Start()
     {
