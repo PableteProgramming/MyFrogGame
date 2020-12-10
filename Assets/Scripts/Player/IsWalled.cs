@@ -5,7 +5,6 @@ using UnityEngine;
 public class IsWalled : MonoBehaviour
 {
     public static bool IsWall;
-    public bool temp;
     void Start()
     {
         if(transform.GetChild(0).GetComponent<CheckWall>().IsWalled || transform.GetChild(1).GetComponent<CheckWall>().IsWalled)
@@ -28,6 +27,5 @@ public class IsWalled : MonoBehaviour
         {
             IsWall = false;
         }
-        temp = IsWall;
     }
 }
