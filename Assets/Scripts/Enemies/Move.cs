@@ -8,6 +8,8 @@ public class Move : MonoBehaviour
     public SpriteRenderer sprite;
     public GameObject Leftcheck;
     public GameObject Rightcheck;
+    public GameObject UpCheck;
+    public bool Upcheck;
     public float walkspeed;
     private float realwalkspeed;
     public float waitime;
@@ -15,10 +17,12 @@ public class Move : MonoBehaviour
     public float waitedTime;
     private bool sleeping;
     private bool moving;
+    public bool IsDead;
 
     private void Start()
     {
         sleeping = false;
+        IsDead = false;
         realwaittime = waitime;
         moving = true;
         waitedTime = 0;
@@ -47,6 +51,15 @@ public class Move : MonoBehaviour
             }
         }
 
+        if (Upcheck)
+        {
+            IsDead = UpCheck.GetComponent<UpCheck>().IsDead;
+            if (IsDead)
+            {
+                Destroy(gameObject);
+            }
+        }
+
         if (Leftcheck.GetComponent<LeftCheck>().IsWalled)
         {
             walkspeed = -realwalkspeed;
@@ -71,7 +84,10 @@ public class Move : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            collision.transform.GetComponent<PlayerRespawn>().PlayerDamage();
+            if (!IsDead)
+            {
+                collision.transform.GetComponent<PlayerRespawn>().PlayerDamage();
+            }
         }
     }
 }

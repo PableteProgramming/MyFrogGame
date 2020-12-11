@@ -67,6 +67,7 @@
     <Compile Include="Assets\Scripts\Enemies\Move.cs" />
     <Compile Include="Assets\Scripts\Enemies\RightCheck.cs" />
     <Compile Include="Assets\Scripts\Enemies\Spike.cs" />
+    <Compile Include="Assets\Scripts\Enemies\UpCheck.cs" />
     <Compile Include="Assets\Scripts\Fruits\AllFruitsEat.cs" />
     <Compile Include="Assets\Scripts\Fruits\CollectFruit.cs" />
     <Compile Include="Assets\Scripts\Platforms\TwoSidesPlatform.cs" />
