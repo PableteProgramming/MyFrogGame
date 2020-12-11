@@ -47,7 +47,7 @@ public class Move : MonoBehaviour
             }
         }
 
-        if (Leftcheck.GetComponent<LeftCheck>().IsWalled/*LeftCheck.IsWalled*/)
+        if (Leftcheck.GetComponent<LeftCheck>().IsWalled)
         {
             walkspeed = -realwalkspeed;
             sprite.flipX = true;
