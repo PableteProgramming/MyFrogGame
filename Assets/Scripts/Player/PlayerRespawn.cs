@@ -15,6 +15,7 @@ public class PlayerRespawn : MonoBehaviour
 
     public void PlayerDamage()
     {
+        gameObject.tag = "Untagged";
         Hitted = true;
         animator.Play("Hit");
         Invoke("ChangeScene", 0.5f);

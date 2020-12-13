@@ -110,6 +110,10 @@ public class PlayerController : MonoBehaviour
 
             if (CheckGround.IsGrounded == true)
             {
+                if (gameObject.tag != "Player")
+                {
+                    gameObject.tag = "Player";
+                }
                 animator.SetBool("Jump", false);
                 animator.SetBool("Fall", false);
                 animator.SetBool("DoubleJump", false);
