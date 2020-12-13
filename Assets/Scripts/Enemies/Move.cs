@@ -51,14 +51,14 @@ public class Move : MonoBehaviour
             }
         }
 
-        if (Upcheck)
+        /*if (Upcheck)
         {
             IsDead = UpCheck.GetComponent<UpCheck>().IsDead;
             if (IsDead)
             {
                 Destroy(gameObject);
             }
-        }
+        }*/
 
         if (Leftcheck.GetComponent<LeftCheck>().IsWalled)
         {
@@ -82,9 +82,24 @@ public class Move : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        if (UpCheck)
+        {
+            IsDead= UpCheck.GetComponent<UpCheck>().IsDead;
+        }
         if (collision.gameObject.CompareTag("Player"))
         {
-            if (!IsDead)
+            if (UpCheck)
+            {
+                if (!IsDead)
+                {
+                    collision.transform.GetComponent<PlayerRespawn>().PlayerDamage();
+                }
+                else
+                {
+                    Destroy(gameObject);
+                }
+            }
+            else
             {
                 collision.transform.GetComponent<PlayerRespawn>().PlayerDamage();
             }

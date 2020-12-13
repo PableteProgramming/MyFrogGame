@@ -13,6 +13,7 @@ ScriptsOnlyBuild:
     - RightCheck
     - Spike
     - TwoSidesPlatform
+    - UpCheck
     Cinemachine.dll:
     - Cinemachine.CinemachineBrain
     - Cinemachine.CinemachineConfiner
@@ -96,21 +97,23 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12878}
     - Class: 114
-      Script: {instanceID: 13460}
+      Script: {instanceID: 13114}
     - Class: 114
-      Script: {instanceID: 13538}
+      Script: {instanceID: 13462}
     - Class: 114
-      Script: {instanceID: 13618}
+      Script: {instanceID: 13540}
     - Class: 114
-      Script: {instanceID: 13902}
+      Script: {instanceID: 13620}
     - Class: 114
-      Script: {instanceID: 14154}
+      Script: {instanceID: 13904}
     - Class: 114
-      Script: {instanceID: 14274}
+      Script: {instanceID: 14156}
     - Class: 114
-      Script: {instanceID: 14374}
+      Script: {instanceID: 14276}
     - Class: 114
-      Script: {instanceID: 14516}
+      Script: {instanceID: 14376}
+    - Class: 114
+      Script: {instanceID: 14518}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -158,7 +161,7 @@ ScriptsOnlyBuild:
     className: AudioPlayableAsset
   - hash:
       serializedVersion: 2
-      Hash: bdbbb969488f02f44de895b769b1f9cd
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: IsWalled
@@ -314,7 +317,7 @@ ScriptsOnlyBuild:
     className: SpriteShapeGeometryCache
   - hash:
       serializedVersion: 2
-      Hash: 345f8c0b22ef9ad5559218c983c80db2
+      Hash: e9982cb7bd815f2f248b3d5965830cdb
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Move
@@ -608,6 +611,12 @@ ScriptsOnlyBuild:
     className: CinemachineTargetGroup
   - hash:
       serializedVersion: 2
+      Hash: 191ce1545b19f2994259a57086ae19be
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: UpCheck
+  - hash:
+      serializedVersion: 2
       Hash: 5ad4aa237d47ac2bab17bacb672edf7a
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -734,7 +743,7 @@ ScriptsOnlyBuild:
     className: TimelineAsset
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+      Hash: 0df5a24314e16f9fd7b4662fa18f876f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: CheckGround
@@ -782,7 +791,7 @@ ScriptsOnlyBuild:
     className: AudioTrack
   - hash:
       serializedVersion: 2
-      Hash: 525986d143a59a230323d1f58ed17c99
+      Hash: e944c35e770d6022682f7c55c8f721c0
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: LeftCheck
@@ -854,7 +863,7 @@ ScriptsOnlyBuild:
     className: AllFruitsEat
   - hash:
       serializedVersion: 2
-      Hash: 525986d143a59a230323d1f58ed17c99
+      Hash: e944c35e770d6022682f7c55c8f721c0
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: RightCheck
