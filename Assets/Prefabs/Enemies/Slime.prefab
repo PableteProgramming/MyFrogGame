@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 326935916133483464}
   - component: {fileID: 326935916133483470}
   - component: {fileID: 326935916133483465}
+  - component: {fileID: 2645462318622975557}
   m_Layer: 0
   m_Name: RightCheck
   m_TagString: Untagged
@@ -72,6 +73,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   IsWalled: 0
   Tag: SlimeConfiner
+--- !u!114 &2645462318622975557
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 326935916133483467}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3480a5540747778419c117eec9597e68, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IsWalled: 0
+  Tag: SlimeConfiner
 --- !u!1 &326935916500952234
 GameObject:
   m_ObjectHideFlags: 0
@@ -83,6 +98,7 @@ GameObject:
   - component: {fileID: 326935916500952235}
   - component: {fileID: 326935916500952233}
   - component: {fileID: 326935916500952232}
+  - component: {fileID: 3710935084946356353}
   m_Layer: 0
   m_Name: LeftCheck
   m_TagString: Untagged
@@ -140,6 +156,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f0c2883cbdff2db468ab5e1c526fba63, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IsWalled: 0
+  Tag: SlimeConfiner
+--- !u!114 &3710935084946356353
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 326935916500952234}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3480a5540747778419c117eec9597e68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   IsWalled: 0
@@ -320,6 +350,7 @@ MonoBehaviour:
   waitime: 0.5
   waitedTime: 0
   IsDead: 0
+  SameCheckTag: 1
 --- !u!1 &326935916613208056
 GameObject:
   m_ObjectHideFlags: 0

@@ -20,10 +20,10 @@ MonoBehaviour:
     y: 30
     width: 1366
     height: 635
-  m_MinSize: {x: 909, y: 321}
-  m_MaxSize: {x: 22004, y: 10021}
+  m_MinSize: {x: 908, y: 321}
+  m_MaxSize: {x: 22003, y: 10021}
   vertical: 1
-  controlID: 1437
+  controlID: 305
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -139,10 +139,10 @@ MonoBehaviour:
     y: 0
     width: 1366
     height: 635
-  m_MinSize: {x: 909, y: 321}
-  m_MaxSize: {x: 22004, y: 10021}
+  m_MinSize: {x: 908, y: 321}
+  m_MaxSize: {x: 22003, y: 10021}
   vertical: 0
-  controlID: 1438
+  controlID: 306
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -167,7 +167,7 @@ MonoBehaviour:
   m_MinSize: {x: 201, y: 321}
   m_MaxSize: {x: 4001, y: 8021}
   vertical: 1
-  controlID: 1340
+  controlID: 307
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -745,7 +745,7 @@ MonoBehaviour:
   m_ViewDataDictionary: {fileID: 0}
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: 15000
+  m_LastSelectedObjectID: 17868
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -813,19 +813,19 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts/Player
+    - Assets/Scripts/Enemies
   m_ViewMode: 1
   m_StartGridSize: 74
   m_LastFolders:
-  - Assets/Scripts/Player
+  - Assets/Scripts/Enemies
   m_LastFoldersGridSize: 74
   m_LastProjectPath: C:\Users\curro.LAPTOP-DUBBS74R\OneDrive\Documentos\Programming\unity\2d\MiFrogGame
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 4c450000
-    m_LastClickedID: 17740
+    m_SelectedIDs: 48450000
+    m_LastClickedID: 17736
     m_ExpandedIDs: 0000000020450000224500002445000026450000284500002a4500002c45000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -881,7 +881,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: cc4700004e390000444a0000da4d0000fc4c0000544e00001c41000000000000aa54000058540000fe510000845500005c490000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -898,7 +898,7 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 5}
+      m_ClientGUIView: {fileID: 11}
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
       m_InstanceID: 0
@@ -1129,7 +1129,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 80f0ffff94f0ffffa4f1ffff5af4ffff9af7ffff5cfbffff
+      m_ExpandedIDs: 5cfbffff5a3b0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1172,8 +1172,8 @@ MonoBehaviour:
     y: 0
     width: 276
     height: 635
-  m_MinSize: {x: 276, y: 71}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 18}
   m_Panes:
   - {fileID: 18}

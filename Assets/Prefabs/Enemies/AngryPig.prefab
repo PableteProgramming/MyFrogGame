@@ -81,7 +81,8 @@ GameObject:
   m_Component:
   - component: {fileID: 7694203282928264500}
   - component: {fileID: 7694203282928264502}
-  - component: {fileID: 7694203282928264503}
+  - component: {fileID: 2718945414389674248}
+  - component: {fileID: 1227764341129945242}
   m_Layer: 0
   m_Name: LeftCheck
   m_TagString: Untagged
@@ -129,7 +130,21 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.03046608, y: 0.2326605}
   m_EdgeRadius: 0
---- !u!114 &7694203282928264503
+--- !u!114 &2718945414389674248
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7694203282928264501}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3480a5540747778419c117eec9597e68, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IsWalled: 0
+  Tag: Ground
+--- !u!114 &1227764341129945242
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -153,7 +168,8 @@ GameObject:
   m_Component:
   - component: {fileID: 7694203283045093573}
   - component: {fileID: 7694203283045093575}
-  - component: {fileID: 7694203283045093572}
+  - component: {fileID: 571617867432435295}
+  - component: {fileID: 3593281961059749579}
   m_Layer: 0
   m_Name: RightCheck
   m_TagString: Untagged
@@ -201,7 +217,21 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.027695179, y: 0.23227412}
   m_EdgeRadius: 0
---- !u!114 &7694203283045093572
+--- !u!114 &571617867432435295
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7694203283045093626}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3480a5540747778419c117eec9597e68, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IsWalled: 0
+  Tag: Ground
+--- !u!114 &3593281961059749579
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -404,6 +434,7 @@ MonoBehaviour:
   waitime: 0.5
   waitedTime: 0
   IsDead: 0
+  SameCheckTag: 1
 --- !u!95 &7694203283723136523
 Animator:
   serializedVersion: 3
