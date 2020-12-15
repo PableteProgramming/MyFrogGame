@@ -435,6 +435,9 @@ MonoBehaviour:
   waitedTime: 0
   IsDead: 0
   SameCheckTag: 1
+  WantJumpOnDeath: 1
+  IsPig: 1
+  animator: {fileID: 7694203283723136523}
 --- !u!95 &7694203283723136523
 Animator:
   serializedVersion: 3

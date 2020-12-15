@@ -19,6 +19,10 @@ public class Move : MonoBehaviour
     private bool moving;
     public bool IsDead;
     public bool SameCheckTag;
+    public bool WantJumpOnDeath;
+    public bool IsPig;
+    private bool AlreadyDead;
+    public Animator animator;
 
     private void Start()
     {
@@ -28,6 +32,7 @@ public class Move : MonoBehaviour
         moving = true;
         waitedTime = 0;
         realwalkspeed = walkspeed;
+        AlreadyDead = false;
     }
 
     void Update()
@@ -51,15 +56,6 @@ public class Move : MonoBehaviour
                 waitedTime = 0;
             }
         }
-
-        /*if (Upcheck)
-        {
-            IsDead = UpCheck.GetComponent<UpCheck>().IsDead;
-            if (IsDead)
-            {
-                Destroy(gameObject);
-            }
-        }*/
 
         if (SameCheckTag)
         {
@@ -115,7 +111,30 @@ public class Move : MonoBehaviour
                 }
                 else
                 {
-                    Destroy(gameObject);
+                    if (WantJumpOnDeath)
+                    {
+                        collision.transform.GetComponent<PlayerFakeMoves>().FakeJump(50, 2);
+                    }
+                    if (IsPig)
+                    {
+                        if (AlreadyDead)
+                        {
+                            Destroy(gameObject);
+                        }
+                        else
+                        {
+                            animator.SetBool("AlreadyDead", true);
+                            realwalkspeed = realwalkspeed * 4;
+                            walkspeed = walkspeed * 4;
+                            AlreadyDead = true;
+                            UpCheck.GetComponent<UpCheck>().IsDead = false;
+                            IsDead = UpCheck.GetComponent<UpCheck>().IsDead;
+                        }
+                    }
+                    else
+                    {
+                        Destroy(gameObject);
+                    }
                 }
             }
             else
