@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class AllFruitsEat : MonoBehaviour
 {
+    public string MainMenuScene;
     void Update()
     {
         AllFruitsCollected();
@@ -27,6 +28,6 @@ public class AllFruitsEat : MonoBehaviour
 
     void ChangeScene()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        SceneManager.LoadScene(MainMenuScene);
     }
 }
