@@ -9,7 +9,7 @@ public class PlayerController : MonoBehaviour
     private string dir;
     private bool dirChanged;
     public bool WallJump;
-    private bool canWallJump;
+    public bool canWallJump;
     public float WallJumpSpeed;
 
     public Rigidbody2D rb2d;
@@ -26,7 +26,7 @@ public class PlayerController : MonoBehaviour
 
     public float DoubleJumpSpeed;
 
-    private bool canDoubleJump;
+    public bool canDoubleJump;
 
     public bool DoubleJump;
 

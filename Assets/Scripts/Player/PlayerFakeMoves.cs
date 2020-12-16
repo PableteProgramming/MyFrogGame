@@ -18,6 +18,14 @@ public class PlayerFakeMoves : MonoBehaviour
         jumpower = power;
         jumpedpower = 0f;
         jumpowerperframe = powerperframe;
+        if (GetComponent<PlayerController>().DoubleJump)
+        {
+            GetComponent<PlayerController>().canDoubleJump = true;
+        }
+        if (GetComponent<PlayerController>().WallJump)
+        {
+            GetComponent<PlayerController>().canWallJump = true;
+        }
     }
 
     private void Update()

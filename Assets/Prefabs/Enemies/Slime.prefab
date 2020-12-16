@@ -353,7 +353,6 @@ MonoBehaviour:
   SameCheckTag: 1
   WantJumpOnDeath: 1
   IsPig: 0
-  AlreadyDead: 0
   animator: {fileID: 0}
 --- !u!1 &326935916613208056
 GameObject:
@@ -400,7 +399,7 @@ GameObject:
   - component: {fileID: 4316491418347645242}
   m_Layer: 0
   m_Name: UpCheck
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
