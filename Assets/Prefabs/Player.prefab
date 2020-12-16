@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 3782994479222753354}
   - component: {fileID: 3782994479222753353}
   - component: {fileID: 330905361608077062}
+  - component: {fileID: 1279857668399740453}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -171,6 +172,7 @@ MonoBehaviour:
   runSpeed: 2
   jumpSpeed: 3
   WallJump: 0
+  canWallJump: 0
   WallJumpSpeed: 4
   rb2d: {fileID: 3782994479222753348}
   spriteRenderer: {fileID: 3782994479222753350}
@@ -179,6 +181,7 @@ MonoBehaviour:
   fallMultiplier: 0.5
   jumpMultiplier: 1
   DoubleJumpSpeed: 3
+  canDoubleJump: 0
   DoubleJump: 1
 --- !u!114 &3782994479222753353
 MonoBehaviour:
@@ -207,6 +210,31 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb2d: {fileID: 3782994479222753348}
+--- !u!114 &1279857668399740453
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3782994479222753352}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58c76af18ac172c408b19004655ed923, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerSelected: 0
+  animator: {fileID: 3782994479222753349}
+  SpriteRenderer: {fileID: 3782994479222753350}
+  playersController:
+  - {fileID: 9100000, guid: 665e3ad13b53ade4bbb92075a47291b5, type: 2}
+  - {fileID: 9100000, guid: df2f122cf0ca30742b3e108223bdb4b9, type: 2}
+  - {fileID: 9100000, guid: ff0b05ae7e157ab4abbd8206df5808ce, type: 2}
+  - {fileID: 9100000, guid: 6085c8b4958667f4f89b0d8dd0f571f0, type: 2}
+  playersRenderer:
+  - {fileID: -6367560908665664636, guid: cd947491a13509945aa1b644f9db3ef2, type: 3}
+  - {fileID: -6367560908665664636, guid: d348dff3819df794186a80cb95777629, type: 3}
+  - {fileID: -6367560908665664636, guid: 40de9a8703e2e5a47882b0b86451c741, type: 3}
+  - {fileID: -6367560908665664636, guid: 3750f45c844123341b9a777a96cb1eca, type: 3}
 --- !u!1 &3782994479224629808
 GameObject:
   m_ObjectHideFlags: 0
