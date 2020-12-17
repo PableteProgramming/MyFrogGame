@@ -2,6 +2,7 @@ ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
     - AllFruitsEat
+    - ChangeSkin
     - Check
     - CheckGround
     - CheckWall
@@ -37,8 +38,10 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -47,8 +50,10 @@ ScriptsOnlyBuild:
     UnityEngine.UI.dll:
     - UnityEngine.EventSystems.EventSystem
     - UnityEngine.EventSystems.StandaloneInputModule
+    - UnityEngine.UI.Button
     - UnityEngine.UI.CanvasScaler
     - UnityEngine.UI.GraphicRaycaster
+    - UnityEngine.UI.Image
     - UnityEngine.UI.Text
   sceneClasses:
     Assets/Scenes/Level1.unity:
@@ -194,6 +199,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11496}
     - Class: 114
+      Script: {instanceID: 11558}
+    - Class: 114
       Script: {instanceID: 11584}
     - Class: 114
       Script: {instanceID: 12242}
@@ -203,6 +210,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 12448}
     - Class: 114
       Script: {instanceID: 12600}
+    - Class: 114
+      Script: {instanceID: 12966}
     - Class: 114
       Script: {instanceID: 13494}
     - Class: 114
@@ -214,13 +223,15 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 14382}
     - Class: 114
-      Script: {instanceID: 26232}
+      Script: {instanceID: 101980}
     - Class: 114
-      Script: {instanceID: 26234}
+      Script: {instanceID: 116522}
     - Class: 114
-      Script: {instanceID: 26238}
+      Script: {instanceID: 116524}
     - Class: 114
-      Script: {instanceID: 26240}
+      Script: {instanceID: 116528}
+    - Class: 114
+      Script: {instanceID: 116530}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -378,7 +389,7 @@ ScriptsOnlyBuild:
     className: Spike
   - hash:
       serializedVersion: 2
-      Hash: c8c8452c098a2c6fb461f117af0d380b
+      Hash: 8532ddce41f096b807cac671693da1b7
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerSelector
@@ -1036,6 +1047,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
+  - hash:
+      serializedVersion: 2
+      Hash: b7ea3536bf8b14b4f1efd7483ad9e942
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ChangeSkin
   platform: 19
   scenePathNames:
   - Assets/Scenes/MainMenuWorld1.unity

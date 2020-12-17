@@ -97,13 +97,13 @@ public class Move : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (UpCheck)
+        if (Upcheck)
         {
             IsDead= UpCheck.GetComponent<UpCheck>().IsDead;
         }
         if (collision.gameObject.CompareTag("Player"))
         {
-            if (UpCheck)
+            if(Upcheck)
             {
                 if (!IsDead)
                 {

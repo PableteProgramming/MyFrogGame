@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class PlayerSelector : MonoBehaviour
 {
-    //public bool enableSelectCharacter;
-    public enum Player { Frog, VirtualGuy, PinkMan, MaskDude };
+    public bool enableSelectCharacter;
+    public enum Player { Frog, VirtualGuy, PinkMan, MaskDude,GreenMaskDude,GrayMaskDude,PurpleMaskDude, RedMaskDude };
     public Player playerSelected;
     public Animator animator;
     public SpriteRenderer SpriteRenderer;
@@ -15,34 +15,50 @@ public class PlayerSelector : MonoBehaviour
 
     void Start()
     {
-        /*if (!enableSelectCharacter)
+        if (!enableSelectCharacter)
         {
             ChangePlayerInMenu();
         }
         else
-        {*/
+        {
             switch (playerSelected)
             {
                 case Player.Frog:
                     SpriteRenderer.sprite = playersRenderer[0];
                     animator.runtimeAnimatorController = playersController[0];
                     break;
-                case Player.VirtualGuy:
-                    SpriteRenderer.sprite = playersRenderer[2];
-                    animator.runtimeAnimatorController = playersController[2];
-                    break;
                 case Player.PinkMan:
                     SpriteRenderer.sprite = playersRenderer[1];
                     animator.runtimeAnimatorController = playersController[1];
+                    break;
+                case Player.VirtualGuy:
+                    SpriteRenderer.sprite = playersRenderer[2];
+                    animator.runtimeAnimatorController = playersController[2];
                     break;
                 case Player.MaskDude:
                     SpriteRenderer.sprite = playersRenderer[3];
                     animator.runtimeAnimatorController = playersController[3];
                     break;
-                default:
+                case Player.GreenMaskDude:
+                    SpriteRenderer.sprite = playersRenderer[4];
+                    animator.runtimeAnimatorController = playersController[4];
+                    break;
+                case Player.GrayMaskDude:
+                    SpriteRenderer.sprite = playersRenderer[5];
+                    animator.runtimeAnimatorController = playersController[5];
+                    break;
+                case Player.PurpleMaskDude:
+                    SpriteRenderer.sprite = playersRenderer[6];
+                    animator.runtimeAnimatorController = playersController[6];
+                    break;
+                case Player.RedMaskDude:
+                    SpriteRenderer.sprite = playersRenderer[7];
+                    animator.runtimeAnimatorController = playersController[7];
+                    break;
+            default:
                     break;
             }
-        //}
+        }
 
     }
 
@@ -54,17 +70,33 @@ public class PlayerSelector : MonoBehaviour
                 SpriteRenderer.sprite = playersRenderer[0];
                 animator.runtimeAnimatorController = playersController[0];
                 break;
-            case "VirtualGuy":
-                SpriteRenderer.sprite = playersRenderer[2];
-                animator.runtimeAnimatorController = playersController[2];
-                break;
             case "PinkMan":
                 SpriteRenderer.sprite = playersRenderer[1];
                 animator.runtimeAnimatorController = playersController[1];
                 break;
+            case "VirtualGuy":
+                SpriteRenderer.sprite = playersRenderer[2];
+                animator.runtimeAnimatorController = playersController[2];
+                break;
             case "MaskDude":
                 SpriteRenderer.sprite = playersRenderer[3];
                 animator.runtimeAnimatorController = playersController[3];
+                break;
+            case "GreenMaskDude":
+                SpriteRenderer.sprite = playersRenderer[4];
+                animator.runtimeAnimatorController = playersController[4];
+                break;
+            case "GrayMaskDude":
+                SpriteRenderer.sprite = playersRenderer[5];
+                animator.runtimeAnimatorController = playersController[5];
+                break;
+            case "PurpleMaskDude":
+                SpriteRenderer.sprite = playersRenderer[6];
+                animator.runtimeAnimatorController = playersController[6];
+                break;
+            case "RedMaskDude":
+                SpriteRenderer.sprite = playersRenderer[7];
+                animator.runtimeAnimatorController = playersController[7];
                 break;
             default:
                 break;

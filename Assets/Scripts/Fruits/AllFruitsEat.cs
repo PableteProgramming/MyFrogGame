@@ -15,14 +15,7 @@ public class AllFruitsEat : MonoBehaviour
     {
         if (transform.childCount == 0)
         {
-            if (SceneManager.GetActiveScene().buildIndex == SceneManager.sceneCountInBuildSettings - 1)
-            {
-                Application.Quit();
-            }
-            else
-            {
-                ChangeScene();
-            }
+            ChangeScene();
         }
     }
 

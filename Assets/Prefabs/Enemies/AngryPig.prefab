@@ -429,7 +429,7 @@ MonoBehaviour:
   Leftcheck: {fileID: 7694203282928264501}
   Rightcheck: {fileID: 7694203283045093626}
   UpCheck: {fileID: 1611058479993284565}
-  Upcheck: 1
+  Upcheck: 0
   walkspeed: 0.5
   waitime: 0.5
   waitedTime: 0
