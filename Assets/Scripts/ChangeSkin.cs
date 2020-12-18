@@ -27,6 +27,7 @@ public class ChangeSkin : MonoBehaviour
     private void OnTriggerExit2D(Collider2D collision)
     {
         inDoor = false;
+        skinsPanel.gameObject.SetActive(false);
     }
 
 

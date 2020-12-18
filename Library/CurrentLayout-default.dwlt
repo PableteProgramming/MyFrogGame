@@ -114,7 +114,7 @@ MonoBehaviour:
   m_MinSize: {x: 908, y: 342}
   m_MaxSize: {x: 22003, y: 10021}
   vertical: 1
-  controlID: 19809
+  controlID: 5932
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -141,7 +141,7 @@ MonoBehaviour:
   m_MinSize: {x: 908, y: 342}
   m_MaxSize: {x: 22003, y: 10021}
   vertical: 0
-  controlID: 19810
+  controlID: 5933
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -166,7 +166,7 @@ MonoBehaviour:
   m_MinSize: {x: 201, y: 342}
   m_MaxSize: {x: 4001, y: 8042}
   vertical: 1
-  controlID: 19811
+  controlID: 5934
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -221,7 +221,7 @@ MonoBehaviour:
   - {fileID: 16}
   - {fileID: 17}
   m_Selected: 0
-  m_LastSelected: 1
+  m_LastSelected: 2
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -430,9 +430,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -2.16, y: -0.63963574, z: 0}
+    m_Target: {x: -2.3330173, y: -0.4956605, z: -0.24832466}
     speed: 2
-    m_Value: {x: -2.16, y: -0.63963574, z: 0}
+    m_Value: {x: -2.2287564, y: -0.48778582, z: -0.23928577}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -482,9 +482,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 0.43535745
+    m_Target: 2.0993195
     speed: 2
-    m_Value: 0.43535745
+    m_Value: 2.008918
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -563,7 +563,7 @@ MonoBehaviour:
   m_ViewDataDictionary: {fileID: 0}
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: 98574
+  m_LastSelectedObjectID: 18956
 --- !u!114 &17
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -803,20 +803,20 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scenes
+    - Assets/PixelAdventureCustom/Terrain
   m_ViewMode: 1
   m_StartGridSize: 81
   m_LastFolders:
-  - Assets/Scenes
+  - Assets/PixelAdventureCustom/Terrain
   m_LastFoldersGridSize: 81
   m_LastProjectPath: C:\Users\curro.LAPTOP-DUBBS74R\OneDrive\Documentos\Programming\unity\2d\MiFrogGame
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 338}
-    m_SelectedIDs: 3c470000
-    m_LastClickedID: 18236
-    m_ExpandedIDs: 00000000f2460000f4460000f6460000f8460000fa460000fc460000fe4600000047000002470000044700002847000000ca9a3b
+    scrollPos: {x: 0, y: 226}
+    m_SelectedIDs: b2910000
+    m_LastClickedID: 37298
+    m_ExpandedIDs: 0000000000480000024800000448000006480000084800000a4800000c4800000e48000010480000124800001448000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -844,7 +844,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000f2460000f4460000f6460000f8460000fa460000fc460000fe4600000047000002470000044700002847000000ca9a3b
+    m_ExpandedIDs: 0000000000480000024800000448000006480000084800000a4800000c4800000e48000010480000124800001448000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -872,7 +872,7 @@ MonoBehaviour:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
     m_HadKeyboardFocusLastEvent: 1
-    m_ExpandedInstanceIDs: 4e390000444a0000da4d0000fc4c0000544e00001c41000000000000aa54000058540000fe510000845500005c490000
+    m_ExpandedInstanceIDs: 4e390000444a0000da4d0000fc4c0000544e00001c41000000000000aa54000058540000fe510000845500005c49000018480000d04b0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -888,7 +888,7 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 10}
+      m_ClientGUIView: {fileID: 8}
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
       m_InstanceID: 0
@@ -978,7 +978,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 82490000
     m_LastClickedID: 18818
-    m_ExpandedIDs: 00000000f2460000f4460000f6460000f8460000fa460000fc460000fe4600000047000002470000044700002847000000ca9a3b
+    m_ExpandedIDs: 0000000000480000024800000448000006480000084800000a4800000c4800000e48000010480000124800001448000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1006,7 +1006,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000f2460000f4460000f6460000f8460000fa460000fc460000fe4600000047000002470000044700002847000000ca9a3b
+    m_ExpandedIDs: 0000000000480000024800000448000006480000084800000a4800000c4800000e48000010480000124800001448000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1093,7 +1093,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: f69dffff0a9effffec9effff6e9fffff42a4ffff34c2ffffacc2ffffeec3ffff78c4ffff6cc5ffffcec5ffff22d6ffff04dcffff22e4ffff2ee4ffff5cfbffffac39000092af00005ece0000ea7f01000e810100
+      m_ExpandedIDs: 8cf6ffff5cfbffffa2480000b0480000ec480000064900000c4a00003a4a0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
