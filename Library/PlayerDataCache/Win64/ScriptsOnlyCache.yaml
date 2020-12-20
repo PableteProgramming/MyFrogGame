@@ -18,6 +18,7 @@ ScriptsOnlyBuild:
     - PlayerSelector
     - RightCheck
     - Spike
+    - TrampolineJump
     - TwoSidesPlatform
     - UpCheck
     Cinemachine.dll:
@@ -39,8 +40,10 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -131,23 +134,25 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 13346}
     - Class: 114
-      Script: {instanceID: 13420}
+      Script: {instanceID: 13404}
     - Class: 114
-      Script: {instanceID: 13498}
+      Script: {instanceID: 13422}
     - Class: 114
-      Script: {instanceID: 13764}
+      Script: {instanceID: 13500}
     - Class: 114
-      Script: {instanceID: 13778}
+      Script: {instanceID: 13766}
     - Class: 114
-      Script: {instanceID: 13998}
+      Script: {instanceID: 13780}
     - Class: 114
-      Script: {instanceID: 14108}
+      Script: {instanceID: 14000}
     - Class: 114
-      Script: {instanceID: 14202}
+      Script: {instanceID: 14110}
     - Class: 114
-      Script: {instanceID: 14334}
+      Script: {instanceID: 14204}
     - Class: 114
-      Script: {instanceID: 14386}
+      Script: {instanceID: 14336}
+    - Class: 114
+      Script: {instanceID: 14388}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -240,23 +245,23 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12970}
     - Class: 114
-      Script: {instanceID: 13498}
+      Script: {instanceID: 13500}
     - Class: 114
-      Script: {instanceID: 13778}
+      Script: {instanceID: 13780}
     - Class: 114
-      Script: {instanceID: 13998}
+      Script: {instanceID: 14000}
     - Class: 114
-      Script: {instanceID: 14314}
+      Script: {instanceID: 14316}
     - Class: 114
-      Script: {instanceID: 14386}
+      Script: {instanceID: 14388}
     - Class: 114
-      Script: {instanceID: 17770}
+      Script: {instanceID: 61604}
     - Class: 114
-      Script: {instanceID: 17778}
+      Script: {instanceID: 61606}
     - Class: 114
-      Script: {instanceID: 17784}
+      Script: {instanceID: 61610}
     - Class: 114
-      Script: {instanceID: 17786}
+      Script: {instanceID: 61612}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -844,6 +849,12 @@ ScriptsOnlyBuild:
     assemblyName: Cinemachine.dll
     namespaceName: 
     className: CinemachineTouchInputMapper
+  - hash:
+      serializedVersion: 2
+      Hash: f8784ff09003e0b4ae524a0a9688a601
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: TrampolineJump
   - hash:
       serializedVersion: 2
       Hash: 5b39dcc8ef34d0c74e640dcd04a3f0e1
