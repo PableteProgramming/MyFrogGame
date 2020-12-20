@@ -115,7 +115,8 @@ public class Move : MonoBehaviour
                     {
                         if(!Input.GetKeyDown("space") && !Input.GetKeyDown("up"))
                         {
-                            collision.transform.GetComponent<PlayerFakeMoves>().FakeJump(50, 2);
+                            collision.transform.GetComponent<PlayerFakeMoves>().FakeJump(5);
+                            
                         }
                     }
                     if (IsPig)

@@ -345,7 +345,7 @@ MonoBehaviour:
   Leftcheck: {fileID: 326935916500952234}
   Rightcheck: {fileID: 326935916133483467}
   UpCheck: {fileID: 9018667855719148655}
-  Upcheck: 0
+  Upcheck: 1
   walkspeed: 0.5
   waitime: 0.5
   waitedTime: 0
@@ -399,7 +399,7 @@ GameObject:
   - component: {fileID: 4316491418347645242}
   m_Layer: 0
   m_Name: UpCheck
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

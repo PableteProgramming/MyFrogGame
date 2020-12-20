@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 8771075387322869391}
   m_Layer: 0
   m_Name: UpCheck
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -45,7 +45,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.010390997, y: 0.13457367}
+  m_Offset: {x: 0.01446867, y: 0.13457367}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -56,7 +56,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.23905802, y: 0.006319225}
+  m_Size: {x: 0.21006107, y: 0.006319225}
   m_EdgeRadius: 0
 --- !u!114 &8771075387322869391
 MonoBehaviour:
@@ -429,7 +429,7 @@ MonoBehaviour:
   Leftcheck: {fileID: 7694203282928264501}
   Rightcheck: {fileID: 7694203283045093626}
   UpCheck: {fileID: 1611058479993284565}
-  Upcheck: 0
+  Upcheck: 1
   walkspeed: 0.5
   waitime: 0.5
   waitedTime: 0
