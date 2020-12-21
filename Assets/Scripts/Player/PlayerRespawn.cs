@@ -18,7 +18,7 @@ public class PlayerRespawn : MonoBehaviour
         gameObject.tag = "Untagged";
         Hitted = true;
         animator.Play("Hit");
-        Invoke("ChangeScene", 0.5f);
+        Invoke("ChangeScene", 0.1f);
     }
 
     void ChangeScene()

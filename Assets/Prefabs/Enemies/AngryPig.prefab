@@ -403,6 +403,7 @@ MonoBehaviour:
   Leftcheck: {fileID: 7694203282928264501}
   Rightcheck: {fileID: 7694203283045093626}
   walkspeed: 0.5
+  realwalkspeed: 0
   waitime: 0.5
   waitedTime: 0
   SameCheckTag: 1
@@ -438,7 +439,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.01446867, y: 0.1233123}
+  m_Offset: {x: 0.010675669, y: 0.1233123}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -449,7 +450,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.21006107, y: 0.014539316}
+  m_Size: {x: 0.21764708, y: 0.014539316}
   m_EdgeRadius: 0
 --- !u!114 &9149560097731950425
 MonoBehaviour:
