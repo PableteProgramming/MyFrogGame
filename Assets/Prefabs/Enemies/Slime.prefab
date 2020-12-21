@@ -390,6 +390,7 @@ MonoBehaviour:
   Leftcheck: {fileID: 326935916500952234}
   Rightcheck: {fileID: 326935916133483467}
   walkspeed: 0.5
+  realwalkspeed: 0
   waitime: 0.5
   waitedTime: 0
   SameCheckTag: 1
@@ -432,6 +433,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifes: 1
+  HitAnimationName: Hit
+  animator: {fileID: 326935916571894294}
+  Hit: 1
+  DeadTime: 0.1
 --- !u!1 &326935916613208056
 GameObject:
   m_ObjectHideFlags: 0

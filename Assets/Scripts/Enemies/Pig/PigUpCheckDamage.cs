@@ -19,12 +19,14 @@ public class PigUpCheckDamage : MonoBehaviour
             collision.transform.GetComponent<PlayerFakeMoves>().FakeJump(5);
             if (AlreadyDead)
             {
-                Destroy(gameObject);
+                GetComponent<Move>().enabled=false;
+                animator.SetBool("RealDead", true);
+                Destroy(gameObject,0.1f);
             }
             else
             {
                 AlreadyDead = true;
-                animator.SetBool("AlreadyDead",true);
+                animator.SetBool("Dead", true);
                 GetComponent<Move>().realwalkspeed = GetComponent<Move>().realwalkspeed * 4;
                 GetComponent<Move>().walkspeed = GetComponent<Move>().walkspeed * 4;
             }

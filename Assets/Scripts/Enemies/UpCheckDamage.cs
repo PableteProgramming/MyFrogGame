@@ -5,15 +5,29 @@ using UnityEngine;
 public class UpCheckDamage : MonoBehaviour
 {
     public int lifes;
+    public string HitAnimationName;
+    public Animator animator;
+    public bool Hit;
+    public float DeadTime;
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))
         {
             collision.transform.GetComponent<PlayerFakeMoves>().FakeJump(5);
+            if (Hit)
+            {
+                animator.Play(HitAnimationName);
+            }
+            else
+            {
+                DeadTime = 0;
+            }
+
+
             if (lifes==1)
             {
-                Destroy(gameObject);
+                Destroy(gameObject,DeadTime);
             }
             else
             {
