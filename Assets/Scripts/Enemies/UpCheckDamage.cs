@@ -9,12 +9,13 @@ public class UpCheckDamage : MonoBehaviour
     public Animator animator;
     public bool Hit;
     public float DeadTime;
+    public float FakeJumpSpeed;
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            collision.transform.GetComponent<PlayerFakeMoves>().FakeJump(5);
+            collision.transform.GetComponent<PlayerFakeMoves>().FakeJump(FakeJumpSpeed);
             if (Hit)
             {
                 animator.Play(HitAnimationName);

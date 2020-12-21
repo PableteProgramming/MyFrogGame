@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class CollectFruit : MonoBehaviour
 {
+    public AudioSource clip;
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
@@ -11,6 +13,7 @@ public class CollectFruit : MonoBehaviour
             GetComponent<SpriteRenderer>().enabled = false;
             gameObject.transform.GetChild(0).gameObject.SetActive(true);
             Destroy(gameObject, 0.5f);
+            clip.Play();
         }
     }
 }
