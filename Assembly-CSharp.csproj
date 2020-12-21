@@ -63,12 +63,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\Enemies\Check.cs" />
-    <Compile Include="Assets\Scripts\Enemies\LeftCheck.cs" />
+    <Compile Include="Assets\Scripts\Enemies\Checks\Check.cs" />
+    <Compile Include="Assets\Scripts\Enemies\Checks\LeftCheck.cs" />
+    <Compile Include="Assets\Scripts\Enemies\Checks\RightCheck.cs" />
+    <Compile Include="Assets\Scripts\Enemies\Checks\UpCheck.cs" />
     <Compile Include="Assets\Scripts\Enemies\Move.cs" />
-    <Compile Include="Assets\Scripts\Enemies\RightCheck.cs" />
-    <Compile Include="Assets\Scripts\Enemies\Spike.cs" />
-    <Compile Include="Assets\Scripts\Enemies\UpCheck.cs" />
+    <Compile Include="Assets\Scripts\Enemies\Pig\PigUpCheckDamage.cs" />
+    <Compile Include="Assets\Scripts\Enemies\PlayerDamage.cs" />
+    <Compile Include="Assets\Scripts\Enemies\UpCheckDamage.cs" />
     <Compile Include="Assets\Scripts\Fruits\AllFruitsEat.cs" />
     <Compile Include="Assets\Scripts\Fruits\CollectFruit.cs" />
     <Compile Include="Assets\Scripts\MainMenu\ChangeSkin.cs" />
@@ -76,12 +78,12 @@
     <Compile Include="Assets\Scripts\Options\OptionsMenu.cs" />
     <Compile Include="Assets\Scripts\Platforms\TwoSidesPlatform.cs" />
     <Compile Include="Assets\Scripts\Player\CheckGround.cs" />
-    <Compile Include="Assets\Scripts\Player\CheckWall.cs" />
-    <Compile Include="Assets\Scripts\Player\IsWalled.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerController.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerFakeMoves.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerRespawn.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerSelector.cs" />
+    <Compile Include="Assets\Scripts\Player\Wall\CheckWall.cs" />
+    <Compile Include="Assets\Scripts\Player\Wall\IsWalled.cs" />
     <Compile Include="Assets\Scripts\Trampoline\TrampolineJump.cs" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Overlay.shader" />
