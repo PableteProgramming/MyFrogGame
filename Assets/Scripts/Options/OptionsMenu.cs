@@ -7,6 +7,7 @@ public class OptionsMenu : MonoBehaviour
 {
     public GameObject optionsPanel;
     public string MainMenuScene;
+    public AudioSource clip;
 
     public void Options()
     {
@@ -35,5 +36,10 @@ public class OptionsMenu : MonoBehaviour
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         Time.timeScale = 1;
+    }
+
+    public void PlaySound()
+    {
+        clip.Play();
     }
 }

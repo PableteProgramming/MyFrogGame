@@ -5097,6 +5097,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Slime1
       objectReference: {fileID: 0}
+    - target: {fileID: 9221905134625821851, guid: e130202efcf32ef409a1816ec9e11178,
+        type: 3}
+      propertyPath: cam
+      value: 
+      objectReference: {fileID: 1114817068}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e130202efcf32ef409a1816ec9e11178, type: 3}
 --- !u!1 &526921216
@@ -6296,6 +6301,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Slime2
       objectReference: {fileID: 0}
+    - target: {fileID: 9221905134625821851, guid: e130202efcf32ef409a1816ec9e11178,
+        type: 3}
+      propertyPath: cam
+      value: 
+      objectReference: {fileID: 1114817068}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e130202efcf32ef409a1816ec9e11178, type: 3}
 --- !u!4 &660779071 stripped
@@ -33116,6 +33126,11 @@ PrefabInstance:
       propertyPath: waitime
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 9221905134625821851, guid: e130202efcf32ef409a1816ec9e11178,
+        type: 3}
+      propertyPath: cam
+      value: 
+      objectReference: {fileID: 1114817068}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e130202efcf32ef409a1816ec9e11178, type: 3}
 --- !u!1001 &809052292326243064
