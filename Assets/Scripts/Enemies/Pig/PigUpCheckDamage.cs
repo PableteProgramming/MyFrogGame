@@ -8,7 +8,7 @@ public class PigUpCheckDamage : MonoBehaviour
     private bool AlreadyDead;
     public float FakeJumpSpeed;
     public AudioSource clip;
-    public GameObject PlayerDamage;
+    public Camera cam;
 
     private void Start()
     {
@@ -22,10 +22,10 @@ public class PigUpCheckDamage : MonoBehaviour
             collision.transform.GetComponent<PlayerFakeMoves>().FakeJump(FakeJumpSpeed);
             if (AlreadyDead)
             {
+                AudioSource.PlayClipAtPoint(clip.clip, new Vector3(transform.position.x, transform.position.y, cam.transform.position.z), clip.volume);
                 GetComponent<Move>().enabled=false;
                 animator.SetBool("RealDead", true);
-                Invoke("Die", 0.1f);
-                
+                Destroy(gameObject);
             }
             else
             {
@@ -35,14 +35,5 @@ public class PigUpCheckDamage : MonoBehaviour
                 GetComponent<Move>().walkspeed = GetComponent<Move>().walkspeed * 4;
             }
         }
-    }
-
-    private void Die()
-    {
-        PlayerDamage.SetActive(false);
-        GetComponent<Collider2D>().enabled = false;
-        GetComponent<SpriteRenderer>().enabled = false;
-        clip.Play();
-        Destroy(gameObject, clip.clip.length);
     }
 }

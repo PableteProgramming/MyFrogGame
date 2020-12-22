@@ -306,7 +306,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7694203283723136520}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 5.899, y: -0.181, z: -0.93542427}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -468,7 +468,7 @@ MonoBehaviour:
   animator: {fileID: 7694203283723136523}
   FakeJumpSpeed: 5
   clip: {fileID: 6687335442827301406}
-  PlayerDamage: {fileID: 2979673128636335728}
+  cam: {fileID: 0}
 --- !u!82 &6687335442827301406
 AudioSource:
   m_ObjectHideFlags: 0
