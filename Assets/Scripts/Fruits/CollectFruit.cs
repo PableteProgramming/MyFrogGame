@@ -11,6 +11,7 @@ public class CollectFruit : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             GetComponent<SpriteRenderer>().enabled = false;
+            GetComponent<Collider2D>().enabled = false;
             gameObject.transform.GetChild(0).gameObject.SetActive(true);
             Destroy(gameObject, 0.5f);
             clip.Play();
