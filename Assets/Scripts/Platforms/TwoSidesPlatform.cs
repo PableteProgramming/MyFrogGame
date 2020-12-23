@@ -5,7 +5,7 @@ using UnityEngine;
 public class TwoSidesPlatform : MonoBehaviour
 {
     private PlatformEffector2D effector;
-    public bool IsPlayed;
+    private bool IsPlayed;
     void Start()
     {
         effector = GetComponent<PlatformEffector2D>();

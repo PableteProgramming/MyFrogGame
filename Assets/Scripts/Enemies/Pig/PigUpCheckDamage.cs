@@ -25,7 +25,7 @@ public class PigUpCheckDamage : MonoBehaviour
                 AudioSource.PlayClipAtPoint(clip.clip, new Vector3(transform.position.x, transform.position.y, cam.transform.position.z), clip.volume);
                 GetComponent<Move>().enabled=false;
                 animator.SetBool("RealDead", true);
-                Destroy(gameObject);
+                Destroy(gameObject,0.1f);
             }
             else
             {

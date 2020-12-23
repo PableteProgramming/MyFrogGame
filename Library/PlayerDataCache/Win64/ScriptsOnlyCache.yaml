@@ -213,6 +213,10 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
     - Class: 91
       Script: {instanceID: 0}
     - Class: 95
@@ -260,13 +264,13 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 14394}
     - Class: 114
-      Script: {instanceID: 22502}
+      Script: {instanceID: 19582}
     - Class: 114
-      Script: {instanceID: 22510}
+      Script: {instanceID: 19590}
     - Class: 114
-      Script: {instanceID: 22516}
+      Script: {instanceID: 19596}
     - Class: 114
-      Script: {instanceID: 22518}
+      Script: {instanceID: 19598}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -406,7 +410,7 @@ ScriptsOnlyBuild:
     className: TouchInputModule
   - hash:
       serializedVersion: 2
-      Hash: 5cad7273634bff60789362869fee9c36
+      Hash: 13116d0babfdcbd601f982a7c3b40f85
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: OptionsMenu
@@ -682,7 +686,7 @@ ScriptsOnlyBuild:
     className: CinemachineTriggerAction
   - hash:
       serializedVersion: 2
-      Hash: c7fb0793c007060b4b9d7bed979a3bc5
+      Hash: 3bdd157573aca24a881f6622ab7d8498
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: UpCheckDamage
@@ -856,7 +860,7 @@ ScriptsOnlyBuild:
     className: Physics2DRaycaster
   - hash:
       serializedVersion: 2
-      Hash: e21174b8c13d304a1011bd1c7020bc3a
+      Hash: e568603008f0f36f0e013af47ac324fb
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PigUpCheckDamage
@@ -1116,4 +1120,4 @@ ScriptsOnlyBuild:
   scenePathNames:
   - Assets/Scenes/MainMenuWorld1.unity
   - Assets/Scenes/Level1.unity
-  playerPath: C:/Users/curro.LAPTOP-DUBBS74R/OneDrive/Escritorio/Juego/MiFrogGame.exe
+  playerPath: C:/Users/curro.LAPTOP-DUBBS74R/OneDrive/Escritorio/Juego/x64/MiFrogGame.exe
