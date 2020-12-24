@@ -12,6 +12,7 @@ public class UpCheckDamage : MonoBehaviour
     public float FakeJumpSpeed;
     public AudioSource clip;
     public Camera cam;
+    public bool Music;
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -30,7 +31,10 @@ public class UpCheckDamage : MonoBehaviour
 
             if (lifes==1)
             {
-                AudioSource.PlayClipAtPoint(clip.clip, new Vector3(transform.position.x,transform.position.y,cam.transform.position.z),clip.volume);
+                if (Music)
+                {
+                    AudioSource.PlayClipAtPoint(clip.clip, new Vector3(transform.position.x, transform.position.y, cam.transform.position.z), clip.volume);
+                }
                 Destroy(gameObject,DeadTime);
             }
             else

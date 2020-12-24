@@ -9,6 +9,7 @@ public class PigUpCheckDamage : MonoBehaviour
     public float FakeJumpSpeed;
     public AudioSource clip;
     public Camera cam;
+    public bool Music;
 
     private void Start()
     {
@@ -22,7 +23,10 @@ public class PigUpCheckDamage : MonoBehaviour
             collision.transform.GetComponent<PlayerFakeMoves>().FakeJump(FakeJumpSpeed);
             if (AlreadyDead)
             {
-                AudioSource.PlayClipAtPoint(clip.clip, new Vector3(transform.position.x, transform.position.y, cam.transform.position.z), clip.volume);
+                if (Music)
+                {
+                    AudioSource.PlayClipAtPoint(clip.clip, new Vector3(transform.position.x, transform.position.y, cam.transform.position.z), clip.volume);
+                }
                 GetComponent<Move>().enabled=false;
                 animator.SetBool("RealDead", true);
                 Destroy(gameObject,0.1f);

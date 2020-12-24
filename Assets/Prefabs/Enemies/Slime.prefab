@@ -441,6 +441,7 @@ MonoBehaviour:
   FakeJumpSpeed: 5
   clip: {fileID: 2871288608687042707}
   cam: {fileID: 0}
+  Music: 1
 --- !u!82 &2871288608687042707
 AudioSource:
   m_ObjectHideFlags: 0

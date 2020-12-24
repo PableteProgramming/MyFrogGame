@@ -6,32 +6,16 @@ public class PlayerController : MonoBehaviour
 {
     public float runSpeed;
     public float jumpSpeed;
-    private string dir;
-    private bool dirChanged;
-    public bool WallJump;
-    public bool canWallJump;
-    public float WallJumpSpeed;
-
     public Rigidbody2D rb2d;
-
     public SpriteRenderer spriteRenderer;
-
     public Animator animator;
-
     public bool betterjump;
-
     public float fallMultiplier;
-
     public float jumpMultiplier;
-
     public float DoubleJumpSpeed;
-
     public bool canDoubleJump;
-
     public bool DoubleJump;
-
     private bool Hitted;
-   //public bool IsWall1;
 
     void Start()
     {
@@ -40,17 +24,6 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        if (!WallJump)
-        {
-            transform.GetChild(0).gameObject.SetActive(false);
-        }
-        else
-        {
-            transform.GetChild(0).gameObject.SetActive(true);
-        }
-        //
-        //IsWall1 = IsWalled.IsWall;
-        //
         Hitted = transform.GetComponent<PlayerRespawn>().Hitted;
         if (!Hitted)
         {
@@ -62,32 +35,11 @@ public class PlayerController : MonoBehaviour
                     {
                         canDoubleJump = true;
                     }
-                    if (WallJump)
-                    {
-                        canWallJump = true;
-                    }
                     rb2d.velocity = new Vector2(rb2d.velocity.x, jumpSpeed);
-                    dirChanged = false;
                 }
                 else
                 {
-                    if (IsWalled.IsWall)
-                    {
-                        if (WallJump)
-                        {
-                            if (Input.GetKeyDown("space") || Input.GetKeyDown("up"))
-                            {
-                                if (canWallJump)
-                                {
-                                    rb2d.velocity = new Vector2(rb2d.velocity.x, WallJumpSpeed);
-                                    canWallJump = false;
-                                    dirChanged = false;
-                                }
-                            }
-                        }
-                    }
-                    //
-                    else if (DoubleJump)
+                    if (DoubleJump)
                     {
                         if (Input.GetKeyDown("space") || Input.GetKeyDown("up"))
                         {
@@ -128,23 +80,6 @@ public class PlayerController : MonoBehaviour
                 animator.SetBool("Fall", false);
             }
 
-            if (dirChanged)
-            {
-                canWallJump = true;
-            }
-
-            /*if (rb2d.velocity.x > 0)
-            {
-                dir = "right";
-            }
-            else if (rb2d.velocity.x > 0)
-            {
-                dir = "left";
-            }
-            else
-            {
-                dir = "stop";
-            }*/
         }
     }
 
@@ -155,12 +90,6 @@ public class PlayerController : MonoBehaviour
         {
             if (Input.GetKey("d") || Input.GetKey("right"))
             {
-                //dirChanged = false;
-                if (dir == "left")
-                {
-                    dirChanged = true;
-                }
-                dir = "right";
                 rb2d.velocity = new Vector2(runSpeed, rb2d.velocity.y);
                 spriteRenderer.flipX = false;
                 animator.SetBool("Run", true);
@@ -168,12 +97,6 @@ public class PlayerController : MonoBehaviour
             }
             else if (Input.GetKey("a") || Input.GetKey("left"))
             {
-                //dirChanged = false;
-                if (dir == "right")
-                {
-                    dirChanged = true;
-                }
-                dir = "left";
                 rb2d.velocity = new Vector2(-runSpeed, rb2d.velocity.y);
                 spriteRenderer.flipX = true;
                 animator.SetBool("Run", true);
@@ -181,8 +104,6 @@ public class PlayerController : MonoBehaviour
             }
             else
             {
-                dirChanged = false;
-                dir = "stop";
                 rb2d.velocity = new Vector2(0, rb2d.velocity.y);
                 animator.SetBool("Run", false);
             }
