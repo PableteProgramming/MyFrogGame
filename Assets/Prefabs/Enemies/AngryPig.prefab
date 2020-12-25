@@ -81,7 +81,6 @@ GameObject:
   - component: {fileID: 7694203282928264500}
   - component: {fileID: 7694203282928264502}
   - component: {fileID: 2718945414389674248}
-  - component: {fileID: 1227764341129945242}
   m_Layer: 0
   m_Name: LeftCheck
   m_TagString: Untagged
@@ -143,20 +142,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   IsWalled: 0
   Tag: Ground
---- !u!114 &1227764341129945242
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7694203282928264501}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f0c2883cbdff2db468ab5e1c526fba63, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  IsWalled: 0
-  Tag: Ground
 --- !u!1 &7694203283045093626
 GameObject:
   m_ObjectHideFlags: 0
@@ -168,7 +153,6 @@ GameObject:
   - component: {fileID: 7694203283045093573}
   - component: {fileID: 7694203283045093575}
   - component: {fileID: 571617867432435295}
-  - component: {fileID: 3593281961059749579}
   m_Layer: 0
   m_Name: RightCheck
   m_TagString: Untagged
@@ -226,20 +210,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3480a5540747778419c117eec9597e68, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  IsWalled: 0
-  Tag: Ground
---- !u!114 &3593281961059749579
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7694203283045093626}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9f73d55e475667f4f9f13e9d1c9d1f69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   IsWalled: 0

@@ -80,7 +80,6 @@ GameObject:
   m_Component:
   - component: {fileID: 326935916133483464}
   - component: {fileID: 326935916133483470}
-  - component: {fileID: 326935916133483465}
   - component: {fileID: 2645462318622975557}
   m_Layer: 0
   m_Name: RightCheck
@@ -129,20 +128,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.03886354, y: 0.2138319}
   m_EdgeRadius: 0
---- !u!114 &326935916133483465
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 326935916133483467}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9f73d55e475667f4f9f13e9d1c9d1f69, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  IsWalled: 0
-  Tag: SlimeConfiner
 --- !u!114 &2645462318622975557
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -167,7 +152,6 @@ GameObject:
   m_Component:
   - component: {fileID: 326935916500952235}
   - component: {fileID: 326935916500952233}
-  - component: {fileID: 326935916500952232}
   - component: {fileID: 3710935084946356353}
   m_Layer: 0
   m_Name: LeftCheck
@@ -216,20 +200,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.04151666, y: 0.21188879}
   m_EdgeRadius: 0
---- !u!114 &326935916500952232
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 326935916500952234}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f0c2883cbdff2db468ab5e1c526fba63, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  IsWalled: 0
-  Tag: SlimeConfiner
 --- !u!114 &3710935084946356353
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -394,7 +364,6 @@ MonoBehaviour:
   realwalkspeed: 0
   waitime: 0.5
   waitedTime: 0
-  SameCheckTag: 1
 --- !u!61 &8147649054120550672
 BoxCollider2D:
   m_ObjectHideFlags: 0

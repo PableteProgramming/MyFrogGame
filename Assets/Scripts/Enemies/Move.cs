@@ -15,7 +15,6 @@ public class Move : MonoBehaviour
     public float waitedTime;
     private bool sleeping;
     private bool moving;
-    public bool SameCheckTag;
 
     private void Start()
     {
@@ -46,35 +45,17 @@ public class Move : MonoBehaviour
             }
         }
 
-        if (SameCheckTag)
+        if (Leftcheck.GetComponent<Check>().IsWalled)
         {
-            if (Leftcheck.GetComponent<Check>().IsWalled)
-            {
-                walkspeed = -realwalkspeed;
-                sprite.flipX = true;
-                waitime = 0;
-            }
-            else if (Rightcheck.GetComponent<Check>().IsWalled)
-            {
-                sprite.flipX = false;
-                walkspeed = realwalkspeed;
-                waitime = 0;
-            }
+            walkspeed = -realwalkspeed;
+            sprite.flipX = true;
+            waitime = 0;
         }
-        else
+        else if (Rightcheck.GetComponent<Check>().IsWalled)
         {
-            if (Leftcheck.GetComponent<LeftCheck>().IsWalled)
-            {
-                walkspeed = -realwalkspeed;
-                sprite.flipX = true;
-                waitime = 0;
-            }
-            else if (Rightcheck.GetComponent<RightCheck>().IsWalled)
-            {
-                sprite.flipX = false;
-                walkspeed = realwalkspeed;
-                waitime = 0;
-            }
+            sprite.flipX = false;
+            walkspeed = realwalkspeed;
+            waitime = 0;
         }
 
         if (moving)
