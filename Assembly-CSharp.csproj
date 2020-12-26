@@ -65,7 +65,8 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\Enemies\ArtificalInteligence.cs" />
     <Compile Include="Assets\Scripts\Enemies\Checks\Check.cs" />
-    <Compile Include="Assets\Scripts\Enemies\Checks\UpCheck.cs" />
+    <Compile Include="Assets\Scripts\Enemies\FatBird\FatBirdAttack.cs" />
+    <Compile Include="Assets\Scripts\Enemies\FatBird\FatBirdMove.cs" />
     <Compile Include="Assets\Scripts\Enemies\Move.cs" />
     <Compile Include="Assets\Scripts\Enemies\Pig\PigUpCheckDamage.cs" />
     <Compile Include="Assets\Scripts\Enemies\PlayerDamage.cs" />
