@@ -11,7 +11,6 @@ public class Move : MonoBehaviour
     public float walkspeed;
     public float realwalkspeed;
     public float waitime;
-    private float realwaittime;
     public float waitedTime;
     private bool sleeping;
     private bool moving;
@@ -19,7 +18,6 @@ public class Move : MonoBehaviour
     private void Start()
     {
         sleeping = false;
-        realwaittime = waitime;
         moving = true;
         waitedTime = 0;
         realwalkspeed = walkspeed;
@@ -30,7 +28,6 @@ public class Move : MonoBehaviour
         
         if (waitedTime >= waitime)
         {
-            waitime = realwaittime;
             if (sleeping)
             {
                 sleeping = false;
