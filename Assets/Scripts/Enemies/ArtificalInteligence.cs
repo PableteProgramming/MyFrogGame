@@ -21,6 +21,7 @@ public class ArtificalInteligence : MonoBehaviour
     public Transform[] moveSpots;
     public string IdleAnimationName;
     public bool IdleAnimation;
+    public bool WantFlipX;
 
     void Start()
     {
@@ -62,7 +63,10 @@ public class ArtificalInteligence : MonoBehaviour
 
         if (transform.position.x > actualPos.x)
         {
-            spriteRenderer.flipX = true;
+            if (WantFlipX)
+            {
+                spriteRenderer.flipX = true;
+            }
             if (IdleAnimation)
             {
                 animator.SetBool(IdleAnimationName, false);
@@ -70,7 +74,10 @@ public class ArtificalInteligence : MonoBehaviour
         }
         else if (transform.position.x < actualPos.x)
         {
-            spriteRenderer.flipX = false;
+            if (WantFlipX)
+            {
+                spriteRenderer.flipX = false;
+            }
             if (IdleAnimation)
             {
                 animator.SetBool(IdleAnimationName, false);

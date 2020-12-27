@@ -17,6 +17,7 @@ public class FatBirdMove : MonoBehaviour
     public float GroundedWaitTime;
     private float GroundedWaitedTime;
     public float FallSpeed;
+    public bool ArtificialIntelligence;
 
     private void Start()
     {
@@ -28,6 +29,7 @@ public class FatBirdMove : MonoBehaviour
 
     private void Update()
     {
+        //When going up/back to his start position
         if (GoingUp)
         {
             if (Dynamic)
@@ -38,28 +40,35 @@ public class FatBirdMove : MonoBehaviour
             transform.position = Vector2.MoveTowards(transform.position,startPos,UpSpeed*Time.deltaTime);
         }
 
+        //If it his back to his start position
         if (Vector2.Distance(transform.position,startPos)<0.1f)
         {
-            //CanFall = true;
+            if (ArtificialIntelligence)
+            {
+                GetComponent<ArtificalInteligence>().enabled = true;
+            }
             GoingUp = false;
         }
-        else
-        {
-            //CanFall = false;
-        }
 
+        //Detect if FatBird is Grounded
         Grounded = GroundChecker.GetComponent<GroundCheck>().IsGrounded;
 
+        //Checking if raycast collides with player
         if (RayCastSpawnPoint.GetComponent<FatBirdAttack>().Saw)
         {
             if (CanFall)
             {
+                if (ArtificialIntelligence)
+                {
+                    GetComponent<ArtificalInteligence>().enabled = false;
+                }
                 Dynamic = true;
                 rb2d.gravityScale = 1;
                 GoingUp = false;
             }
         }
 
+        //Detecting if playing Falling anim
         if (Dynamic)
         {
 
@@ -73,12 +82,12 @@ public class FatBirdMove : MonoBehaviour
             }
         }
 
+
+        //If grounded
         if (Grounded)
         {
             animator.SetBool("Grounded", true);
-            //
             animator.SetBool("Falling", false);
-            //
             if (!GoingUp)
             {
                 GroundedWaitedTime += Time.deltaTime;

@@ -268,7 +268,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 3
   m_Sprite: {fileID: 6570920502705930198, guid: 9f8778d0d44049a459735824f24042e0,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -345,7 +345,6 @@ MonoBehaviour:
   DeadTime: 0.1
   FakeJumpSpeed: 5
   clip: {fileID: 0}
-  cam: {fileID: 0}
   Music: 0
 --- !u!114 &7673903165743325527
 MonoBehaviour:
@@ -369,3 +368,4 @@ MonoBehaviour:
   - {fileID: 7673903164803997840}
   IdleAnimationName: 
   IdleAnimation: 0
+  WantFlipX: 1
