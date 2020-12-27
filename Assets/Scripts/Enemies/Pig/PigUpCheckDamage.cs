@@ -8,11 +8,12 @@ public class PigUpCheckDamage : MonoBehaviour
     private bool AlreadyDead;
     public float FakeJumpSpeed;
     public AudioSource clip;
-    public Camera cam;
+    private Camera cam;
     public bool Music;
 
     private void Start()
     {
+        cam = Camera.main;
         AlreadyDead = false;
     }
 

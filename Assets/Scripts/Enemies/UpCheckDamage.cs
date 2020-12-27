@@ -11,8 +11,14 @@ public class UpCheckDamage : MonoBehaviour
     public float DeadTime;
     public float FakeJumpSpeed;
     public AudioSource clip;
-    public Camera cam;
+    private Camera cam;
     public bool Music;
+
+
+    private void Start()
+    {
+        cam = Camera.main;
+    }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {

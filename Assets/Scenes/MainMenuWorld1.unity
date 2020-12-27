@@ -1011,6 +1011,7 @@ GameObject:
   - component: {fileID: 309468373}
   - component: {fileID: 309468374}
   - component: {fileID: 309468375}
+  - component: {fileID: 309468376}
   m_Layer: 0
   m_Name: PlayerDamage
   m_TagString: Untagged
@@ -1070,6 +1071,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: edaa58f18306c2346b4159c0adfdf839, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &309468376
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 309468372}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf0e74c5a5020104294785f82f885efd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IsGrounded: 0
 --- !u!1 &324901921
 GameObject:
   m_ObjectHideFlags: 0
@@ -1239,7 +1253,6 @@ MonoBehaviour:
   DeadTime: 0.1
   FakeJumpSpeed: 5
   clip: {fileID: 0}
-  cam: {fileID: 0}
   Music: 0
 --- !u!212 &340606880
 SpriteRenderer:
@@ -1326,14 +1339,14 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 340606877}
-  m_BodyType: 1
+  m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -1372,7 +1385,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb2d: {fileID: 340606882}
   animator: {fileID: 340606883}
+  UpSpeed: 0.5
   RayCastSpawnPoint: {fileID: 634711700}
+  GroundChecker: {fileID: 309468372}
+  GroundedWaitTime: 0.3
+  FallSpeed: 1
 --- !u!1 &346924870
 GameObject:
   m_ObjectHideFlags: 0
