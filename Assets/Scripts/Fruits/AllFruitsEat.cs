@@ -5,11 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class AllFruitsEat : MonoBehaviour
 {
-    public string MainMenuScene;
-    public GameObject Player;
-    public string DesappearingAnimationName;
-    public float DesappearingTime;
+    public GameObject DesappearingObject;
     public bool Disappearing;
+    public string MainMenuScene;
 
     void Update()
     {
@@ -22,13 +20,7 @@ public class AllFruitsEat : MonoBehaviour
         {
             if (Disappearing)
             {
-                Player.gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(0, 0);
-                Player.gameObject.GetComponent<Rigidbody2D>().gravityScale = 0;
-                Player.gameObject.GetComponent<PlayerController>().Started = false;
-                //Player.gameObject.GetComponent<Rigidbody2D>().gameObject.SetActive(false);
-                Player.gameObject.GetComponent<BoxCollider2D>().enabled = false;
-                Player.gameObject.GetComponent<Animator>().Play(DesappearingAnimationName);
-                Invoke("ChangeScene", DesappearingTime);
+                DesappearingObject.SetActive(true);
             }
             else
             {
@@ -37,7 +29,7 @@ public class AllFruitsEat : MonoBehaviour
         }
     }
 
-    void ChangeScene()
+    private void ChangeScene()
     {
         SceneManager.LoadScene(MainMenuScene);
     }
