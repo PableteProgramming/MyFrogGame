@@ -63,6 +63,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\CheckPoint\Start\CheckPlayer.cs" />
     <Compile Include="Assets\Scripts\Enemies\ArtificalInteligence.cs" />
     <Compile Include="Assets\Scripts\Enemies\Checks\Check.cs" />
     <Compile Include="Assets\Scripts\Enemies\FatBird\FatBirdAttack.cs" />

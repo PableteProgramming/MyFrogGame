@@ -16,16 +16,22 @@ public class PlayerController : MonoBehaviour
     public bool canDoubleJump;
     public bool DoubleJump;
     private bool Hitted;
+    public bool Started;
+    public float AppearingTime;
+    private float AppearingTimePassed;
 
     void Start()
     {
+        Started = false;
+        rb2d.gravityScale = 0;
+        AppearingTimePassed = 0;
         Hitted = transform.GetComponent<PlayerRespawn>().Hitted;
     }
 
     void Update()
     {
         Hitted = transform.GetComponent<PlayerRespawn>().Hitted;
-        if (!Hitted)
+        if (!Hitted && Started)
         {
             if (Input.GetKey("space") || Input.GetKey("up"))
             {
@@ -62,6 +68,7 @@ public class PlayerController : MonoBehaviour
 
             if (CheckGround.IsGrounded == true)
             {
+                
                 if (gameObject.tag != "Player")
                 {
                     gameObject.tag = "Player";
@@ -81,12 +88,23 @@ public class PlayerController : MonoBehaviour
             }
 
         }
+
+        if (AppearingTimePassed>=AppearingTime && !Started)
+        {
+            rb2d.gravityScale = 1;
+            Started = true;
+        }
+
+        if (!Started)
+        {
+            AppearingTimePassed += Time.deltaTime;
+        }
     }
 
     private void FixedUpdate()
     {
         Hitted = transform.GetComponent<PlayerRespawn>().Hitted;
-        if (!Hitted)
+        if (!Hitted && Started)
         {
             if (Input.GetKey("d") || Input.GetKey("right"))
             {
