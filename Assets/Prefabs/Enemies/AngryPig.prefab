@@ -323,7 +323,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 3
+  m_SortingOrder: -1
   m_Sprite: {fileID: 6055667495070531183, guid: 3315bdad18a105d49a220419bb2c813f,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -377,7 +377,6 @@ MonoBehaviour:
   realwalkspeed: 0
   waitime: 0.5
   waitedTime: 0
-  SameCheckTag: 1
 --- !u!95 &7694203283723136523
 Animator:
   serializedVersion: 3
@@ -438,7 +437,6 @@ MonoBehaviour:
   animator: {fileID: 7694203283723136523}
   FakeJumpSpeed: 5
   clip: {fileID: 6687335442827301406}
-  cam: {fileID: 0}
   Music: 1
 --- !u!82 &6687335442827301406
 AudioSource:
