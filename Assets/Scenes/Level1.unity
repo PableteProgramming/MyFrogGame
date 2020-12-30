@@ -512,9 +512,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba9a13fd13d1380419a538e919f823e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MainMenuScene: MainMenuWorld1
   DesappearingObject: {fileID: 1849898291}
   Disappearing: 1
+  MainMenuScene: MainMenuWorld1
 --- !u!1 &43794999
 GameObject:
   m_ObjectHideFlags: 0
@@ -8003,16 +8003,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 8685159351176842879, guid: 0d68b663395ff79469cc1c2c75dfdda9,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8685159351254783593, guid: 0d68b663395ff79469cc1c2c75dfdda9,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0d68b663395ff79469cc1c2c75dfdda9, type: 3}

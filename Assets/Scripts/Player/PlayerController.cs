@@ -16,6 +16,8 @@ public class PlayerController : MonoBehaviour
     public bool canDoubleJump;
     public bool DoubleJump;
     private bool Hitted;
+    public GameObject appearing;
+    public GameObject desappearing;
 
     void Start()
     {
@@ -24,6 +26,8 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
+        appearing.transform.position = transform.position;
+        desappearing.transform.position = transform.position;
         Hitted = transform.GetComponent<PlayerRespawn>().Hitted;
         if (!Hitted)
         {

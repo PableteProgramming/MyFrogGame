@@ -6,15 +6,20 @@ public class Appearing : MonoBehaviour
 {
     public float Time;
     public GameObject player;
+    public bool WantAppearing;
 
     private void Start()
     {
+        if (!WantAppearing)
+        {
+            Time = 0;
+        }
         Invoke("Change", Time);
     }
 
     private void Change()
     {
         player.SetActive(true);
-        Destroy(gameObject);
+        gameObject.SetActive(false);
     }
 }
