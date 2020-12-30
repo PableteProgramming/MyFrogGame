@@ -1,5 +1,55 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8215781986646447446
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3750032456579998012}
+  - component: {fileID: 7749567405170767675}
+  m_Layer: 0
+  m_Name: Decoration
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3750032456579998012
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8215781986646447446}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8685159350917869989}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7749567405170767675
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8215781986646447446}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01377bb0eabafb7429b75f4a9f04abe0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Appearing: 1
+  Desappearing: 1
+  DesappearingObject: {fileID: 8685159351176842879}
+  AppearingObject: {fileID: 8685159349562512512}
+  PlayerSprite: {fileID: 8685159351254783593}
+  AppearingTime: 0.8
+  DesappearingTime: 0.6
 --- !u!1 &8685159349206898375
 GameObject:
   m_ObjectHideFlags: 0
@@ -82,14 +132,13 @@ GameObject:
   - component: {fileID: 8685159349562512519}
   - component: {fileID: 8685159349562512517}
   - component: {fileID: 8685159349562512518}
-  - component: {fileID: 8685159349562512516}
   m_Layer: 0
   m_Name: Appearing
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &8685159349562512519
 Transform:
   m_ObjectHideFlags: 0
@@ -174,21 +223,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &8685159349562512516
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8685159349562512512}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d92e4a6ab6b1e89488884808b5df5cd9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Time: 0.8
-  player: {fileID: 8685159351254783593}
-  WantAppearing: 1
 --- !u!1 &8685159350917869990
 GameObject:
   m_ObjectHideFlags: 0
@@ -219,6 +253,7 @@ Transform:
   - {fileID: 8685159351254783592}
   - {fileID: 8685159351176842878}
   - {fileID: 8685159349562512519}
+  - {fileID: 3750032456579998012}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -233,7 +268,6 @@ GameObject:
   - component: {fileID: 8685159351176842878}
   - component: {fileID: 8685159351176842876}
   - component: {fileID: 8685159351176842877}
-  - component: {fileID: 8685159351176842755}
   m_Layer: 0
   m_Name: Desappearing
   m_TagString: Untagged
@@ -325,21 +359,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &8685159351176842755
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8685159351176842879}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8de665e93c4711846871f4ef1beb21e4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MainMenuScene: MainMenuWorld1
-  Time: 0.6
-  player: {fileID: 8685159351254783593}
 --- !u!1 &8685159351254783593
 GameObject:
   m_ObjectHideFlags: 0

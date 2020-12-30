@@ -25,7 +25,8 @@ public class Exit : MonoBehaviour
     {
         if (inDoor && Input.GetKey(KeyCode.Space))
         {
-            Application.Quit();
+            GetComponent<doPlayerTransition>().DoTransition();
+            //Application.Quit();
         }
     }
 }

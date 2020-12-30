@@ -5,21 +5,20 @@ using UnityEngine.SceneManagement;
 
 public class OpenDoor : MonoBehaviour
 {
-    public string levelScene;
+    //public string levelScene;
     private bool inDoor = false;
+    //public bool PlayerDecorationDesappearing;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            //text.gameObject.SetActive(true);
             inDoor = true;
         }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        //text.gameObject.SetActive(false);
         inDoor = false;
     }
 
@@ -27,7 +26,8 @@ public class OpenDoor : MonoBehaviour
     {
         if (inDoor && Input.GetKey(KeyCode.Space))
         {
-            SceneManager.LoadScene(levelScene);
+            GetComponent<doPlayerTransition>().DoTransition();
+            //SceneManager.LoadScene(levelScene);
         }
     }
 }

@@ -454,6 +454,7 @@ GameObject:
   m_Component:
   - component: {fileID: 26618448}
   - component: {fileID: 26618449}
+  - component: {fileID: 26618450}
   m_Layer: 0
   m_Name: Fruits
   m_TagString: Untagged
@@ -512,9 +513,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba9a13fd13d1380419a538e919f823e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DesappearingObject: {fileID: 1849898291}
-  Disappearing: 1
-  MainMenuScene: MainMenuWorld1
+--- !u!114 &26618450
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 26618447}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d30ab0a55b787b548ad69dad5360542d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PlayerDecorationObject: {fileID: 908264746}
+  NextSceneName: MainMenuWorld1
 --- !u!1 &43794999
 GameObject:
   m_ObjectHideFlags: 0
@@ -9980,6 +9992,12 @@ Transform:
   m_Father: {fileID: 1704378057}
   m_RootOrder: 173
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &908264746 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8215781986646447446, guid: 0d68b663395ff79469cc1c2c75dfdda9,
+    type: 3}
+  m_PrefabInstance: {fileID: 724536881}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &909901590
 GameObject:
   m_ObjectHideFlags: 0
@@ -33248,12 +33266,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 247650283019611995, guid: 026e416c5836fff49b88453ae1274cec,
     type: 3}
   m_PrefabInstance: {fileID: 1400248546}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1849898291 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8685159351176842879, guid: 0d68b663395ff79469cc1c2c75dfdda9,
-    type: 3}
-  m_PrefabInstance: {fileID: 724536881}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1853056304
 GameObject:

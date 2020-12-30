@@ -934,6 +934,7 @@ GameObject:
   - component: {fileID: 451786136}
   - component: {fileID: 451786135}
   - component: {fileID: 451786138}
+  - component: {fileID: 451786139}
   m_Layer: 0
   m_Name: Exit
   m_TagString: Untagged
@@ -1043,6 +1044,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fcc408518f8cf8b47b844eaa278bc927, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &451786139
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 451786134}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d30ab0a55b787b548ad69dad5360542d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PlayerDecorationObject: {fileID: 1352622700}
+  NextSceneName: Exit
 --- !u!1 &495378898
 GameObject:
   m_ObjectHideFlags: 0
@@ -1765,6 +1780,7 @@ GameObject:
   - component: {fileID: 718091070}
   - component: {fileID: 718091069}
   - component: {fileID: 718091068}
+  - component: {fileID: 718091071}
   m_Layer: 0
   m_Name: World1
   m_TagString: Untagged
@@ -1798,7 +1814,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89b9b6fe5ae5c1a4fbcc76799c9d80f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelScene: MainMenuWorld1
 --- !u!61 &718091069
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1875,6 +1890,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &718091071
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 718091066}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d30ab0a55b787b548ad69dad5360542d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PlayerDecorationObject: {fileID: 1352622700}
+  NextSceneName: MainMenuWorld1
 --- !u!1001 &733672039
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5030,7 +5059,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   skinsPanel: {fileID: 274481303}
-  player: {fileID: 0}
+  player: {fileID: 1277203345}
 --- !u!61 &1188121585
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5107,6 +5136,12 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1277203345 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8685159351254783593, guid: 0d68b663395ff79469cc1c2c75dfdda9,
+    type: 3}
+  m_PrefabInstance: {fileID: 1352622699}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1321162716
 GameObject:
   m_ObjectHideFlags: 0
@@ -5276,6 +5311,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7749567405170767675, guid: 0d68b663395ff79469cc1c2c75dfdda9,
+        type: 3}
+      propertyPath: Appearing
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8685159350917869989, guid: 0d68b663395ff79469cc1c2c75dfdda9,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5336,8 +5376,24 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 8685159351176842877, guid: 0d68b663395ff79469cc1c2c75dfdda9,
+        type: 3}
+      propertyPath: m_FlipX
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8685159351176842879, guid: 0d68b663395ff79469cc1c2c75dfdda9,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0d68b663395ff79469cc1c2c75dfdda9, type: 3}
+--- !u!1 &1352622700 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8215781986646447446, guid: 0d68b663395ff79469cc1c2c75dfdda9,
+    type: 3}
+  m_PrefabInstance: {fileID: 1352622699}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1381393399
 GameObject:
   m_ObjectHideFlags: 0
@@ -5528,7 +5584,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1393099271
 GameObject:
@@ -7202,7 +7258,7 @@ PrefabInstance:
     - target: {fileID: 7673903164467158891, guid: 6e7cc44aeaf4ce14bbdd11553e3a6ec1,
         type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 7673903164467158891, guid: 6e7cc44aeaf4ce14bbdd11553e3a6ec1,
         type: 3}

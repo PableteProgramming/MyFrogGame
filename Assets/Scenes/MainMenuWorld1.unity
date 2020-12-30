@@ -1255,6 +1255,7 @@ GameObject:
   - component: {fileID: 448738832}
   - component: {fileID: 448738834}
   - component: {fileID: 448738835}
+  - component: {fileID: 448738836}
   m_Layer: 0
   m_Name: Level1
   m_TagString: Untagged
@@ -1364,7 +1365,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89b9b6fe5ae5c1a4fbcc76799c9d80f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelScene: Level1
+--- !u!114 &448738836
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 448738831}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d30ab0a55b787b548ad69dad5360542d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PlayerDecorationObject: {fileID: 1989326263}
+  NextSceneName: Level1
 --- !u!1 &450992375 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8867435629183001714, guid: f4e9aed5f8039c54099202c2cd355da6,
@@ -3338,7 +3352,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   skinsPanel: {fileID: 450992375}
-  player: {fileID: 0}
+  player: {fileID: 1828970495}
 --- !u!61 &1499040012
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3620,6 +3634,7 @@ GameObject:
   - component: {fileID: 1667925823}
   - component: {fileID: 1667925825}
   - component: {fileID: 1667925826}
+  - component: {fileID: 1667925827}
   m_Layer: 0
   m_Name: Exit
   m_TagString: Untagged
@@ -3729,7 +3744,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89b9b6fe5ae5c1a4fbcc76799c9d80f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelScene: MainMenu
+--- !u!114 &1667925827
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1667925822}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d30ab0a55b787b548ad69dad5360542d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PlayerDecorationObject: {fileID: 1989326263}
+  NextSceneName: MainMenu
 --- !u!1 &1676548700
 GameObject:
   m_ObjectHideFlags: 0
@@ -6164,6 +6192,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7749567405170767675, guid: 0d68b663395ff79469cc1c2c75dfdda9,
+        type: 3}
+      propertyPath: Desappearing
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8685159350917869989, guid: 0d68b663395ff79469cc1c2c75dfdda9,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6226,6 +6259,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0d68b663395ff79469cc1c2c75dfdda9, type: 3}
+--- !u!1 &1828970495 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8685159351254783593, guid: 0d68b663395ff79469cc1c2c75dfdda9,
+    type: 3}
+  m_PrefabInstance: {fileID: 1828970494}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1837227444
 GameObject:
   m_ObjectHideFlags: 0
@@ -6714,6 +6753,12 @@ Transform:
   m_Father: {fileID: 1901641919}
   m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1989326263 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8215781986646447446, guid: 0d68b663395ff79469cc1c2c75dfdda9,
+    type: 3}
+  m_PrefabInstance: {fileID: 1828970494}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2002568013
 GameObject:
   m_ObjectHideFlags: 0

@@ -97,6 +97,8 @@ public class PlayerController : MonoBehaviour
             {
                 rb2d.velocity = new Vector2(runSpeed, rb2d.velocity.y);
                 spriteRenderer.flipX = false;
+                appearing.GetComponent<SpriteRenderer>().flipX = false;
+                desappearing.GetComponent<SpriteRenderer>().flipX = false;
                 animator.SetBool("Run", true);
                 animator.SetBool("Fall", false);
             }
@@ -104,6 +106,8 @@ public class PlayerController : MonoBehaviour
             {
                 rb2d.velocity = new Vector2(-runSpeed, rb2d.velocity.y);
                 spriteRenderer.flipX = true;
+                appearing.GetComponent<SpriteRenderer>().flipX = true;
+                desappearing.GetComponent<SpriteRenderer>().flipX = true;
                 animator.SetBool("Run", true);
                 animator.SetBool("Fall", false);
             }
