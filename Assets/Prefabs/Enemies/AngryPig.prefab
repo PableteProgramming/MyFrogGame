@@ -369,14 +369,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a462792fbd990f42a69613d223f5f35, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rb2d: {fileID: 7694203283723136532}
   sprite: {fileID: 7694203283723136535}
   Leftcheck: {fileID: 7694203282928264501}
   Rightcheck: {fileID: 7694203283045093626}
   walkspeed: 0.5
   realwalkspeed: 0
-  waitime: 0.5
-  waitedTime: 0
 --- !u!95 &7694203283723136523
 Animator:
   serializedVersion: 3

@@ -70,11 +70,11 @@
     <Compile Include="Assets\Scripts\Enemies\Checks\Check.cs" />
     <Compile Include="Assets\Scripts\Enemies\DestroyOnGround.cs" />
     <Compile Include="Assets\Scripts\Enemies\FatBird\FatBirdMove.cs" />
-    <Compile Include="Assets\Scripts\Enemies\FatBird\RayCastDetection.cs" />
     <Compile Include="Assets\Scripts\Enemies\GroundCheck.cs" />
     <Compile Include="Assets\Scripts\Enemies\Move.cs" />
     <Compile Include="Assets\Scripts\Enemies\Pig\PigUpCheckDamage.cs" />
     <Compile Include="Assets\Scripts\Enemies\PlayerDamage.cs" />
+    <Compile Include="Assets\Scripts\Enemies\RayCastDetection.cs" />
     <Compile Include="Assets\Scripts\Enemies\UpCheckDamage.cs" />
     <Compile Include="Assets\Scripts\Fruits\AllFruitsEat.cs" />
     <Compile Include="Assets\Scripts\Fruits\CollectFruit.cs" />
