@@ -8,7 +8,6 @@ public class FatBirdMove : MonoBehaviour
     public Rigidbody2D rb2d;
     public Animator animator;
     public float UpSpeed=0.5f;
-    public GameObject RayCastSpawnPoint;
     private bool Grounded;
     public GameObject GroundChecker;
     private Vector2 startPos;
@@ -54,7 +53,7 @@ public class FatBirdMove : MonoBehaviour
         Grounded = GroundChecker.GetComponent<GroundCheck>().IsGrounded;
 
         //Checking if raycast collides with player
-        if (RayCastSpawnPoint.GetComponent<FatBirdAttack>().Saw)
+        if (GetComponent<RayCastDetection>().Saw)
         {
             if (CanFall)
             {
