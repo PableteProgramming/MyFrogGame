@@ -9,17 +9,9 @@ public class Move : MonoBehaviour
     public GameObject Rightcheck;
     public float walkspeed;
     public float realwalkspeed;
-    private float waitime;
-    private float waitedTime;
-    private bool sleeping;
-    private bool moving;
 
     private void Start()
     {
-        sleeping = false;
-        moving = true;
-        waitime = 0;
-        waitedTime = 0;
         realwalkspeed = walkspeed;
     }
 
