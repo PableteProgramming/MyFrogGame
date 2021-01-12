@@ -1,5 +1,52 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1106605134767075901
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8098006027019679742}
+  - component: {fileID: 1400611324325728703}
+  m_Layer: 0
+  m_Name: RayCastSpawnPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8098006027019679742
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1106605134767075901}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.035, y: -0.045, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 3562478332943690794}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1400611324325728703
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1106605134767075901}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32cdaab3f6bb944469460de0bb47779d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Saw: 0
+  RayCastEndPoint: {fileID: 3562478331923875272}
+  dir: 1
+  Tag: Player
 --- !u!1 &3562478331923875273
 GameObject:
   m_ObjectHideFlags: 0
@@ -54,7 +101,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3562478332624130016}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.089, y: 0.049, z: 0}
+  m_LocalPosition: {x: -0.089, y: 0.035, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 3562478332943690794}
@@ -106,7 +153,6 @@ GameObject:
   - component: {fileID: 3562478332943690773}
   - component: {fileID: 3562478332943690774}
   - component: {fileID: 3176687678314988037}
-  - component: {fileID: 8769780126226260091}
   - component: {fileID: 2484267802180704030}
   m_Layer: 0
   m_Name: sprite
@@ -128,6 +174,7 @@ Transform:
   m_Children:
   - {fileID: 3562478333525162374}
   - {fileID: 3562478332624130019}
+  - {fileID: 8098006027019679742}
   m_Father: {fileID: 3562478332887961588}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -265,22 +312,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 3145364215281404074, guid: c81e0ec906151884b978a9d8461ef502,
     type: 3}
   launchSpawnPoint: {fileID: 3562478332624130019}
---- !u!114 &8769780126226260091
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3562478332943690795}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 32cdaab3f6bb944469460de0bb47779d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Saw: 0
-  RayCastEndPoint: {fileID: 3562478331923875272}
-  dir: 1
-  Tag: Player
+  RayCastSpawnPoint: {fileID: 1106605134767075901}
 --- !u!82 &2484267802180704030
 AudioSource:
   m_ObjectHideFlags: 0

@@ -5,11 +5,12 @@ using UnityEngine;
 public class AttackWithBullet : MonoBehaviour
 {
     private float waitedTime;
-    public bool left;
     public float waitTimeToAttack = 3;
     public Animator animator;
     public GameObject bulletPrefab;
     public Transform launchSpawnPoint;
+    public GameObject RayCastSpawnPoint;
+    public float LaunchBulletTime=0.5f;
 
     private void Start()
     {
@@ -20,11 +21,11 @@ public class AttackWithBullet : MonoBehaviour
     {
         if (waitedTime>=waitTimeToAttack)
         {
-            if (GetComponent<RayCastDetection>().Saw)
+            if (RayCastSpawnPoint.GetComponent<RayCastDetection>().Saw)
             {
                 waitedTime = 0;
                 animator.Play("Attack");
-                Invoke("LaunchBullet", 0.5f);
+                Invoke("LaunchBullet", LaunchBulletTime);
             }
         }
         else
