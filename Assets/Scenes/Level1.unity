@@ -6138,6 +6138,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Slime1
       objectReference: {fileID: 0}
+    - target: {fileID: 326935916571894293, guid: e130202efcf32ef409a1816ec9e11178,
+        type: 3}
+      propertyPath: left
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9221905134625821851, guid: e130202efcf32ef409a1816ec9e11178,
         type: 3}
       propertyPath: cam
@@ -7363,6 +7368,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Slime2
+      objectReference: {fileID: 0}
+    - target: {fileID: 326935916571894293, guid: e130202efcf32ef409a1816ec9e11178,
+        type: 3}
+      propertyPath: left
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9221905134625821851, guid: e130202efcf32ef409a1816ec9e11178,
         type: 3}
@@ -30262,6 +30272,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: AngryPig
       objectReference: {fileID: 0}
+    - target: {fileID: 7694203283723136522, guid: fa64d2e5b3909c74cb0c642a21902a46,
+        type: 3}
+      propertyPath: left
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9149560097731950425, guid: fa64d2e5b3909c74cb0c642a21902a46,
         type: 3}
       propertyPath: cam
@@ -36284,6 +36299,11 @@ PrefabInstance:
       propertyPath: waitime
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 326935916571894293, guid: e130202efcf32ef409a1816ec9e11178,
+        type: 3}
+      propertyPath: left
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9221905134625821851, guid: e130202efcf32ef409a1816ec9e11178,
         type: 3}
       propertyPath: cam
@@ -36591,6 +36611,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: AngryPig
+      objectReference: {fileID: 0}
+    - target: {fileID: 7694203283723136522, guid: fa64d2e5b3909c74cb0c642a21902a46,
+        type: 3}
+      propertyPath: left
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9149560097731950425, guid: fa64d2e5b3909c74cb0c642a21902a46,
         type: 3}

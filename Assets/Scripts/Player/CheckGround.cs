@@ -7,6 +7,11 @@ public class CheckGround : MonoBehaviour
     public static bool IsGrounded;
     public bool Ground;
 
+    private void Start()
+    {
+        IsGrounded = false;
+    }
+
     private void Update()
     {
         Ground = IsGrounded;        
