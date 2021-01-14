@@ -7,16 +7,28 @@ public class Move : MonoBehaviour
     public SpriteRenderer sprite;
     public GameObject Leftcheck;
     public GameObject Rightcheck;
+    public Rigidbody2D rb2d;
     public float walkspeed;
     public float realwalkspeed;
+    private bool moving;
 
     private void Start()
     {
+        moving = true;
         realwalkspeed = walkspeed;
     }
 
     void Update()
     {
+        if (moving)
+        {
+            moving = false;
+        }
+        else
+        {
+            moving = true;
+        }
+
         if (Leftcheck.GetComponent<Check>().IsWalled)
         {
             walkspeed = -realwalkspeed;
@@ -27,6 +39,10 @@ public class Move : MonoBehaviour
             sprite.flipX = false;
             walkspeed = realwalkspeed;
         }
-        transform.Translate(Vector2.right*(-walkspeed)*Time.deltaTime);
+
+        if (moving)
+        {
+            rb2d.velocity = new Vector2(-walkspeed, rb2d.velocity.y);
+        }
     }
 }

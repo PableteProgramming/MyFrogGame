@@ -372,6 +372,7 @@ MonoBehaviour:
   sprite: {fileID: 7694203283723136535}
   Leftcheck: {fileID: 7694203282928264501}
   Rightcheck: {fileID: 7694203283045093626}
+  rb2d: {fileID: 7694203283723136532}
   walkspeed: 0.5
   realwalkspeed: 0
 --- !u!95 &7694203283723136523
