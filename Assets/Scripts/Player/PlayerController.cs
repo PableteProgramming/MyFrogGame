@@ -18,6 +18,7 @@ public class PlayerController : MonoBehaviour
     private bool Hitted;
     public GameObject appearing;
     public GameObject desappearing;
+    public GameObject GroundChecker;
 
     void Start()
     {
@@ -33,7 +34,7 @@ public class PlayerController : MonoBehaviour
         {
             if (Input.GetKey("space") || Input.GetKey("up"))
             {
-                if (CheckGround.IsGrounded)
+                if (GroundChecker.GetComponent<CheckGround>().Ground)
                 {
                     if (DoubleJump)
                     {
@@ -58,13 +59,13 @@ public class PlayerController : MonoBehaviour
                 }
             }
 
-            if (CheckGround.IsGrounded == false)
+            if (GroundChecker.GetComponent<CheckGround>().Ground == false)
             {
                 animator.SetBool("Jump", true);
                 animator.SetBool("Run", false);
             }
 
-            if (CheckGround.IsGrounded == true)
+            if (GroundChecker.GetComponent<CheckGround>().Ground == true)
             {
                 
                 if (gameObject.tag != "Player")

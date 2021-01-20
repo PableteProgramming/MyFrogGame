@@ -4,24 +4,18 @@ using UnityEngine;
 
 public class CheckGround : MonoBehaviour
 {
-    public static bool IsGrounded;
     public bool Ground;
 
     private void Start()
     {
-        IsGrounded = false;
-    }
-
-    private void Update()
-    {
-        Ground = IsGrounded;        
+        Ground = false;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Ground"))
         {
-            IsGrounded = true;
+            Ground = true;
         }
     }
 
@@ -29,7 +23,7 @@ public class CheckGround : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Ground"))
         {
-            IsGrounded = true;
+            Ground = true;
         }
     }
 
@@ -37,7 +31,7 @@ public class CheckGround : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Ground"))
         {
-            IsGrounded = false;
+            Ground = false;
         }
     }
 }

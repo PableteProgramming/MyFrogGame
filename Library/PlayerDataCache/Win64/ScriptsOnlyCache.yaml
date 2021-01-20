@@ -19,8 +19,6 @@ ScriptsOnlyBuild:
     - PlayerFakeMoves
     - PlayerRespawn
     - PlayerSelector
-    - RinoMove
-    - RinoRayCastDetection
     - TrampolineJump
     - TwoSidesPlatform
     - UpCheckDamage
@@ -267,13 +265,13 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 14410}
     - Class: 114
-      Script: {instanceID: 23686}
+      Script: {instanceID: 20410}
     - Class: 114
-      Script: {instanceID: 23688}
+      Script: {instanceID: 20418}
     - Class: 114
-      Script: {instanceID: 23692}
+      Script: {instanceID: 20424}
     - Class: 114
-      Script: {instanceID: 23694}
+      Script: {instanceID: 20426}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -598,7 +596,7 @@ ScriptsOnlyBuild:
     className: SpriteShapeGeometryCache
   - hash:
       serializedVersion: 2
-      Hash: 7dbbd36b28bd5d0973930342825af9d9
+      Hash: 3fcefb18eb0d6b3b9e6e5b074ce3b339
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Move
@@ -724,7 +722,7 @@ ScriptsOnlyBuild:
     className: NoiseSettings
   - hash:
       serializedVersion: 2
-      Hash: 4544c1009bf01a3574101915f1ea87ce
+      Hash: 3789ba0ceed0fb7b30853271a0c7de9e
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: BulletMove
@@ -1054,7 +1052,7 @@ ScriptsOnlyBuild:
     className: CinemachineIndependentImpulseListener
   - hash:
       serializedVersion: 2
-      Hash: a9fbe7a3299f903bbff852360f241182
+      Hash: cc307cda71e9a87eaa4200c097d5f401
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: AttackWithBullet
