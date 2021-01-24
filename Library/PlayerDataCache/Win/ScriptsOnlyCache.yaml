@@ -8,6 +8,7 @@ ScriptsOnlyBuild:
     - CheckPlayer
     - CollectFruit
     - Exit
+    - GroundedPlayerDamage
     - Move
     - OpenDoor
     - OptionsMenu
@@ -122,43 +123,43 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11740}
     - Class: 114
-      Script: {instanceID: 12152}
+      Script: {instanceID: 12154}
     - Class: 114
-      Script: {instanceID: 12262}
+      Script: {instanceID: 12264}
     - Class: 114
-      Script: {instanceID: 12340}
+      Script: {instanceID: 12342}
     - Class: 114
-      Script: {instanceID: 12414}
+      Script: {instanceID: 12416}
     - Class: 114
-      Script: {instanceID: 12470}
+      Script: {instanceID: 12472}
     - Class: 114
-      Script: {instanceID: 12622}
+      Script: {instanceID: 12624}
     - Class: 114
-      Script: {instanceID: 12652}
+      Script: {instanceID: 12654}
     - Class: 114
-      Script: {instanceID: 12826}
+      Script: {instanceID: 12828}
     - Class: 114
-      Script: {instanceID: 13366}
+      Script: {instanceID: 13368}
     - Class: 114
-      Script: {instanceID: 13384}
+      Script: {instanceID: 13386}
     - Class: 114
-      Script: {instanceID: 13426}
+      Script: {instanceID: 13428}
     - Class: 114
-      Script: {instanceID: 13444}
+      Script: {instanceID: 13446}
     - Class: 114
-      Script: {instanceID: 13524}
+      Script: {instanceID: 13526}
     - Class: 114
-      Script: {instanceID: 13804}
+      Script: {instanceID: 13806}
     - Class: 114
-      Script: {instanceID: 14024}
+      Script: {instanceID: 14026}
     - Class: 114
-      Script: {instanceID: 14134}
+      Script: {instanceID: 14136}
     - Class: 114
-      Script: {instanceID: 14358}
+      Script: {instanceID: 14360}
     - Class: 114
-      Script: {instanceID: 14410}
+      Script: {instanceID: 14412}
     - Class: 114
-      Script: {instanceID: 14434}
+      Script: {instanceID: 14436}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -249,29 +250,31 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11598}
     - Class: 114
-      Script: {instanceID: 12262}
+      Script: {instanceID: 11928}
     - Class: 114
-      Script: {instanceID: 12414}
+      Script: {instanceID: 12264}
     - Class: 114
-      Script: {instanceID: 12470}
+      Script: {instanceID: 12416}
     - Class: 114
-      Script: {instanceID: 12622}
+      Script: {instanceID: 12472}
     - Class: 114
-      Script: {instanceID: 13524}
+      Script: {instanceID: 12624}
     - Class: 114
-      Script: {instanceID: 13804}
+      Script: {instanceID: 13526}
     - Class: 114
-      Script: {instanceID: 14338}
+      Script: {instanceID: 13806}
     - Class: 114
-      Script: {instanceID: 14410}
+      Script: {instanceID: 14340}
     - Class: 114
-      Script: {instanceID: 20410}
+      Script: {instanceID: 14412}
     - Class: 114
-      Script: {instanceID: 20418}
+      Script: {instanceID: 129316}
     - Class: 114
-      Script: {instanceID: 20424}
+      Script: {instanceID: 129318}
     - Class: 114
-      Script: {instanceID: 20426}
+      Script: {instanceID: 129322}
+    - Class: 114
+      Script: {instanceID: 129324}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -354,21 +357,21 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11598}
     - Class: 114
-      Script: {instanceID: 12262}
+      Script: {instanceID: 12264}
     - Class: 114
-      Script: {instanceID: 12414}
+      Script: {instanceID: 12416}
     - Class: 114
-      Script: {instanceID: 12470}
+      Script: {instanceID: 12472}
     - Class: 114
-      Script: {instanceID: 12622}
+      Script: {instanceID: 12624}
     - Class: 114
-      Script: {instanceID: 13524}
+      Script: {instanceID: 13526}
     - Class: 114
-      Script: {instanceID: 13804}
+      Script: {instanceID: 13806}
     - Class: 114
-      Script: {instanceID: 14338}
+      Script: {instanceID: 14340}
     - Class: 114
-      Script: {instanceID: 14410}
+      Script: {instanceID: 14412}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -452,7 +455,7 @@ ScriptsOnlyBuild:
     className: CinemachineFixedSignal
   - hash:
       serializedVersion: 2
-      Hash: 20520d70464ecc6d6fc3650e93f81d57
+      Hash: 7396ee86aa42498078e714ae5f55dfdd
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerController
@@ -666,6 +669,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: RectMask2D
+  - hash:
+      serializedVersion: 2
+      Hash: 369df397ef4015147f128af85c2255a0
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: GroundedPlayerDamage
   - hash:
       serializedVersion: 2
       Hash: 63bdc2cf3273aa9bf650350f19d2af61
