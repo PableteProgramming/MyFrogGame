@@ -5379,6 +5379,12 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1352622699}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1352622701 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8685159349206898375, guid: 0d68b663395ff79469cc1c2c75dfdda9,
+    type: 3}
+  m_PrefabInstance: {fileID: 1352622699}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1381393399
 GameObject:
   m_ObjectHideFlags: 0
@@ -6299,7 +6305,7 @@ PrefabInstance:
         type: 3}
       propertyPath: PlayerCheckGround
       value: 
-      objectReference: {fileID: 1530974965}
+      objectReference: {fileID: 1352622701}
     - target: {fileID: 8888667365705909754, guid: 9604fbb27d4a81a40b2fc23bbe592fbc,
         type: 3}
       propertyPath: PlayerCheckGround
