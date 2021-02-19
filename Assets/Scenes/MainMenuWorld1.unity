@@ -4766,7 +4766,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.7766991, y: 1}
+    m_SensorSize: {x: 1.7777778, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -7954,7 +7954,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1870967673}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.26098055, y: 0.16021642, z: -10}
+  m_LocalPosition: {x: -0.26085633, y: 0.16018537, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 360593851}
@@ -8801,6 +8801,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1750052247}
     m_Modifications:
+    - target: {fileID: 1625076253702935104, guid: f4e9aed5f8039c54099202c2cd355da6,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1499040011}
+    - target: {fileID: 1625076253702935104, guid: f4e9aed5f8039c54099202c2cd355da6,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetPlayerBlueFrog
+      objectReference: {fileID: 0}
+    - target: {fileID: 5080040725803878200, guid: f4e9aed5f8039c54099202c2cd355da6,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1499040011}
+    - target: {fileID: 5080040725803878200, guid: f4e9aed5f8039c54099202c2cd355da6,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetPlayerGrayFrog
+      objectReference: {fileID: 0}
     - target: {fileID: 8867435629183001714, guid: f4e9aed5f8039c54099202c2cd355da6,
         type: 3}
       propertyPath: m_Name

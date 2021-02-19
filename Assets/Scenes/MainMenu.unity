@@ -6879,6 +6879,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 670167684}
     m_Modifications:
+    - target: {fileID: 1625076253702935104, guid: f4e9aed5f8039c54099202c2cd355da6,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1188121584}
+    - target: {fileID: 1625076253702935104, guid: f4e9aed5f8039c54099202c2cd355da6,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetPlayerBlueFrog
+      objectReference: {fileID: 0}
+    - target: {fileID: 5080040725803878200, guid: f4e9aed5f8039c54099202c2cd355da6,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1188121584}
+    - target: {fileID: 5080040725803878200, guid: f4e9aed5f8039c54099202c2cd355da6,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetPlayerGrayFrog
+      objectReference: {fileID: 0}
     - target: {fileID: 8867435629183001714, guid: f4e9aed5f8039c54099202c2cd355da6,
         type: 3}
       propertyPath: m_Name

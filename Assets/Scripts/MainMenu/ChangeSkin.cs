@@ -37,6 +37,18 @@ public class ChangeSkin : MonoBehaviour
         ResetPlayerSkin();
     }
 
+    public void SetPlayerBlueFrog()
+    {
+        PlayerPrefs.SetString("PlayerSelected", "BlueFrog");
+        ResetPlayerSkin();
+    }
+
+    public void SetPlayerGrayFrog()
+    {
+        PlayerPrefs.SetString("PlayerSelected", "GrayFrog");
+        ResetPlayerSkin();
+    }
+
     public void SetPlayerMaskDude()
     {
         PlayerPrefs.SetString("PlayerSelected", "MaskDude");
