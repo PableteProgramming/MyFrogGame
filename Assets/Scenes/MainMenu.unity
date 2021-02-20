@@ -5371,6 +5371,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 8685159351254783599, guid: 0d68b663395ff79469cc1c2c75dfdda9,
+        type: 3}
+      propertyPath: enableSelectCharacter
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8685159351254783599, guid: 0d68b663395ff79469cc1c2c75dfdda9,
+        type: 3}
+      propertyPath: playerSelected
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0d68b663395ff79469cc1c2c75dfdda9, type: 3}
 --- !u!1 &1352622700 stripped
@@ -6879,6 +6889,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 670167684}
     m_Modifications:
+    - target: {fileID: 1544699746546010571, guid: f4e9aed5f8039c54099202c2cd355da6,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1188121584}
+    - target: {fileID: 1544699746546010571, guid: f4e9aed5f8039c54099202c2cd355da6,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetPlayerYellowFrog
+      objectReference: {fileID: 0}
     - target: {fileID: 1625076253702935104, guid: f4e9aed5f8039c54099202c2cd355da6,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -7093,6 +7113,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: SetPlayerMaskDudePurple
+      objectReference: {fileID: 0}
+    - target: {fileID: 9102416018230015314, guid: f4e9aed5f8039c54099202c2cd355da6,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1188121584}
+    - target: {fileID: 9102416018230015314, guid: f4e9aed5f8039c54099202c2cd355da6,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetPlayerOrangeFrog
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f4e9aed5f8039c54099202c2cd355da6, type: 3}

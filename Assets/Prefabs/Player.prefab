@@ -689,6 +689,8 @@ MonoBehaviour:
   - {fileID: 9100000, guid: cde3162f6bbb01c4482e3894fdc12c55, type: 2}
   - {fileID: 9100000, guid: da594328cbbb9a143b1bc5a91318d2ed, type: 2}
   - {fileID: 9100000, guid: 97f822b9190e25249b0fcb029363d37b, type: 2}
+  - {fileID: 9100000, guid: bab58950af733f0499825e3581c9c85d, type: 2}
+  - {fileID: 9100000, guid: 07def54284966c54fa0dbfadb69b0e84, type: 2}
   playersRenderer:
   - {fileID: -6367560908665664636, guid: cd947491a13509945aa1b644f9db3ef2, type: 3}
   - {fileID: -6367560908665664636, guid: d348dff3819df794186a80cb95777629, type: 3}
@@ -700,3 +702,5 @@ MonoBehaviour:
   - {fileID: 2352900718389649656, guid: 36a269a7018b74e4d8323f0424538407, type: 3}
   - {fileID: 8738767973659055506, guid: 275bcb6c67726844e8c59326c38a855b, type: 3}
   - {fileID: 7210169228162317084, guid: e093ff6600a80554cbe202d1b83bfc91, type: 3}
+  - {fileID: 1360709084015977596, guid: 8284167d5b4db0242b1d3af9ae5c6336, type: 3}
+  - {fileID: 6632571312894616811, guid: 5ff57e06782d8d249a617915976abdeb, type: 3}
