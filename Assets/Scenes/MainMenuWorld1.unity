@@ -8831,6 +8831,16 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: SetPlayerGrayFrog
       objectReference: {fileID: 0}
+    - target: {fileID: 5848635572277177392, guid: f4e9aed5f8039c54099202c2cd355da6,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1499040011}
+    - target: {fileID: 5848635572277177392, guid: f4e9aed5f8039c54099202c2cd355da6,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetPlayerGreenVirtualGuy
+      objectReference: {fileID: 0}
     - target: {fileID: 8867435629183001714, guid: f4e9aed5f8039c54099202c2cd355da6,
         type: 3}
       propertyPath: m_Name

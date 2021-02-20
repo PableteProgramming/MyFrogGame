@@ -103,6 +103,12 @@ public class ChangeSkin : MonoBehaviour
         ResetPlayerSkin();
     }
 
+    public void SetPlayerGreenVirtualGuy()
+    {
+        PlayerPrefs.SetString("PlayerSelected", "GreenVirtualGuy");
+        ResetPlayerSkin();
+    }
+
     void ResetPlayerSkin()
     {
         skinsPanel.gameObject.SetActive(false);
