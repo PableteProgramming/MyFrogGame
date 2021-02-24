@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerSelector : MonoBehaviour
 {
     public bool enableSelectCharacter;
-    public enum Player { Frog,BlueFrog,GrayFrog,OrangeFrog,YellowFrog, VirtualGuy, GreenVirtualGuy, PinkMan, MaskDude,GreenMaskDude,GrayMaskDude,PurpleMaskDude, RedMaskDude };
+    public enum Player { Frog,BlueFrog,GrayFrog,OrangeFrog,YellowFrog, VirtualGuy, GreenVirtualGuy, PurpleVirtualGuy,PinkMan, MaskDude,GreenMaskDude,GrayMaskDude,PurpleMaskDude, RedMaskDude };
     public Player playerSelected;
     public Animator animator;
     public SpriteRenderer SpriteRenderer;
@@ -75,6 +75,10 @@ public class PlayerSelector : MonoBehaviour
                     SpriteRenderer.sprite = playersRenderer[12];
                     animator.runtimeAnimatorController = playersController[12];
                     break;
+                case Player.PurpleVirtualGuy:
+                    SpriteRenderer.sprite = playersRenderer[13];
+                    animator.runtimeAnimatorController = playersController[13];
+                    break;
                 default:
                     break;
             }
@@ -137,6 +141,10 @@ public class PlayerSelector : MonoBehaviour
             case "GreenVirtualGuy":
                 SpriteRenderer.sprite = playersRenderer[12];
                 animator.runtimeAnimatorController = playersController[12];
+                break;
+            case "PurpleVirtualGuy":
+                SpriteRenderer.sprite = playersRenderer[13];
+                animator.runtimeAnimatorController = playersController[13];
                 break;
             default:
                 break;

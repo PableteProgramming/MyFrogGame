@@ -5059,7 +5059,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   skinsPanel: {fileID: 274481303}
-  player: {fileID: 1277203345}
 --- !u!61 &1188121585
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6889,55 +6888,15 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 670167684}
     m_Modifications:
-    - target: {fileID: 1544699746546010571, guid: f4e9aed5f8039c54099202c2cd355da6,
+    - target: {fileID: 5076377826531483331, guid: f4e9aed5f8039c54099202c2cd355da6,
         type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      propertyPath: player
       value: 
-      objectReference: {fileID: 1188121584}
-    - target: {fileID: 1544699746546010571, guid: f4e9aed5f8039c54099202c2cd355da6,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: SetPlayerYellowFrog
-      objectReference: {fileID: 0}
-    - target: {fileID: 1625076253702935104, guid: f4e9aed5f8039c54099202c2cd355da6,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 1188121584}
-    - target: {fileID: 1625076253702935104, guid: f4e9aed5f8039c54099202c2cd355da6,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: SetPlayerBlueFrog
-      objectReference: {fileID: 0}
-    - target: {fileID: 5080040725803878200, guid: f4e9aed5f8039c54099202c2cd355da6,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 1188121584}
-    - target: {fileID: 5080040725803878200, guid: f4e9aed5f8039c54099202c2cd355da6,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: SetPlayerGrayFrog
-      objectReference: {fileID: 0}
-    - target: {fileID: 5848635572277177392, guid: f4e9aed5f8039c54099202c2cd355da6,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 1188121584}
-    - target: {fileID: 5848635572277177392, guid: f4e9aed5f8039c54099202c2cd355da6,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: SetPlayerGreenVirtualGuy
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1277203345}
     - target: {fileID: 8867435629183001714, guid: f4e9aed5f8039c54099202c2cd355da6,
         type: 3}
       propertyPath: m_Name
       value: Panel
-      objectReference: {fileID: 0}
-    - target: {fileID: 8867435629183001714, guid: f4e9aed5f8039c54099202c2cd355da6,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8867435629183001725, guid: f4e9aed5f8039c54099202c2cd355da6,
         type: 3}
@@ -7043,96 +7002,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8867435629643923206, guid: f4e9aed5f8039c54099202c2cd355da6,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 1188121584}
-    - target: {fileID: 8867435629643923206, guid: f4e9aed5f8039c54099202c2cd355da6,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: SetPlayerMaskDude
-      objectReference: {fileID: 0}
-    - target: {fileID: 8867435629663767554, guid: f4e9aed5f8039c54099202c2cd355da6,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 1188121584}
-    - target: {fileID: 8867435629663767554, guid: f4e9aed5f8039c54099202c2cd355da6,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: SetPlayerFrog
-      objectReference: {fileID: 0}
-    - target: {fileID: 8867435630046176050, guid: f4e9aed5f8039c54099202c2cd355da6,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 1188121584}
-    - target: {fileID: 8867435630046176050, guid: f4e9aed5f8039c54099202c2cd355da6,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: SetPlayerPinkMan
-      objectReference: {fileID: 0}
-    - target: {fileID: 8867435630348154687, guid: f4e9aed5f8039c54099202c2cd355da6,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 1188121584}
-    - target: {fileID: 8867435630348154687, guid: f4e9aed5f8039c54099202c2cd355da6,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: SetPlayerMaskDudeGray
-      objectReference: {fileID: 0}
-    - target: {fileID: 8867435630466611063, guid: f4e9aed5f8039c54099202c2cd355da6,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 1188121584}
-    - target: {fileID: 8867435630466611063, guid: f4e9aed5f8039c54099202c2cd355da6,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: SetPlayerMaskDudeRed
-      objectReference: {fileID: 0}
-    - target: {fileID: 8867435630496130343, guid: f4e9aed5f8039c54099202c2cd355da6,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 1188121584}
-    - target: {fileID: 8867435630496130343, guid: f4e9aed5f8039c54099202c2cd355da6,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: SetPlayerMaskDudeGreen
-      objectReference: {fileID: 0}
-    - target: {fileID: 8867435630740900944, guid: f4e9aed5f8039c54099202c2cd355da6,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 1188121584}
-    - target: {fileID: 8867435630740900944, guid: f4e9aed5f8039c54099202c2cd355da6,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: SetPlayerVirtualGuy
-      objectReference: {fileID: 0}
-    - target: {fileID: 8867435630841755777, guid: f4e9aed5f8039c54099202c2cd355da6,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 1188121584}
-    - target: {fileID: 8867435630841755777, guid: f4e9aed5f8039c54099202c2cd355da6,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: SetPlayerMaskDudePurple
-      objectReference: {fileID: 0}
-    - target: {fileID: 9102416018230015314, guid: f4e9aed5f8039c54099202c2cd355da6,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 1188121584}
-    - target: {fileID: 9102416018230015314, guid: f4e9aed5f8039c54099202c2cd355da6,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: SetPlayerOrangeFrog
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f4e9aed5f8039c54099202c2cd355da6, type: 3}

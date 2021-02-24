@@ -4,32 +4,14 @@ using UnityEngine;
 
 public class ChangeSkin : MonoBehaviour
 {
-    public GameObject skinsPanel;
-    private bool inDoor = false;
+
     public GameObject player;
 
-    private void Update()
+    public void ResetPlayerSkin()
     {
-        if (inDoor && Input.GetKey(KeyCode.Space))
-        {
-            skinsPanel.gameObject.SetActive(true);
-        }
+        gameObject.SetActive(false);
+        player.GetComponent<PlayerSelector>().ChangePlayerInMenu();
     }
-
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.gameObject.CompareTag("Player"))
-        {
-            inDoor = true;
-        }
-    }
-
-    private void OnTriggerExit2D(Collider2D collision)
-    {
-        inDoor = false;
-        skinsPanel.gameObject.SetActive(false);
-    }
-
 
     public void SetPlayerFrog()
     {
@@ -109,9 +91,9 @@ public class ChangeSkin : MonoBehaviour
         ResetPlayerSkin();
     }
 
-    void ResetPlayerSkin()
+    public void SetPlayerPurpleVirtualGuy()
     {
-        skinsPanel.gameObject.SetActive(false);
-        player.GetComponent<PlayerSelector>().ChangePlayerInMenu();
+        PlayerPrefs.SetString("PlayerSelected", "PurpleVirtualGuy");
+        ResetPlayerSkin();
     }
 }
