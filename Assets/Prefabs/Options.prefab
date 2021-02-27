@@ -521,7 +521,7 @@ GameObject:
   - component: {fileID: 8925355060349988976}
   - component: {fileID: 8925355060349988991}
   m_Layer: 5
-  m_Name: Exit
+  m_Name: Skins
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -628,7 +628,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 8925355062300004377}
-        m_MethodName: Exit
+        m_MethodName: Skins
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -683,7 +683,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -32}
+  m_AnchoredPosition: {x: 0, y: 4}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8925355060444354402
@@ -726,10 +726,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: 'Exit
-
-
-'
+  m_Text: Skins
 --- !u!1 &8925355060960548371
 GameObject:
   m_ObjectHideFlags: 0
@@ -1362,6 +1359,7 @@ MonoBehaviour:
   optionsPanel: {fileID: 8925355062009785488}
   MainMenuScene: 
   clip: {fileID: 2850738952641849249}
+  skinspanel: {fileID: 0}
 --- !u!82 &2850738952641849249
 AudioSource:
   m_ObjectHideFlags: 0

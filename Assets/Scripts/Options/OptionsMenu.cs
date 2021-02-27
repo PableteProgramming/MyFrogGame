@@ -8,6 +8,7 @@ public class OptionsMenu : MonoBehaviour
     public GameObject optionsPanel;
     public string MainMenuScene;
     public AudioSource clip;
+    public GameObject skinspanel;
 
     public void Options()
     {
@@ -30,6 +31,12 @@ public class OptionsMenu : MonoBehaviour
     public void Exit()
     {
         Application.Quit();
+    }
+
+    public void Skins()
+    {
+        optionsPanel.SetActive(false);
+        skinspanel.gameObject.SetActive(true);
     }
 
     public void RestartLevel()

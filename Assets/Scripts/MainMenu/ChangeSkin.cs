@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class ChangeSkin : MonoBehaviour
 {
-
     public GameObject player;
 
     public void ResetPlayerSkin()
     {
+        Time.timeScale = 1;
         gameObject.SetActive(false);
         player.GetComponent<PlayerSelector>().ChangePlayerInMenu();
     }

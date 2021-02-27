@@ -12,6 +12,7 @@ public class SkinDoor : MonoBehaviour
     {
         if (inDoor && Input.GetKey(KeyCode.Space))
         {
+            Time.timeScale = 0;
             skinsPanel.gameObject.SetActive(true);
         }
     }
@@ -27,6 +28,6 @@ public class SkinDoor : MonoBehaviour
     private void OnTriggerExit2D(Collider2D collision)
     {
         inDoor = false;
-        skinsPanel.gameObject.SetActive(false);
+        //skinsPanel.gameObject.SetActive(false);
     }
 }
