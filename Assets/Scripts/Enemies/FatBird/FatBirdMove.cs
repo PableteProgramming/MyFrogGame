@@ -70,7 +70,6 @@ public class FatBirdMove : MonoBehaviour
         //Detecting if playing Falling anim
         if (Dynamic)
         {
-
             if (rb2d.velocity.y < 0)
             {
                 animator.SetBool("Falling", true);
