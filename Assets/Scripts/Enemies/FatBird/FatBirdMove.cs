@@ -84,6 +84,11 @@ public class FatBirdMove : MonoBehaviour
         //If grounded
         if (Grounded)
         {
+            /*if (Dynamic)
+            {
+                Dynamic = false;
+                rb2d.gravityScale = 0;
+            }*/
             animator.SetBool("Grounded", true);
             animator.SetBool("Falling", false);
             if (!GoingUp)

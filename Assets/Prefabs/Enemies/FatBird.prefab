@@ -41,7 +41,6 @@ GameObject:
   - component: {fileID: 2499834858873548382}
   - component: {fileID: 2499834858873548381}
   - component: {fileID: 2499834858873548380}
-  - component: {fileID: 2499834858873548371}
   m_Layer: 0
   m_Name: PlayerDamage
   m_TagString: Untagged
@@ -76,7 +75,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.004793912, y: -0.04406947}
+  m_Offset: {x: -0.004793912, y: -0.039464712}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -87,7 +86,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.30901974, y: 0.27147138}
+  m_Size: {x: 0.30901974, y: 0.26226187}
   m_EdgeRadius: 0
 --- !u!114 &2499834858873548380
 MonoBehaviour:
@@ -101,19 +100,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: edaa58f18306c2346b4159c0adfdf839, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &2499834858873548371
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2499834858873548383}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf0e74c5a5020104294785f82f885efd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  IsGrounded: 0
 --- !u!1 &2499834858891931306
 GameObject:
   m_ObjectHideFlags: 0
@@ -181,6 +167,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2499834858873548382}
+  - {fileID: 1966560068815886818}
   m_Father: {fileID: 2499834859841481338}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -336,7 +323,7 @@ MonoBehaviour:
   rb2d: {fileID: 2499834858976890153}
   animator: {fileID: 2499834858976890152}
   UpSpeed: 0.5
-  GroundChecker: {fileID: 2499834858873548383}
+  GroundChecker: {fileID: 7927292478212433336}
   GroundedWaitTime: 0.3
   FallSpeed: 1
   ArtificialIntelligence: 1
@@ -538,3 +525,74 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &7927292478212433336
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1966560068815886818}
+  - component: {fileID: 3214583509694261642}
+  - component: {fileID: 7487949762298029582}
+  m_Layer: 0
+  m_Name: CheckGround
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1966560068815886818
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7927292478212433336}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2499834858976890133}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &3214583509694261642
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7927292478212433336}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.004998967, y: -0.17650831}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.30506477, y: 0.0076146126}
+  m_EdgeRadius: 0
+--- !u!114 &7487949762298029582
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7927292478212433336}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf0e74c5a5020104294785f82f885efd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IsGrounded: 0
