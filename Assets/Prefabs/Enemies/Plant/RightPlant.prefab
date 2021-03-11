@@ -114,7 +114,6 @@ GameObject:
   - component: {fileID: 4147440227615243603}
   - component: {fileID: 4147440227615243600}
   - component: {fileID: 4147440227615243607}
-  - component: {fileID: 2982379169493238588}
   - component: {fileID: 4848655490119013146}
   m_Layer: 0
   m_Name: sprite
@@ -268,29 +267,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 249e237beeab8434fa829851fc43c334, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  left: 0
   waitTimeToAttack: 1
   animator: {fileID: 4147440227615243600}
   bulletPrefab: {fileID: 9054348596876388444, guid: 4253f7de6f14c374d8b0467aa9f62931,
     type: 3}
   launchSpawnPoint: {fileID: 4147440227866107557}
   RayCastSpawnPoint: {fileID: 431609411997767102}
---- !u!114 &2982379169493238588
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4147440227615243629}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 32cdaab3f6bb944469460de0bb47779d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Saw: 0
-  RayCastEndPoint: {fileID: 4147440228641068174}
-  dir: 0
-  Tag: Player
+  LaunchBulletTime: 0.5
 --- !u!82 &4848655490119013146
 AudioSource:
   m_ObjectHideFlags: 0
