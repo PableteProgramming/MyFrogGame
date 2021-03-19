@@ -8,6 +8,7 @@ TagManager:
   - Fruit
   - Enemy
   - SlimeConfiner
+  - PigConfiner
   layers:
   - Default
   - TransparentFX

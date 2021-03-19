@@ -45,6 +45,7 @@ ScriptsOnlyBuild:
     - UnityEditor.U2D.Animation.BoneGizmo
     Unity.2D.Tilemap.Editor.dll:
     - UnityEditor.Tilemaps.GridBrush
+    - UnityEditor.Tilemaps.GridBrushEditor
     - UnityEditor.Tilemaps.GridPaintingState
     - UnityEditor.Tilemaps.GridPaletteBrushes
     - UnityEditor.Tilemaps.GridPalettes
@@ -55,10 +56,8 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -385,6 +384,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11326}
     - Class: 114
+      Script: {instanceID: 11336}
+    - Class: 114
       Script: {instanceID: 11390}
     - Class: 114
       Script: {instanceID: 11412}
@@ -416,6 +417,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 12264}
     - Class: 114
       Script: {instanceID: 12342}
+    - Class: 114
+      Script: {instanceID: 12416}
     - Class: 114
       Script: {instanceID: 12450}
     - Class: 114
@@ -450,6 +453,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 13808}
     - Class: 114
       Script: {instanceID: 14028}
+    - Class: 114
+      Script: {instanceID: 14138}
     - Class: 114
       Script: {instanceID: 14362}
     - Class: 114
@@ -566,13 +571,13 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 14416}
     - Class: 114
-      Script: {instanceID: 248806}
+      Script: {instanceID: 291504}
     - Class: 114
-      Script: {instanceID: 248808}
+      Script: {instanceID: 291506}
     - Class: 114
-      Script: {instanceID: 248812}
+      Script: {instanceID: 291510}
     - Class: 114
-      Script: {instanceID: 248814}
+      Script: {instanceID: 291512}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
