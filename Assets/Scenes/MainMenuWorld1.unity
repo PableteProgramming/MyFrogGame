@@ -1380,6 +1380,7 @@ GameObject:
   - component: {fileID: 448738834}
   - component: {fileID: 448738835}
   - component: {fileID: 448738836}
+  - component: {fileID: 448738837}
   m_Layer: 0
   m_Name: Level1
   m_TagString: Untagged
@@ -1503,6 +1504,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PlayerDecorationObject: {fileID: 1989326263}
   NextSceneName: Level1
+  UpdateLevel: 0
+--- !u!114 &448738837
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 448738831}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3d42bc003b45004c8c8c0b95fcdeb10, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentLevel: 1
+  currentWorld: 1
+  VariableName: WandL
+  Blocked: {fileID: 21300000, guid: c6da773b85348a342855aa692fc7c2ca, type: 3}
+  Available: {fileID: 21300000, guid: c6da773b85348a342855aa692fc7c2ca, type: 3}
 --- !u!1001 &450896477
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1809,6 +1828,7 @@ GameObject:
   - component: {fileID: 524931979}
   - component: {fileID: 524931978}
   - component: {fileID: 524931977}
+  - component: {fileID: 524931981}
   m_Layer: 0
   m_Name: Level3
   m_TagString: Untagged
@@ -1844,6 +1864,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PlayerDecorationObject: {fileID: 1989326263}
   NextSceneName: Level3
+  UpdateLevel: 0
 --- !u!114 &524931978
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1932,6 +1953,23 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &524931981
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 524931975}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3d42bc003b45004c8c8c0b95fcdeb10, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentLevel: 3
+  currentWorld: 1
+  VariableName: WandL
+  Blocked: {fileID: 21300000, guid: 3065c36827168e14488da5fedece05ec, type: 3}
+  Available: {fileID: 21300000, guid: 801c3f559e0816648b767427b13dc6c6, type: 3}
 --- !u!1 &530175805
 GameObject:
   m_ObjectHideFlags: 0
@@ -4031,6 +4069,7 @@ GameObject:
   - component: {fileID: 1452808307}
   - component: {fileID: 1452808306}
   - component: {fileID: 1452808305}
+  - component: {fileID: 1452808309}
   m_Layer: 0
   m_Name: Level2
   m_TagString: Untagged
@@ -4066,6 +4105,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PlayerDecorationObject: {fileID: 1989326263}
   NextSceneName: Level2
+  UpdateLevel: 0
 --- !u!114 &1452808306
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4154,6 +4194,23 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1452808309
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1452808303}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3d42bc003b45004c8c8c0b95fcdeb10, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentLevel: 2
+  currentWorld: 1
+  VariableName: WandL
+  Blocked: {fileID: 21300000, guid: 5f07c6bfaeb51c24bafcacbce4eac6f6, type: 3}
+  Available: {fileID: 21300000, guid: 7f03c3d54a864ff4d89e6cc4b53c6ea1, type: 3}
 --- !u!1 &1457826248
 GameObject:
   m_ObjectHideFlags: 0
@@ -4986,6 +5043,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PlayerDecorationObject: {fileID: 1989326263}
   NextSceneName: MainMenu
+  UpdateLevel: 0
 --- !u!1 &1676548700
 GameObject:
   m_ObjectHideFlags: 0

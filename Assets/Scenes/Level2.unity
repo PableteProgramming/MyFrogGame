@@ -7267,7 +7267,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.772152, y: 1}
+    m_SensorSize: {x: 1.7768924, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -28716,7 +28716,7 @@ PrefabInstance:
     - target: {fileID: 6113093748016179464, guid: 5d6ae24fd5930a747a0dca1cc27edd5d,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6113093748016179464, guid: 5d6ae24fd5930a747a0dca1cc27edd5d,
         type: 3}
@@ -28952,7 +28952,7 @@ PrefabInstance:
     - target: {fileID: 113937386294688287, guid: ff52ef1e30c311a408c8d48a49c53547,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 113937386294688287, guid: ff52ef1e30c311a408c8d48a49c53547,
         type: 3}
@@ -33548,7 +33548,7 @@ PrefabInstance:
     - target: {fileID: 1742715759391593606, guid: c5386cef2ec24ba41bc909c1c64171fc,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1742715759391593606, guid: c5386cef2ec24ba41bc909c1c64171fc,
         type: 3}
@@ -33628,7 +33628,7 @@ PrefabInstance:
     - target: {fileID: 2419869195360458927, guid: c73f1bf36732bcf45bef62a639735ff6,
         type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2419869195360458927, guid: c73f1bf36732bcf45bef62a639735ff6,
         type: 3}
@@ -35266,7 +35266,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1888290492}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.4132378, y: 0.2370132, z: -10}
+  m_LocalPosition: {x: -0.4064257, y: 0.2370132, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1647212913}
@@ -38586,6 +38586,7 @@ GameObject:
   - component: {fileID: 2137070216}
   - component: {fileID: 2137070215}
   - component: {fileID: 2137070214}
+  - component: {fileID: 2137070217}
   m_Layer: 0
   m_Name: Fruits
   m_TagString: Untagged
@@ -38607,6 +38608,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PlayerDecorationObject: {fileID: 2115527077}
   NextSceneName: MainMenuWorld1
+  UpdateLevel: 1
 --- !u!114 &2137070215
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -38630,10 +38632,10 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 1327671816}
   - {fileID: 1742205875}
   - {fileID: 1725473368}
   - {fileID: 1350432081}
-  - {fileID: 1327671816}
   - {fileID: 1009868376}
   - {fileID: 849090562}
   - {fileID: 791131038}
@@ -38721,6 +38723,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2137070217
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2137070213}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a63d7d83b1b1564c9b6dc1d82e3327e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nextLevel: 3
+  nextWorld: 1
+  VariableName: WandL
 --- !u!1 &2138047129
 GameObject:
   m_ObjectHideFlags: 0

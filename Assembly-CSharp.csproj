@@ -85,6 +85,8 @@
     <Compile Include="Assets\Scripts\Fruits\CollectFruit.cs" />
     <Compile Include="Assets\Scripts\MainMenu\ChangeSkin.cs" />
     <Compile Include="Assets\Scripts\MainMenu\Exit.cs" />
+    <Compile Include="Assets\Scripts\MainMenu\LevelAvailable.cs" />
+    <Compile Include="Assets\Scripts\MainMenu\LevelController.cs" />
     <Compile Include="Assets\Scripts\MainMenu\OpenDoor.cs" />
     <Compile Include="Assets\Scripts\MainMenu\SkinDoor.cs" />
     <Compile Include="Assets\Scripts\Options\OptionsMenu.cs" />

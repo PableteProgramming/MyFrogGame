@@ -15,6 +15,8 @@ ScriptsOnlyBuild:
     - FatBirdMove
     - GroundCheck
     - GroundedPlayerDamage
+    - LevelAvailable
+    - LevelController
     - Move
     - OpenDoor
     - OptionsMenu
@@ -44,7 +46,6 @@ ScriptsOnlyBuild:
     Unity.2D.Animation.Editor.dll:
     - UnityEditor.U2D.Animation.BoneGizmo
     Unity.2D.Tilemap.Editor.dll:
-    - UnityEditor.Tilemaps.GridBrush
     - UnityEditor.Tilemaps.GridPaintingState
     - UnityEditor.Tilemaps.GridPaletteBrushes
     - UnityEditor.Tilemaps.GridPalettes
@@ -174,6 +175,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 14416}
     - Class: 114
       Script: {instanceID: 14440}
+    - Class: 114
+      Script: {instanceID: 25302}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -307,6 +310,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 14414}
     - Class: 114
       Script: {instanceID: 14416}
+    - Class: 114
+      Script: {instanceID: 25302}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -462,6 +467,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 14416}
     - Class: 114
       Script: {instanceID: 14440}
+    - Class: 114
+      Script: {instanceID: 25302}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -570,13 +577,15 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 14416}
     - Class: 114
-      Script: {instanceID: 291504}
+      Script: {instanceID: 33366}
     - Class: 114
-      Script: {instanceID: 291506}
+      Script: {instanceID: 180010}
     - Class: 114
-      Script: {instanceID: 291510}
+      Script: {instanceID: 180012}
     - Class: 114
-      Script: {instanceID: 291512}
+      Script: {instanceID: 180016}
+    - Class: 114
+      Script: {instanceID: 180018}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -688,6 +697,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 14414}
     - Class: 114
       Script: {instanceID: 14416}
+    - Class: 114
+      Script: {instanceID: 33366}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1107,7 +1118,7 @@ ScriptsOnlyBuild:
     className: Selectable
   - hash:
       serializedVersion: 2
-      Hash: cb01627d1ead38de02a975d5947b5fa1
+      Hash: 79f6aee1ec05e01e8ee5807114a04da6
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: doPlayerTransition
@@ -1603,6 +1614,18 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
+  - hash:
+      serializedVersion: 2
+      Hash: d2d26dc3e75546022d28ec79f1e147e0
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: LevelController
+  - hash:
+      serializedVersion: 2
+      Hash: e6f65003e8c9e9326fa778274f145d00
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: LevelAvailable
   platform: 24
   scenePathNames:
   - Assets/Scenes/MainMenu.unity
