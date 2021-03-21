@@ -73,7 +73,10 @@ public class PlayerDecoration : MonoBehaviour
         {
             Application.Quit();
         }
-        SceneManager.LoadScene(NextSceneName);
+        else
+        {
+            SceneManager.LoadScene(NextSceneName);
+        }
     }
 
 }
