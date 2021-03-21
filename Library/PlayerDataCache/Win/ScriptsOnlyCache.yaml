@@ -20,6 +20,8 @@ ScriptsOnlyBuild:
     - Move
     - OpenDoor
     - OptionsMenu
+    - Particles
+    - ParticlesRemove
     - PigUpCheckDamage
     - PlatformMove
     - PlayerController
@@ -56,8 +58,10 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -174,6 +178,10 @@ ScriptsOnlyBuild:
       Script: {instanceID: 14420}
     - Class: 114
       Script: {instanceID: 14444}
+    - Class: 114
+      Script: {instanceID: 23150}
+    - Class: 114
+      Script: {instanceID: 67118}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -305,6 +313,10 @@ ScriptsOnlyBuild:
       Script: {instanceID: 14418}
     - Class: 114
       Script: {instanceID: 14420}
+    - Class: 114
+      Script: {instanceID: 23150}
+    - Class: 114
+      Script: {instanceID: 67118}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -458,6 +470,10 @@ ScriptsOnlyBuild:
       Script: {instanceID: 14420}
     - Class: 114
       Script: {instanceID: 14444}
+    - Class: 114
+      Script: {instanceID: 23150}
+    - Class: 114
+      Script: {instanceID: 67118}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -544,6 +560,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11574}
     - Class: 114
+      Script: {instanceID: 11598}
+    - Class: 114
       Script: {instanceID: 11600}
     - Class: 114
       Script: {instanceID: 12266}
@@ -564,13 +582,15 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 14420}
     - Class: 114
-      Script: {instanceID: 26534}
+      Script: {instanceID: 67118}
     - Class: 114
-      Script: {instanceID: 26536}
+      Script: {instanceID: 127796}
     - Class: 114
-      Script: {instanceID: 26540}
+      Script: {instanceID: 127798}
     - Class: 114
-      Script: {instanceID: 26542}
+      Script: {instanceID: 127802}
+    - Class: 114
+      Script: {instanceID: 127804}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -913,7 +933,7 @@ ScriptsOnlyBuild:
     className: SpriteShapeGeometryCache
   - hash:
       serializedVersion: 2
-      Hash: 3fcefb18eb0d6b3b9e6e5b074ce3b339
+      Hash: 8b446c26a1b11d76f6db2581421f6198
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Move
@@ -1607,6 +1627,18 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 623019ba99571458583e7a1cec890e4c
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Particles
+  - hash:
+      serializedVersion: 2
+      Hash: f5b274f6cdc5d219b3bfa46264d5a087
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ParticlesRemove
   platform: 5
   scenePathNames:
   - Assets/Scenes/MainMenu.unity
@@ -1614,4 +1646,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/Level1.unity
   - Assets/Scenes/Level2.unity
   - Assets/Scenes/Level3.unity
-  playerPath: C:/Users/curro.LAPTOP-DUBBS74R/OneDrive/Documentos/Programming/unity/2d/MiFrogGame/Build/Windows/x86/MiFrogGame.exe
+  playerPath: C:/Users/curro.LAPTOP-DUBBS74R/OneDrive/Escritorio/Juego/Windows/x86/MiFrogGame.exe

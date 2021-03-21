@@ -118,7 +118,7 @@ GameObject:
   - component: {fileID: 3562478332887961588}
   m_Layer: 0
   m_Name: LeftPlant
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -306,13 +306,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 249e237beeab8434fa829851fc43c334, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  left: 1
   waitTimeToAttack: 1
   animator: {fileID: 3562478332943690774}
   bulletPrefab: {fileID: 3145364215281404074, guid: c81e0ec906151884b978a9d8461ef502,
     type: 3}
   launchSpawnPoint: {fileID: 3562478332624130019}
   RayCastSpawnPoint: {fileID: 1106605134767075901}
+  LaunchBulletTime: 0.5
 --- !u!82 &2484267802180704030
 AudioSource:
   m_ObjectHideFlags: 0

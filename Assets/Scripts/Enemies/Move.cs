@@ -10,10 +10,12 @@ public class Move : MonoBehaviour
     public Rigidbody2D rb2d;
     public float walkspeed;
     public float realwalkspeed;
+    public int dir;
     private bool moving;
 
     private void Start()
     {
+        dir = -1;
         moving = true;
         realwalkspeed = walkspeed;
     }
@@ -31,11 +33,13 @@ public class Move : MonoBehaviour
 
         if (Leftcheck.GetComponent<Check>().IsWalled)
         {
+            dir = 1;
             walkspeed = -realwalkspeed;
             sprite.flipX = true;
         }
         else if (Rightcheck.GetComponent<Check>().IsWalled)
         {
+            dir = -1;
             sprite.flipX = false;
             walkspeed = realwalkspeed;
         }

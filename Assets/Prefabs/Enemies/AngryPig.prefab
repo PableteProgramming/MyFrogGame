@@ -264,7 +264,7 @@ GameObject:
   - component: {fileID: 6687335442827301406}
   m_Layer: 0
   m_Name: AngryPig
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -375,6 +375,7 @@ MonoBehaviour:
   rb2d: {fileID: 7694203283723136532}
   walkspeed: 0.5
   realwalkspeed: 0
+  dir: 0
 --- !u!95 &7694203283723136523
 Animator:
   serializedVersion: 3
