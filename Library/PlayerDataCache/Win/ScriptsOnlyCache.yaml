@@ -564,13 +564,13 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 14420}
     - Class: 114
-      Script: {instanceID: 51864}
+      Script: {instanceID: 26534}
     - Class: 114
-      Script: {instanceID: 51866}
+      Script: {instanceID: 26536}
     - Class: 114
-      Script: {instanceID: 51870}
+      Script: {instanceID: 26540}
     - Class: 114
-      Script: {instanceID: 51872}
+      Script: {instanceID: 26542}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1614,4 +1614,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/Level1.unity
   - Assets/Scenes/Level2.unity
   - Assets/Scenes/Level3.unity
-  playerPath: C:/Users/curro.LAPTOP-DUBBS74R/OneDrive/Escritorio/Juego/Windows/x86/MiFrogGame.exe
+  playerPath: C:/Users/curro.LAPTOP-DUBBS74R/OneDrive/Documentos/Programming/unity/2d/MiFrogGame/Build/Windows/x86/MiFrogGame.exe
