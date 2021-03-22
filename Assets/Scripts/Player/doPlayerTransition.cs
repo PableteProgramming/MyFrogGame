@@ -15,6 +15,7 @@ public class doPlayerTransition : MonoBehaviour
         {
             gameObject.GetComponent<LevelController>().UpdateLevel();
         }
+        Destroy(gameObject);
     }
 
 }

@@ -18,6 +18,7 @@ public class PlayerController : MonoBehaviour
     private bool Hitted;
     public GameObject appearing;
     public GameObject desappearing;
+    public GameObject PointTransition;
     public GameObject GroundChecker;
 
     void Start()
@@ -29,6 +30,7 @@ public class PlayerController : MonoBehaviour
     {
         appearing.transform.position = transform.position;
         desappearing.transform.position = transform.position;
+        PointTransition.transform.position = transform.position;
         Hitted = transform.GetComponent<PlayerRespawn>().Hitted;
         if (!Hitted)
         {

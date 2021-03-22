@@ -12,6 +12,9 @@ public class PlayerDecoration : MonoBehaviour
     public float AppearingTime;
     public float DesappearingTime;
     private string NextSceneName;
+    public bool PointTransition;
+    public GameObject PointTranstionObject;
+    public float PointTransitiontime=2f;
 
     private void Start()
     {
@@ -69,6 +72,21 @@ public class PlayerDecoration : MonoBehaviour
     private void DesappearChange()
     {
         DesappearingObject.SetActive(false);
+        if (PointTransition)
+        {
+            //Do point transition
+            PointTranstionObject.SetActive(true);
+            Invoke("ExitOrChange", PointTransitiontime);
+        }
+        else
+        {
+            ExitOrChange();
+        }
+        
+    }
+
+    private void ExitOrChange()
+    {
         if (!DoesSceneExist(NextSceneName))
         {
             Application.Quit();
@@ -77,6 +95,7 @@ public class PlayerDecoration : MonoBehaviour
         {
             SceneManager.LoadScene(NextSceneName);
         }
+        //PointTranstionObject.SetActive(false);
     }
 
 }

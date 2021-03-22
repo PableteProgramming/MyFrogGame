@@ -2136,7 +2136,7 @@ PrefabInstance:
     - target: {fileID: 8925355062300004376, guid: c212f2cfd0361d54c8075adf011feb55,
         type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8925355062300004376, guid: c212f2cfd0361d54c8075adf011feb55,
         type: 3}
@@ -5325,6 +5325,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7749567405170767675, guid: 0d68b663395ff79469cc1c2c75dfdda9,
+        type: 3}
+      propertyPath: PointTransition
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7749567405170767675, guid: 0d68b663395ff79469cc1c2c75dfdda9,
+        type: 3}
+      propertyPath: PointTranstionObject
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 8685159350917869989, guid: 0d68b663395ff79469cc1c2c75dfdda9,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5596,7 +5606,7 @@ Transform:
   - {fileID: 1188121583}
   - {fileID: 451786137}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1396380148
 GameObject:
