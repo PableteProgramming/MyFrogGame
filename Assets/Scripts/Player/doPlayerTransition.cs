@@ -7,15 +7,23 @@ public class doPlayerTransition : MonoBehaviour
     public GameObject PlayerDecorationObject;
     public string NextSceneName;
     public bool UpdateLevel=false;
+    private bool AlreadyDone;
+
+    private void Start()
+    {
+        AlreadyDone = false;
+    }
 
     public void DoTransition()
     {
-        PlayerDecorationObject.GetComponent<PlayerDecoration>().Desappear(NextSceneName);
-        if (UpdateLevel)
+        if (!AlreadyDone)
         {
-            gameObject.GetComponent<LevelController>().UpdateLevel();
+            PlayerDecorationObject.GetComponent<PlayerDecoration>().Desappear(NextSceneName);
+            if (UpdateLevel)
+            {
+                gameObject.GetComponent<LevelController>().UpdateLevel();
+            }
+            AlreadyDone = true;
         }
-        Destroy(gameObject);
     }
-
 }

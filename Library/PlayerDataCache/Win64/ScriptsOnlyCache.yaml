@@ -58,8 +58,10 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -578,13 +580,13 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 14424}
     - Class: 114
-      Script: {instanceID: 23924}
+      Script: {instanceID: 135228}
     - Class: 114
-      Script: {instanceID: 23932}
+      Script: {instanceID: 135230}
     - Class: 114
-      Script: {instanceID: 23938}
+      Script: {instanceID: 135234}
     - Class: 114
-      Script: {instanceID: 23940}
+      Script: {instanceID: 135236}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -753,7 +755,7 @@ ScriptsOnlyBuild:
     className: AudioPlayableAsset
   - hash:
       serializedVersion: 2
-      Hash: 0e7973dc834514d0f26b4cd04da9cb90
+      Hash: d046989f1b1f13549eca2f410d488a2e
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerDecoration
@@ -1640,4 +1642,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/Level1.unity
   - Assets/Scenes/Level2.unity
   - Assets/Scenes/Level3.unity
-  playerPath: C:/Users/curro.LAPTOP-DUBBS74R/OneDrive/Documentos/Programming/unity/2d/MiFrogGame/Build/Windows/x64/MiFrogGame.exe
+  playerPath: C:/Users/curro.LAPTOP-DUBBS74R/OneDrive/Escritorio/Juego/Windows/x64/MiFrogGame.exe
