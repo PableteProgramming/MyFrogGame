@@ -48,6 +48,7 @@ ScriptsOnlyBuild:
     Unity.2D.Animation.Editor.dll:
     - UnityEditor.U2D.Animation.BoneGizmo
     Unity.2D.Tilemap.Editor.dll:
+    - UnityEditor.Tilemaps.GridBrush
     - UnityEditor.Tilemaps.GridPaintingState
     - UnityEditor.Tilemaps.GridPaletteBrushes
     - UnityEditor.Tilemaps.GridPalettes
@@ -580,13 +581,13 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 14424}
     - Class: 114
-      Script: {instanceID: 135228}
+      Script: {instanceID: 235832}
     - Class: 114
-      Script: {instanceID: 135230}
+      Script: {instanceID: 235834}
     - Class: 114
-      Script: {instanceID: 135234}
+      Script: {instanceID: 235838}
     - Class: 114
-      Script: {instanceID: 135236}
+      Script: {instanceID: 235840}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1642,4 +1643,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/Level1.unity
   - Assets/Scenes/Level2.unity
   - Assets/Scenes/Level3.unity
-  playerPath: C:/Users/curro.LAPTOP-DUBBS74R/OneDrive/Escritorio/Juego/Windows/x64/MiFrogGame.exe
+  playerPath: C:/Users/curro.LAPTOP-DUBBS74R/OneDrive/Documentos/Programming/unity/2d/MiFrogGame/Build/Windows/x64/MiFrogGame.exe
