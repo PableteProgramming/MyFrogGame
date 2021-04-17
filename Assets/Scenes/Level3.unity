@@ -9196,7 +9196,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.7768924, y: 1}
+    m_SensorSize: {x: 1.7772152, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -28699,7 +28699,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a63d7d83b1b1564c9b6dc1d82e3327e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextLevel: 3
+  nextLevel: 4
   nextWorld: 1
   VariableName: WAndL
 --- !u!1 &1298565780
@@ -30929,7 +30929,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1477785967}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.4064257, y: 0.23701324, z: -10}
+  m_LocalPosition: {x: -0.40596175, y: 0.23701324, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 824521764}
