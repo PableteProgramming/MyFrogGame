@@ -10,7 +10,7 @@ public class FatBirdMove : MonoBehaviour
     public float UpSpeed=0.5f;
     private bool Grounded;
     public GameObject GroundChecker;
-    private Vector2 startPos;
+    public Transform startPos;
     private bool CanFall;
     private bool GoingUp;
     public float GroundedWaitTime;
@@ -20,7 +20,6 @@ public class FatBirdMove : MonoBehaviour
 
     private void Start()
     {
-        startPos = transform.position;
         GroundedWaitedTime = 0;
         CanFall = true;
         Dynamic = false;
@@ -36,11 +35,11 @@ public class FatBirdMove : MonoBehaviour
                 Dynamic = false;
                 rb2d.gravityScale = 0;
             }
-            transform.position = Vector2.MoveTowards(transform.position,startPos,UpSpeed*Time.deltaTime);
+            transform.position = Vector2.MoveTowards(transform.position,startPos.position,UpSpeed*Time.deltaTime);
         }
 
         //If it his back to his start position
-        if (Vector2.Distance(transform.position,startPos)<0.1f)
+        if (Vector2.Distance(transform.position,startPos.position)<=0)
         {
             if (ArtificialIntelligence)
             {
@@ -84,11 +83,6 @@ public class FatBirdMove : MonoBehaviour
         //If grounded
         if (Grounded)
         {
-            /*if (Dynamic)
-            {
-                Dynamic = false;
-                rb2d.gravityScale = 0;
-            }*/
             animator.SetBool("Grounded", true);
             animator.SetBool("Falling", false);
             if (!GoingUp)
