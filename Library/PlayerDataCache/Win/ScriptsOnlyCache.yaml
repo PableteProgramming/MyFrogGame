@@ -720,13 +720,13 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 14550}
     - Class: 114
-      Script: {instanceID: 19482}
+      Script: {instanceID: 22422}
     - Class: 114
-      Script: {instanceID: 19490}
+      Script: {instanceID: 22430}
     - Class: 114
-      Script: {instanceID: 19496}
+      Script: {instanceID: 22436}
     - Class: 114
-      Script: {instanceID: 19498}
+      Script: {instanceID: 22438}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1675,7 +1675,7 @@ ScriptsOnlyBuild:
     className: Outline
   - hash:
       serializedVersion: 2
-      Hash: 623019ba99571458583e7a1cec890e4c
+      Hash: 452f1c06ec2b9bb5db7d6d015593bfa0
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Particles
@@ -1789,4 +1789,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/Level2.unity
   - Assets/Scenes/Level3.unity
   - Assets/Scenes/Level4.unity
-  playerPath: C:/Users/curro.LAPTOP-DUBBS74R/OneDrive/Documentos/Programming/unity/2d/MiFrogGame/Build/Windows/x86/MiFrogGame.exe
+  playerPath: C:/Users/curro.LAPTOP-DUBBS74R/OneDrive/Escritorio/Juego/Windows/x86/MiFrogGame.exe
