@@ -14719,7 +14719,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.45521545, y: 1.2571781}
+  m_Offset: {x: 0.40542877, y: 1.2571781}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -14730,7 +14730,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.010663837, y: 0.29298782}
+  m_Size: {x: 0.006526679, y: 0.29298782}
   m_EdgeRadius: 0
 --- !u!61 &179687996
 BoxCollider2D:
@@ -14745,7 +14745,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -1.4016869, y: 1.2571781}
+  m_Offset: {x: -1.3582854, y: 1.2571781}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -14756,7 +14756,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.008287311, y: 0.29298782}
+  m_Size: {x: 0.0055265427, y: 0.29298782}
   m_EdgeRadius: 0
 --- !u!1001 &186737222
 PrefabInstance:
@@ -15447,7 +15447,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -1.2189529, y: 2.2204404}
+  m_Offset: {x: -1.1964471, y: 2.2204404}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -15458,7 +15458,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.013018131, y: 0.2976017}
+  m_Size: {x: 0.0062664747, y: 0.2976017}
   m_EdgeRadius: 0
 --- !u!61 &226734543
 BoxCollider2D:
@@ -15473,7 +15473,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.060135588, y: 2.216196}
+  m_Offset: {x: -0.078231916, y: 2.216196}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -15484,7 +15484,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.010663718, y: 0.2891121}
+  m_Size: {x: 0.0046316087, y: 0.2891121}
   m_EdgeRadius: 0
 --- !u!4 &228807956 stripped
 Transform:
@@ -15774,7 +15774,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 1.1922152, y: 4.452353}
+  m_Offset: {x: 1.2034853, y: 4.452353}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -15785,7 +15785,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.016213417, y: 0.2837782}
+  m_Size: {x: 0.005694747, y: 0.2837782}
   m_EdgeRadius: 0
 --- !u!61 &237175051
 BoxCollider2D:
@@ -15800,7 +15800,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 2.819881, y: 4.4537745}
+  m_Offset: {x: 2.8005104, y: 4.4537745}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -15811,7 +15811,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.009537935, y: 0.2816162}
+  m_Size: {x: 0.004484415, y: 0.2816162}
   m_EdgeRadius: 0
 --- !u!4 &240388019 stripped
 Transform:
@@ -23304,6 +23304,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Slime4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4676895517534896123, guid: e130202efcf32ef409a1816ec9e11178,
+        type: 3}
+      propertyPath: livingTime
+      value: 0.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e130202efcf32ef409a1816ec9e11178, type: 3}
@@ -31771,7 +31776,7 @@ PrefabInstance:
     - target: {fileID: 154850733185584759, guid: 4ccd2785ee588bb4d8412c92d8ddfd87,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.8868745
+      value: 0.8902
       objectReference: {fileID: 0}
     - target: {fileID: 154850733185584759, guid: 4ccd2785ee588bb4d8412c92d8ddfd87,
         type: 3}
@@ -36187,6 +36192,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Slime3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4676895517534896123, guid: e130202efcf32ef409a1816ec9e11178,
+        type: 3}
+      propertyPath: waitTime
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4676895517534896123, guid: e130202efcf32ef409a1816ec9e11178,
+        type: 3}
+      propertyPath: livingTime
+      value: 0.7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e130202efcf32ef409a1816ec9e11178, type: 3}

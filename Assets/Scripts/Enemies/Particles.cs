@@ -10,6 +10,7 @@ public class Particles : MonoBehaviour
     public float waitTime;
     private float waitedTime;
     public GameObject dirDetector;
+    public float livingTime = 2;
     int dir;
 
     private void Start()
@@ -35,11 +36,13 @@ public class Particles : MonoBehaviour
         {
             //right
             newparticle = Instantiate(particlesPrefab, rightspawnPoint.position, rightspawnPoint.rotation);
+            newparticle.GetComponent<ParticlesRemove>().livingTime = livingTime;
         }
         else if (dir >= 1)
         {
             //left
             newparticle = Instantiate(particlesPrefab, leftspawnPoint.position, leftspawnPoint.rotation);
+            newparticle.GetComponent<ParticlesRemove>().livingTime = livingTime;
         }
     }
 
