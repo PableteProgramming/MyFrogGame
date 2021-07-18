@@ -409,7 +409,8 @@ MonoBehaviour:
   bulletPrefab: {fileID: 6796372277618843500, guid: 25a07b5841b7e5944a443cc2c5686c27,
     type: 3}
   launchSpawnPoint: {fileID: 3938956306064995607}
-  RayCastSpawnPoint: {fileID: 3938956305787524488}
+  RayCastSpawnPoint:
+  - {fileID: 3938956305787524488}
   LaunchBulletTime: 0.2
 --- !u!114 &3938956307567950767
 MonoBehaviour:

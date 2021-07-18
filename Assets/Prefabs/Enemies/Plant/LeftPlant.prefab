@@ -311,7 +311,8 @@ MonoBehaviour:
   bulletPrefab: {fileID: 3145364215281404074, guid: c81e0ec906151884b978a9d8461ef502,
     type: 3}
   launchSpawnPoint: {fileID: 3562478332624130019}
-  RayCastSpawnPoint: {fileID: 1106605134767075901}
+  RayCastSpawnPoint:
+  - {fileID: 1106605134767075901}
   LaunchBulletTime: 0.5
 --- !u!82 &2484267802180704030
 AudioSource:

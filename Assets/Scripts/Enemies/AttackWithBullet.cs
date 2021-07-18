@@ -9,7 +9,7 @@ public class AttackWithBullet : MonoBehaviour
     public Animator animator;
     public GameObject bulletPrefab;
     public Transform launchSpawnPoint;
-    public GameObject RayCastSpawnPoint;
+    public GameObject[] RayCastSpawnPoint;
     public float LaunchBulletTime=0.5f;
 
     private void Start()
@@ -21,11 +21,15 @@ public class AttackWithBullet : MonoBehaviour
     {
         if (waitedTime>=waitTimeToAttack)
         {
-            if (RayCastSpawnPoint.GetComponent<RayCastDetection>().Saw)
+            for(int i=0; i < RayCastSpawnPoint.Length; i++)
             {
-                waitedTime = 0;
-                animator.Play("Attack");
-                Invoke("LaunchBullet", LaunchBulletTime);
+                if (RayCastSpawnPoint[i].GetComponent<RayCastDetection>().Saw)
+                {
+                    waitedTime = 0;
+                    animator.Play("Attack");
+                    Invoke("LaunchBullet", LaunchBulletTime);
+                    break;
+                }
             }
         }
         else
