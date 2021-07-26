@@ -7,9 +7,8 @@ public class LevelController : MonoBehaviour
 {
     public int nextLevel;
     public int nextWorld;
-    public string VariableName;
     
-    private Tuple<int, int> Split(string c,char d)
+    /*private Tuple<int, int> Split(string c,char d)
     {
         string[] splitted = c.Split(d);
         string world = splitted[0];
@@ -17,11 +16,11 @@ public class LevelController : MonoBehaviour
 
         Tuple<int, int> r = new Tuple<int, int>(int.Parse(world), int.Parse(level));
         return r;
-    }
+    }*/
 
     public void UpdateLevel()
     {
-        if (!PlayerPrefs.HasKey(VariableName))
+        /*if (!PlayerPrefs.HasKey(VariableName))
         {
             //variable not initialized
             PlayerPrefs.SetString(VariableName, 1 + ";" + 1);
@@ -35,6 +34,14 @@ public class LevelController : MonoBehaviour
             //update
             PlayerPrefs.SetString(VariableName, nextWorld + ";" + nextLevel);
         }
-        Debug.Log(PlayerPrefs.GetString(VariableName));
+        Debug.Log(PlayerPrefs.GetString(VariableName));*/
+        SaveLoad.Load();
+        if (nextWorld >= SaveLoad.Game.World && nextLevel > SaveLoad.Game.level)
+        {
+            //update
+            SaveLoad.Game.World = nextWorld;
+            SaveLoad.Game.level = nextLevel;
+            SaveLoad.Save();
+        }
     }
 }

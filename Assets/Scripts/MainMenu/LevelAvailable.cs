@@ -7,11 +7,11 @@ public class LevelAvailable : MonoBehaviour
 {
     public int currentLevel;
     public int currentWorld;
-    public string VariableName;
+    //public string VariableName;
     public Sprite Blocked;
     public Sprite Available;
 
-    private Tuple<int, int> Split(string c, char d)
+    /*private Tuple<int, int> Split(string c, char d)
     {
         string[] splitted = c.Split(d);
         string world = splitted[0];
@@ -19,11 +19,12 @@ public class LevelAvailable : MonoBehaviour
 
         Tuple<int, int> r = new Tuple<int, int>(int.Parse(world), int.Parse(level));
         return r;
-    }
+    }*/
 
     private void Start()
     {
-        if (!PlayerPrefs.HasKey(VariableName))
+        SaveLoad.Load();
+        /*if (!PlayerPrefs.HasKey(VariableName))
         {
             Debug.Log("Initializing var");
             //variable not initialized
@@ -51,9 +52,9 @@ public class LevelAvailable : MonoBehaviour
             }
 
             return;
-        }
+        }*/
 
-        string content = PlayerPrefs.GetString(VariableName);
+        /*string content = PlayerPrefs.GetString(VariableName);
 
         Tuple<int, int> WandL = Split(content, ';');
 
@@ -76,6 +77,26 @@ public class LevelAvailable : MonoBehaviour
             }
         }
 
-        Debug.Log(PlayerPrefs.GetString(VariableName));
+        Debug.Log(PlayerPrefs.GetString(VariableName));*/
+
+        if (currentWorld <= SaveLoad.Game.World && currentLevel <= SaveLoad.Game.level)
+        {
+            //available
+            gameObject.GetComponent<OpenDoor>().enabled = true;
+            Debug.Log("available " + currentLevel);
+            if (Available != null)
+            {
+                gameObject.GetComponent<SpriteRenderer>().sprite = Available;
+            }
+        }
+        else
+        {
+            gameObject.GetComponent<OpenDoor>().enabled = false;
+            Debug.Log("closed " + currentLevel);
+            if (Blocked != null)
+            {
+                gameObject.GetComponent<SpriteRenderer>().sprite = Blocked;
+            }
+        }
     }
 }

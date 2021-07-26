@@ -88,7 +88,8 @@ public class PlayerSelector : MonoBehaviour
 
     public void ChangePlayerInMenu()
     {
-        switch (PlayerPrefs.GetString("PlayerSelected"))
+        SaveLoad.Load();
+        switch (SaveLoad.Game.skin)
         {
             case "Frog":
                 SpriteRenderer.sprite = playersRenderer[0];

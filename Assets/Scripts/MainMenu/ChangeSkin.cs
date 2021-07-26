@@ -8,6 +8,7 @@ public class ChangeSkin : MonoBehaviour
 
     public void ResetPlayerSkin()
     {
+        SaveLoad.Save();
         Time.timeScale = 1;
         gameObject.SetActive(false);
         player.GetComponent<PlayerSelector>().ChangePlayerInMenu();
@@ -15,85 +16,99 @@ public class ChangeSkin : MonoBehaviour
 
     public void SetPlayerFrog()
     {
-        PlayerPrefs.SetString("PlayerSelected", "Frog");
+        SaveLoad.Game.skin = "Frog";
+        //PlayerPrefs.SetString("PlayerSelected", "Frog");
         ResetPlayerSkin();
     }
 
     public void SetPlayerBlueFrog()
     {
-        PlayerPrefs.SetString("PlayerSelected", "BlueFrog");
+        SaveLoad.Game.skin = "BlueFrog";
+        //PlayerPrefs.SetString("PlayerSelected", "BlueFrog");
         ResetPlayerSkin();
     }
 
     public void SetPlayerOrangeFrog()
     {
-        PlayerPrefs.SetString("PlayerSelected", "OrangeFrog");
+        SaveLoad.Game.skin = "OrangeFrog";
+        //PlayerPrefs.SetString("PlayerSelected", "OrangeFrog");
         ResetPlayerSkin();
     }
 
     public void SetPlayerYellowFrog()
     {
-        PlayerPrefs.SetString("PlayerSelected", "YellowFrog");
+        SaveLoad.Game.skin = "YellowFrog";
+        //PlayerPrefs.SetString("PlayerSelected", "YellowFrog");
         ResetPlayerSkin();
     }
 
     public void SetPlayerGrayFrog()
     {
-        PlayerPrefs.SetString("PlayerSelected", "GrayFrog");
+        SaveLoad.Game.skin = "GrayFrog";
+        //PlayerPrefs.SetString("PlayerSelected", "GrayFrog");
         ResetPlayerSkin();
     }
 
     public void SetPlayerMaskDude()
     {
-        PlayerPrefs.SetString("PlayerSelected", "MaskDude");
+        SaveLoad.Game.skin = "MaskDude";
+        //PlayerPrefs.SetString("PlayerSelected", "MaskDude");
         ResetPlayerSkin();
     }
 
     public void SetPlayerMaskDudeGreen()
     {
-        PlayerPrefs.SetString("PlayerSelected", "GreenMaskDude");
+        SaveLoad.Game.skin = "GreenMaskDude";
+        //PlayerPrefs.SetString("PlayerSelected", "GreenMaskDude");
         ResetPlayerSkin();
     }
 
     public void SetPlayerMaskDudePurple()
     {
-        PlayerPrefs.SetString("PlayerSelected", "PurpleMaskDude");
+        SaveLoad.Game.skin = "PurpleMaskDude";
+        //PlayerPrefs.SetString("PlayerSelected", "PurpleMaskDude");
         ResetPlayerSkin();
     }
 
     public void SetPlayerMaskDudeRed()
     {
-        PlayerPrefs.SetString("PlayerSelected", "RedMaskDude");
+        SaveLoad.Game.skin = "RedMaskDude";
+        //PlayerPrefs.SetString("PlayerSelected", "RedMaskDude");
         ResetPlayerSkin();
     }
 
     public void SetPlayerMaskDudeGray()
     {
-        PlayerPrefs.SetString("PlayerSelected", "GrayMaskDude");
+        SaveLoad.Game.skin = "GrayMaskDude";
+        //PlayerPrefs.SetString("PlayerSelected", "GrayMaskDude");
         ResetPlayerSkin();
     }
 
     public void SetPlayerPinkMan()
     {
-        PlayerPrefs.SetString("PlayerSelected", "PinkMan");
+        SaveLoad.Game.skin = "PinkMan";
+        //PlayerPrefs.SetString("PlayerSelected", "PinkMan");
         ResetPlayerSkin();
     }
 
     public void SetPlayerVirtualGuy()
     {
-        PlayerPrefs.SetString("PlayerSelected", "VirtualGuy");
+        SaveLoad.Game.skin = "VirtualGuy";
+        //PlayerPrefs.SetString("PlayerSelected", "VirtualGuy");
         ResetPlayerSkin();
     }
 
     public void SetPlayerGreenVirtualGuy()
     {
-        PlayerPrefs.SetString("PlayerSelected", "GreenVirtualGuy");
+        SaveLoad.Game.skin = "GreenVirtualGuy";
+        //PlayerPrefs.SetString("PlayerSelected", "GreenVirtualGuy");
         ResetPlayerSkin();
     }
 
     public void SetPlayerPurpleVirtualGuy()
     {
-        PlayerPrefs.SetString("PlayerSelected", "PurpleVirtualGuy");
+        SaveLoad.Game.skin = "PurpleVirtualGuy";
+        //PlayerPrefs.SetString("PlayerSelected", "PurpleVirtualGuy");
         ResetPlayerSkin();
     }
 }
