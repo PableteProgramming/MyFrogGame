@@ -61,3 +61,7 @@ Thumbs.db.meta
 
 #ignore game state
 /MiFrogGame.state
+
+/.vsconfig
+
+/debug.log

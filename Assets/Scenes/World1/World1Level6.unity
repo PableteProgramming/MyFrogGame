@@ -1993,7 +1993,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextLevel: 6
   nextWorld: 1
-  VariableName: WandL
 --- !u!114 &150539929
 MonoBehaviour:
   m_ObjectHideFlags: 0
