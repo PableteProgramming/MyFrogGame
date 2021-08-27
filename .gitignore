@@ -63,5 +63,7 @@ Thumbs.db.meta
 /MiFrogGame.state
 
 /.vsconfig
-
+/updateFile.txt
+/*.zip
+/MyFrogGame-*/
 /debug.log
