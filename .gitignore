@@ -67,3 +67,8 @@ Thumbs.db.meta
 /*.zip
 /MyFrogGame-*/
 /debug.log
+/output
+/download.ps1
+/download.bat
+/temp.txt
+/updateFile.txt

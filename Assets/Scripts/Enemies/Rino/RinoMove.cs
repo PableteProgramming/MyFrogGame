@@ -12,92 +12,66 @@ public class RinoMove : MonoBehaviour
     private float realWalkSpeed;
     public bool moving;
     public bool Left;
-    //public bool WallHit;
-    //public float WallHitWaitTime;
-    //private float WallHitWaitedTime;
-    //public float WallHitPower;
+    private Vector3 idlepos;
 
     private void Start()
     {
         GetComponent<RinoRayCastDetection>().Left = Left;
         realWalkSpeed = speed;
-        //WallHitWaitedTime = 0;
+        moving = false;
+        idlepos = transform.position;
     }
 
     private void Update()
     {
-        /*if (WallHit)
-        {
-            if (WallHitWaitedTime >= WallHitWaitTime)
-            {
-                Move();
-            }
-            else
-            {
-                WallHitWaitedTime += Time.deltaTime;
-            }
-        }
-        else
-        {
-            Move();
-        }*/
-        //
         Move();
-        //
-        
-        
     }
 
     private void Move()
     {
         GetComponent<RinoRayCastDetection>().Left = Left;
+        //if not moving yet
         if (!moving)
         {
             if (GetComponent<RinoRayCastDetection>().Saw)
             {
+                //Rino has seen the player and starts running
                 moving = true;
             }
         }
 
+        //if moving
         if (moving)
         {
+            //playing Run animation
             animator.SetBool("Run", true);
+            //if it collides with wall
             if (LeftCheck.GetComponent<Check>().IsWalled)
             {
+                //changing run direction and flipping sprite
                 speed = -realWalkSpeed;
                 Left = false;
                 sprite.flipX = true;
                 moving = false;
-                /*if (WallHit)
-                {
-                    animator.Play("WallHit");
-                    WallHitWaitedTime = 0;
-                    GetComponent<Rigidbody2D>().velocity = (Vector2.right * WallHitPower);
-                }*/
+                idlepos = transform.position;
             }
             else if (RightCheck.GetComponent<Check>().IsWalled)
             {
+                //changing run direction and flipping sprite
                 sprite.flipX = false;
                 speed = realWalkSpeed;
                 Left = true;
-                /*if (WallHit)
-                {
-                    animator.Play("WallHit");
-                    WallHitWaitedTime = 0;
-                    GetComponent<Rigidbody2D>().velocity = (Vector2.left * WallHitPower);
-                }*/
                 moving = false;
-                
+                idlepos = transform.position;
             }
-            /*else
-            {
-                GetComponent<Rigidbody2D>().velocity = new Vector2(-GetComponent<Rigidbody2D>().velocity.x, -GetComponent<Rigidbody2D>().velocity.y);
-            }*/
+            // make the sprite move
             transform.Translate(Vector2.right * (-speed) * Time.deltaTime);
         }
         else
         {
+            // if not moving, set the animation as idle
             animator.SetBool("Run", false);
+            transform.position = idlepos;
         }
     }
 }
