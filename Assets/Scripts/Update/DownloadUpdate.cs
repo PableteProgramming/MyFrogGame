@@ -9,6 +9,5 @@ public class DownloadUpdate : MonoBehaviour
     {
         WebClient webClient = new WebClient();
         webClient.DownloadFile(url, name);
-        //webClient.DownloadFile("https://github.com/PableteProgramming/MyFrogGameUpdater/raw/master/updateFile", @"updateFile.txt");
     }
 }
