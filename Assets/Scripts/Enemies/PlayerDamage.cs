@@ -8,7 +8,15 @@ public class PlayerDamage : MonoBehaviour
     {
         if (collision.transform.CompareTag("Player"))
         {
-            collision.transform.GetComponent<PlayerRespawn>().PlayerDamage();
+            Debug.Log(collision.transform.GetComponent<PlayerLives>().playerLives);
+            if (collision.transform.GetComponent<PlayerLives>().playerLives==1)
+            {
+                collision.transform.GetComponent<PlayerRespawn>().PlayerDamage();
+            }
+            else
+            {
+                collision.transform.GetComponent<PlayerLives>().playerLives = collision.transform.GetComponent<PlayerLives>().playerLives-1;
+            }
         }
     }
 }
