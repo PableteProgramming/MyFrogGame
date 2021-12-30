@@ -29,6 +29,7 @@ public class PlayerDecoration : MonoBehaviour
         }
         else
         {
+            PlayerSprite.SetActive(false);
             AppearingObject.SetActive(true);
             Invoke("AppearChange", AppearingTime);
         } 
