@@ -13,7 +13,7 @@ public class ChooseCheckPoint : MonoBehaviour
     public void MoveToCheckpoint()
     {
         GameObject currentCheckPoint = null;
-        if (Checkpoints.Length < 1)
+        if (Checkpoints.Length > 0)
         {
             for (int i = 0; i < Checkpoints.Length; i++)
             {
