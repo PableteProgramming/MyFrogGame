@@ -12,6 +12,7 @@ public class Particles : MonoBehaviour
     public GameObject dirDetector;
     public float livingTime = 2;
     int dir;
+    public GameObject PlayerDamage;
 
     private void Start()
     {
@@ -31,19 +32,19 @@ public class Particles : MonoBehaviour
     void LaunchParticle()
     {
         dir= dirDetector.GetComponent<Move>().dir;
-        GameObject newparticle;
+        GameObject newparticle= null;
         if (dir <= -1)
         {
             //right
             newparticle = Instantiate(particlesPrefab, rightspawnPoint.position, rightspawnPoint.rotation);
-            newparticle.GetComponent<ParticlesRemove>().livingTime = livingTime;
         }
         else if (dir >= 1)
         {
             //left
             newparticle = Instantiate(particlesPrefab, leftspawnPoint.position, leftspawnPoint.rotation);
-            newparticle.GetComponent<ParticlesRemove>().livingTime = livingTime;
         }
+        newparticle.GetComponent<ParticlesRemove>().livingTime = livingTime;
+        newparticle.GetComponent<PlayerDamage>().CheckPoints = PlayerDamage.GetComponent<PlayerDamage>().CheckPoints;
     }
 
 }

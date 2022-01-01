@@ -70,6 +70,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: edaa58f18306c2346b4159c0adfdf839, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  CheckPoints: {fileID: 0}
 --- !u!1 &326935916133483467
 GameObject:
   m_ObjectHideFlags: 0
@@ -526,6 +527,8 @@ MonoBehaviour:
   leftspawnPoint: {fileID: 356452911417984629}
   waitTime: 0.5
   dirDetector: {fileID: 326935916571894291}
+  livingTime: 2
+  PlayerDamage: {fileID: 290181226437025907}
 --- !u!1 &326935916613208056
 GameObject:
   m_ObjectHideFlags: 0

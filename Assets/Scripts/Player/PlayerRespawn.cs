@@ -8,7 +8,6 @@ public class PlayerRespawn : MonoBehaviour
     public Animator animator;
     public bool Hitted;
     GameObject Checkpoint;
-    public GameObject decoration;
 
     void Start()
     {

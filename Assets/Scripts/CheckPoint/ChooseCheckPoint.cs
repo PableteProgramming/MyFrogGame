@@ -13,23 +13,30 @@ public class ChooseCheckPoint : MonoBehaviour
     public void MoveToCheckpoint()
     {
         GameObject currentCheckPoint = null;
-        for (int i=0; i<Checkpoints.Length; i++)
+        if (Checkpoints.Length < 1)
         {
-            GameObject current = Checkpoints[i];
-            if (current.GetComponent<CheckPointDetect>().Passed)
+            for (int i = 0; i < Checkpoints.Length; i++)
             {
-                currentCheckPoint = current;
+                GameObject current = Checkpoints[i];
+                if (current.GetComponent<CheckPointDetect>().Passed)
+                {
+                    currentCheckPoint = current;
+                }
             }
-        }
-        if (currentCheckPoint == null)
-        {
-            //set to start
-            Debug.Log("Moving to start");
-            currentCheckPoint = start;
+            if (currentCheckPoint == null)
+            {
+                //set to start
+                Debug.Log("Moving to start");
+                currentCheckPoint = start;
+            }
+            else
+            {
+                currentCheckPoint = currentCheckPoint.GetComponent<CheckPointDetect>().SpawnPoint;
+            }
         }
         else
         {
-            currentCheckPoint = currentCheckPoint.GetComponent<CheckPointDetect>().SpawnPoint;
+            currentCheckPoint = start;
         }
         player.transform.position = currentCheckPoint.transform.position;
         sprite.transform.localPosition = new Vector3(0, 0, 0);

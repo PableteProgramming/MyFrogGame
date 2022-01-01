@@ -13,6 +13,7 @@ public class PlatformMove : MonoBehaviour
     private int i = 0;
 
     public Transform[] moveSpots;
+    public GameObject PlayerParent;
 
     void Start()
     {
@@ -56,7 +57,7 @@ public class PlatformMove : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            collision.transform.SetParent(null);
+            collision.transform.SetParent(PlayerParent.transform);
         }
     }
 }
