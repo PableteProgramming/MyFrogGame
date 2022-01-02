@@ -47,8 +47,7 @@ MonoBehaviour:
   playerDecoration: {fileID: 0}
   player: {fileID: 0}
   sprite: {fileID: 0}
-  Checkpoints:
-  - {fileID: 8856812084730535958}
+  currentCheckpoint: {fileID: 0}
   start: {fileID: 0}
 --- !u!1001 &9011949253108253339
 PrefabInstance:
@@ -117,6 +116,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: CheckPoint
       objectReference: {fileID: 0}
+    - target: {fileID: 2656690909804815098, guid: 26d16c781552a2f4687e3d732511bdac,
+        type: 3}
+      propertyPath: CheckpointsParent
+      value: 
+      objectReference: {fileID: 9011949253773520525}
     - target: {fileID: 2923910459147458867, guid: 26d16c781552a2f4687e3d732511bdac,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -149,12 +153,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 26d16c781552a2f4687e3d732511bdac, type: 3}
---- !u!1 &8856812084730535958 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 574586854945153677, guid: 26d16c781552a2f4687e3d732511bdac,
-    type: 3}
-  m_PrefabInstance: {fileID: 9011949253108253339}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &8856812084730535959 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 574586854945153676, guid: 26d16c781552a2f4687e3d732511bdac,

@@ -7,6 +7,7 @@ public class CheckPointDetect : MonoBehaviour
     public GameObject[] limits;
     public bool Passed;
     public GameObject SpawnPoint;
+    public GameObject CheckpointsParent;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,6 +24,7 @@ public class CheckPointDetect : MonoBehaviour
                 if (limits[i].GetComponent<LimitPassed>().passed)
                 {
                     Passed = true;
+                    CheckpointsParent.GetComponent<ChooseCheckPoint>().currentCheckpoint = gameObject;
                 }
             }
         }
