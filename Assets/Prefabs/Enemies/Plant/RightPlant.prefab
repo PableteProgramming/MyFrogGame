@@ -100,6 +100,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: edaa58f18306c2346b4159c0adfdf839, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  CheckPoints: {fileID: 0}
 --- !u!1 &4147440227615243629
 GameObject:
   m_ObjectHideFlags: 0
@@ -275,6 +276,7 @@ MonoBehaviour:
   RayCastSpawnPoint:
   - {fileID: 431609411997767102}
   LaunchBulletTime: 0.5
+  PlayerDamage: {fileID: 4147440226987632833}
 --- !u!82 &4848655490119013146
 AudioSource:
   m_ObjectHideFlags: 0
