@@ -11,6 +11,7 @@ public class AttackWithBullet : MonoBehaviour
     public Transform launchSpawnPoint;
     public GameObject[] RayCastSpawnPoint;
     public float LaunchBulletTime=0.5f;
+    public GameObject PlayerDamage;
 
     private void Start()
     {
@@ -42,5 +43,6 @@ public class AttackWithBullet : MonoBehaviour
     {
         GameObject newBullet;
         newBullet = Instantiate(bulletPrefab, launchSpawnPoint.position, launchSpawnPoint.rotation);
+        newBullet.GetComponent<PlayerDamage>().CheckPoints = PlayerDamage.GetComponent<PlayerDamage>().CheckPoints;
     }
 }
