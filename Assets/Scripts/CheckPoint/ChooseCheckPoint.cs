@@ -18,7 +18,14 @@ public class ChooseCheckPoint : MonoBehaviour
     public void MoveToCheckpoint()
     {
         sprite.transform.SetParent(player.transform);
-        player.transform.position = currentCheckpoint.transform.position;
+        if (currentCheckpoint == start)
+        {
+            player.transform.position = currentCheckpoint.transform.position;
+        }
+        else
+        {
+            player.transform.position = currentCheckpoint.GetComponent<CheckPointDetect>().SpawnPoint.transform.position;
+        }
         sprite.transform.localPosition = new Vector3(0, 0, 0);
         playerDecoration.GetComponent<PlayerDecoration>().AppearingObject.transform.localPosition = new Vector3(0, 0, 0);
         playerDecoration.GetComponent<PlayerDecoration>().Appear();

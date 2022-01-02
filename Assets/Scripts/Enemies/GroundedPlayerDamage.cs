@@ -7,7 +7,8 @@ public class GroundedPlayerDamage : MonoBehaviour
 
     public GameObject PlayerCheckGround;
     public bool setParent;
-    GameObject CheckPoints;
+    public GameObject CheckPoints;
+    public GameObject PlayerParent;
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -16,6 +17,7 @@ public class GroundedPlayerDamage : MonoBehaviour
             collision.transform.SetParent(transform);
             if (PlayerCheckGround.GetComponent<CheckGround>().Ground)
             {
+                collision.transform.GetComponent<PlayerLives>().playerLives = collision.transform.GetComponent<PlayerLives>().playerLives - 1;
                 collision.transform.GetComponent<PlayerRespawn>().PlayerDamage(collision.transform.GetComponent<PlayerLives>().playerLives, CheckPoints);
             }
         }
@@ -28,6 +30,7 @@ public class GroundedPlayerDamage : MonoBehaviour
             collision.transform.SetParent(transform);
             if (PlayerCheckGround.GetComponent<CheckGround>().Ground)
             {
+                collision.transform.GetComponent<PlayerLives>().playerLives = collision.transform.GetComponent<PlayerLives>().playerLives - 1;
                 collision.transform.GetComponent<PlayerRespawn>().PlayerDamage(collision.transform.GetComponent<PlayerLives>().playerLives, CheckPoints);
             }
         }
@@ -37,7 +40,7 @@ public class GroundedPlayerDamage : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            collision.transform.SetParent(null);
+            collision.transform.SetParent(PlayerParent.transform);
         }
     }
 }

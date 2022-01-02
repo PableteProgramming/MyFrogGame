@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class SetParent : MonoBehaviour
 {
+    public GameObject PlayerParent;
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))
@@ -24,7 +25,7 @@ public class SetParent : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            collision.transform.SetParent(null);
+            collision.transform.SetParent(PlayerParent.transform);
         }
     }
 }

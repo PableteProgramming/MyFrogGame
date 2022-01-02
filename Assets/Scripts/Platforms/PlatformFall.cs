@@ -10,6 +10,7 @@ public class PlatformFall : MonoBehaviour
     bool touching;
     public string Tag;
     public float speed;
+    public GameObject PlayerParent;
     // Start is called before the first frame update
     void Start()
     {
@@ -60,7 +61,7 @@ public class PlatformFall : MonoBehaviour
         if (collision.gameObject.CompareTag(Tag))
         {
             //Player exited
-            collision.transform.SetParent(null);
+            collision.transform.SetParent(PlayerParent.transform);
             touching = false;
         }
     }

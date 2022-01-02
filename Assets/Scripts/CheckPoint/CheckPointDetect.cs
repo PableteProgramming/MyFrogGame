@@ -25,6 +25,8 @@ public class CheckPointDetect : MonoBehaviour
                 {
                     Passed = true;
                     CheckpointsParent.GetComponent<ChooseCheckPoint>().currentCheckpoint = gameObject;
+                    Animator animator = GetComponent<Animator>();
+                    animator.SetBool("Passed", true);
                 }
             }
         }
