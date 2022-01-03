@@ -12589,22 +12589,22 @@ PrefabInstance:
     - target: {fileID: 5628652540616627507, guid: f31d27d1a475a6c41ba78896403a7a7e,
         type: 3}
       propertyPath: m_Size.x
-      value: 0.028435118
+      value: 0.2866828
       objectReference: {fileID: 0}
     - target: {fileID: 5628652540616627507, guid: f31d27d1a475a6c41ba78896403a7a7e,
         type: 3}
       propertyPath: m_Size.y
-      value: 0.961241
+      value: 0.45459825
       objectReference: {fileID: 0}
     - target: {fileID: 5628652540616627507, guid: f31d27d1a475a6c41ba78896403a7a7e,
         type: 3}
       propertyPath: m_Offset.x
-      value: -0.12547334
+      value: 0.018362418
       objectReference: {fileID: 0}
     - target: {fileID: 5628652540616627507, guid: f31d27d1a475a6c41ba78896403a7a7e,
         type: 3}
       propertyPath: m_Offset.y
-      value: 0.04787457
+      value: -0.09019723
       objectReference: {fileID: 0}
     - target: {fileID: 6161822638987926440, guid: f31d27d1a475a6c41ba78896403a7a7e,
         type: 3}
@@ -33082,26 +33082,6 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 0.4
       objectReference: {fileID: 0}
-    - target: {fileID: 3678347640674752424, guid: 26d16c781552a2f4687e3d732511bdac,
-        type: 3}
-      propertyPath: m_Size.x
-      value: 0.014147103
-      objectReference: {fileID: 0}
-    - target: {fileID: 3678347640674752424, guid: 26d16c781552a2f4687e3d732511bdac,
-        type: 3}
-      propertyPath: m_Size.y
-      value: 1.5519161
-      objectReference: {fileID: 0}
-    - target: {fileID: 3678347640674752424, guid: 26d16c781552a2f4687e3d732511bdac,
-        type: 3}
-      propertyPath: m_Offset.x
-      value: -0.3838888
-      objectReference: {fileID: 0}
-    - target: {fileID: 3678347640674752424, guid: 26d16c781552a2f4687e3d732511bdac,
-        type: 3}
-      propertyPath: m_Offset.y
-      value: -0.24410963
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 26d16c781552a2f4687e3d732511bdac, type: 3}
 --- !u!1 &1229034902 stripped
@@ -45569,6 +45549,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 8668147140148899931, guid: 024df6b547807cd4e83bb4f4080f8385,
+        type: 3}
+      propertyPath: Player
+      value: 
+      objectReference: {fileID: 372557445}
     - target: {fileID: 8925355062300004356, guid: 024df6b547807cd4e83bb4f4080f8385,
         type: 3}
       propertyPath: m_Name

@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerLives : MonoBehaviour
 {
     public int playerLives;
-    private int currentLives;
+    public int currentLives;
     // Start is called before the first frame update
     void Start()
     {
